@@ -175,3 +175,155 @@ GetShaderSource() ->
 void main() {}
 
 [GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
+01:17:44.943 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 30ms, your system is too slow
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+libva info: VA-API version 1.22.0
+libva info: Trying to open /usr/lib/aarch64-linux-gnu/dri/v3d_drv_video.so
+libva info: va_openDriver() returns -1
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+01:19:06.789 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+01:20:20.322 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 31ms, your system is too slow
+
+libva info: VA-API version 1.22.0
+libva info: Trying to open /usr/lib/aarch64-linux-gnu/dri/v3d_drv_video.so
+libva info: va_openDriver() returns -1
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
