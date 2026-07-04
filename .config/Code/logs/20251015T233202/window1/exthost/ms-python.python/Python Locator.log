@@ -1,0 +1,27 @@
+2025-10-15 23:41:00.302 [info] Starting Python Locator /home/projeteea/.vscode/extensions/ms-python.python-2025.16.0-linux-arm64/python-env-tools/bin/pet server
+2025-10-15 23:41:01.457 [info] Discovered env: /usr/bin/python
+2025-10-15 23:41:01.672 [info] Discovered env: /bin/python
+2025-10-15 23:41:02.781 [info] Locator Conda took 1.985332132s
+2025-10-15 23:41:02.781 [info] Locator Homebrew took 467.717µs
+2025-10-15 23:41:02.781 [info] Locator LinuxGlobal took 1.436866485s
+2025-10-15 23:41:02.781 [info] Locator PipEnv took 79.98µs
+2025-10-15 23:41:02.782 [info] Locator Pixi took 87.073µs
+2025-10-15 23:41:02.782 [info] Locator Poetry took 465.938µs
+2025-10-15 23:41:02.782 [info] Locator PyEnv took 373.672961ms
+2025-10-15 23:41:02.782 [info] Locator Venv took 103.258µs
+2025-10-15 23:41:02.782 [info] Locator VirtualEnv took 66.129µs
+2025-10-15 23:41:02.783 [info] Locator VirtualEnvWrapper took 136.183µs
+2025-10-15 23:41:02.783 [info] Locator GlobalVirtualEnvs took 301.681µs
+2025-10-15 23:41:02.783 [info] Locator Locators took 1.996358237s
+2025-10-15 23:41:02.783 [info] Locator Path took 2.151680986s
+2025-10-15 23:41:02.783 [info] Locator Workspaces took 4.389µs
+2025-10-15 23:41:02.784 [info] Refresh completed in 2157ms
+2025-10-15 23:41:02.967 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:42:53.105 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:43:31.721 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:44:13.178 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:48:15.435 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:49:10.670 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:49:49.038 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:52:47.018 [info] Resolved Python Environment /usr/bin/python
+2025-10-15 23:53:35.431 [info] Resolved Python Environment /usr/bin/python

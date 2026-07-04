@@ -1,0 +1,18 @@
+2025-10-15 23:40:59.711 [info] Native locator: Refresh started
+2025-10-15 23:41:01.047 [info] Native locator: Refresh started
+2025-10-15 23:41:01.402 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2025-10-15 23:41:01.411 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2025-10-15 23:41:02.834 [info] Native locator: Refresh finished in 3087 ms
+2025-10-15 23:41:02.971 [info] Python interpreter path: /usr/bin/python
+2025-10-15 23:41:09.713 [info] Starting Pylance language server.
+2025-10-15 23:43:45.172 [info] CreateEnv Trigger - Workspace not found for /home/projeteea/Documents/Python/print("hello").py
+2025-10-15 23:43:45.706 [info] Send text to terminal: /usr/bin/python "/home/projeteea/Documents/Python/print("hello").py"
+2025-10-15 23:44:13.188 [info] Send text to terminal: /usr/bin/python "/home/projeteea/Documents/Python/print("hello").py"
+2025-10-15 23:48:19.394 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:48:22.414 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:48:31.733 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:49:10.674 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:49:49.136 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:52:47.022 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:52:59.663 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py
+2025-10-15 23:53:35.435 [info] Send text to terminal: /usr/bin/python /home/projeteea/Documents/Python/Test.py

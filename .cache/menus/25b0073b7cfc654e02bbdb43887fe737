@@ -1,0 +1,1216 @@
+1.2
+rpd-applications.menu+hidden
+18
+D/home/projeteea/.local/share/desktop-directories
+D~/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/raspi-ui-overrides/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/projeteea/.local/share/applications
+D~/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/raspi-ui-overrides/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/projeteea/.config/menus/applications-merged
+F/home/projeteea/.config/menus/rpd-applications.menu
+F/etc/xdg/menus/rpd-applications.menu
+Phosh;MATE;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+4
+0
++Development
+Programmation
+Outils de développement logiciel
+applications-development
+lxde-development.directory
+4
+0
+-arduino.desktop
+Arduino IDE
+Open-source electronics prototyping platform
+arduino
+
+11
+Arduino IDE
+/usr/bin/arduino %f
+0
+0
+
+
+Development;Engineering;Electronics;IDE
+embedded electronics,electronics,avr,microcontroller
+-geany.desktop
+Geany
+Un EDI rapide et léger utilisant GTK+
+geany
+
+10
+Environnement de Développement Intégré
+geany %F
+2
+0
+geany
+
+GTK;Development;IDE;TextEditor
+Texte,Éditeur
+-idle.desktop
+IDLE
+Integrated DeveLopment Environment for Python3
+/usr/share/pixmaps/idle.xpm
+
+11
+
+/usr/bin/idle %F
+2
+0
+/usr/bin/idle
+
+Application;Development
+
+-idle-python3.13.desktop
+IDLE (using Python-3.13)
+Integrated Development Environment for Python (using Python-3.13)
+/usr/share/pixmaps/python3.13.xpm
+
+11
+
+/usr/bin/idle-python3.13
+2
+0
+
+
+Application;Development
+
+-python3.13.desktop
+Python (v3.13)
+Python Interpreter (v3.13)
+/usr/share/pixmaps/python3.13.xpm
+
+11
+
+/usr/bin/python3.13
+7
+0
+
+
+Development
+
+-scratch.desktop
+Scratch
+Programming system and content development tool
+scratch
+
+10
+
+scratch %f
+0
+0
+scratch
+
+Application;Development;ComputerScience
+
+-org.thonny.Thonny.desktop
+Thonny
+Python IDE for beginners
+thonny
+
+11
+Python IDE
+/usr/bin/thonny %F
+0
+0
+
+
+Development;IDE
+programming,education
+-code.desktop
+Visual Studio Code
+Code Editing. Redefined.
+vscode
+
+11
+Text Editor
+/usr/share/code/code %F
+0
+0
+
+
+TextEditor;Development;IDE
+vscode
+-code-url-handler.desktop
+Visual Studio Code - URL Handler
+Code Editing. Redefined.
+vscode
+
+11
+Text Editor
+/usr/share/code/code --open-url %U
+6
+0
+
+
+Utility;TextEditor;Development;IDE
+vscode
+
++Education
+Éducation
+
+applications-science
+lxde-education.directory
+4
+4
+
++Office
+Bureautique
+Applications bureautiques
+applications-office
+lxde-office.directory
+4
+0
+-org.gnome.Evince-previewer.desktop
+Aperçu avant impression
+Aperçu avant impression
+document-print-preview
+
+11
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-libreoffice-draw.desktop
+LibreOffice Draw
+Create and edit drawings, flow charts and logos
+libreoffice-draw
+
+10
+Drawing Program
+libreoffice --draw %U
+2
+0
+libreoffice
+
+Office;FlowChart;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Microsoft Visio,Corel Draw,cdr,odg,svg,pdf,vsd
+
++Internet
+Internet
+Programmes pour accéder à Internet tels que le Web ou la messagerie
+applications-internet
+lxde-network.directory
+4
+0
+-firefox.desktop
+Firefox
+Navigue sur Internet
+firefox
+
+11
+Navigateur Web
+/usr/bin/firefox %u
+2
+0
+
+
+Network;WebBrowser
+
+-minicom.desktop
+minicom
+Friendly menu driven serial communication program
+
+
+11
+
+minicom
+1
+0
+
+
+System;Network;Dialup;ConsoleOnly
+
+-chromium.desktop
+Navigateur Web Chromium
+Explorer le Web
+chromium
+
+11
+Navigateur Web
+/usr/bin/chromium %U
+2
+0
+
+
+Network;WebBrowser
+browser
+-realvnc-vncserver-service.desktop
+VNC Server
+Start VNC Server in Service Mode
+/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+
+10
+VNC Server
+/usr/bin/pkexec /etc/vnc/vncservice start vncserver-x11-serviced
+4
+0
+
+
+Application;Network;RemoteAccess
+
+-org.wireshark.Wireshark.desktop
+Wireshark
+Analyseur de trafic réseau
+org.wireshark.Wireshark
+
+11
+Analyseur réseau
+wireshark %f
+0
+0
+wireshark
+
+Network;Monitor;Qt
+
+
++Multimedia
+Son et vidéo
+Multimédia
+applications-multimedia
+lxde-audio-video.directory
+4
+0
+-vlc.desktop
+Lecteur multimédia VLC
+Lit, capture, diffuse vos flux multimédias
+vlc
+
+10
+Lecteur multimédia
+/usr/bin/vlc --started-from-file %U
+0
+0
+/usr/bin/vlc
+
+AudioVideo;Player;Recorder
+Player,Capture,DVD,Audio,Video,Server,Broadcast
+
++Graphics
+Graphisme
+Applications graphiques
+applications-graphics
+lxde-graphics.directory
+4
+0
+-org.gnome.Evince-previewer.desktop
+Aperçu avant impression
+Aperçu avant impression
+document-print-preview
+
+11
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-eom.desktop
+Visionneuse d'images Eye of MATE
+Parcourir et faire pivoter les images
+eom
+
+10
+
+eom %U
+2
+0
+eom
+
+GTK;Graphics;2DGraphics;RasterGraphics;Viewer
+image,viewer,JPEG,PNG,TIFF,SVG,MATE,photos,browse,thumbnails,rotate
+
++Games
+Jeux
+Jeux et divertissements
+applications-games
+lxde-game.directory
+4
+4
+
++Other
+Autre
+Applications qui n'entraient dans aucune autre catégorie
+applications-other
+lxde-other.directory
+4
+0
+-gcr-viewer.desktop
+Afficher le fichier
+
+
+
+11
+
+/usr/bin/gcr-viewer
+4
+0
+
+
+
+
+-zenoty-dialog-error.desktop
+Dialog Error Icon
+
+dialog-error
+
+11
+
+zenoty
+4
+0
+
+
+
+
+-zenoty-dialog-information.desktop
+Dialog Info Icon
+
+dialog-information
+
+11
+
+zenoty
+4
+0
+
+
+
+
+-zenoty-dialog-question.desktop
+Dialog Question Icon
+
+dialog-question
+
+11
+
+zenoty
+4
+0
+
+
+
+
+-zenoty-dialog-warning.desktop
+Dialog Warning Icon
+
+dialog-warning
+
+11
+
+zenoty
+4
+0
+
+
+
+
+-dillo.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-htop.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-lp-connection-editor.desktop
+Icon for network dialogs
+
+network-transmit-receive
+
+11
+
+lp-connection-editor
+4
+0
+
+
+
+
+-wf-panel-pi.desktop
+Icon for panel dialogs
+
+preferences-desktop
+
+11
+
+wf-panel-pi
+4
+0
+
+
+
+
+-gcr-prompter.desktop
+Invite d’accès
+Débloquer l’accès aux mots de passe et autres secrets
+security-medium
+
+11
+
+/usr/libexec/gcr-prompter
+4
+0
+
+
+
+
+-libreoffice-startcenter.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-lxappearance.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-lxhotkey-gtk.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-lxrandr.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-lxsession-edit.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-obconf.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-openbox.desktop
+Openbox
+
+openbox
+
+11
+
+openbox
+4
+0
+
+
+
+wm,windowmanager,window,manager,gnome
+-org.rncbc.qjackctl.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-org.xfce.mousepad-settings.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-pcmanfm-desktop-pref.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-xdg-desktop-portal-gtk.desktop
+Portal
+
+applications-system-symbolic
+
+11
+
+/usr/libexec/xdg-desktop-portal-gtk
+4
+0
+
+
+
+
+-notification-daemon.desktop
+Service de notification
+Afficher les notifications
+
+
+11
+
+/usr/lib/notification-daemon/notification-daemon
+4
+0
+
+
+
+
+-pishutdown.desktop
+Shutdown
+
+system-shutdown
+
+11
+
+pishutdown
+4
+0
+
+
+
+
+-squeak.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-x-terminal-emulator.desktop
+Terminal
+
+terminal
+
+11
+
+x-terminal-emulator
+6
+0
+/usr/bin/x-terminal-emulator
+
+
+
+-x-www-browser.desktop
+Web Browser
+
+web-browser
+
+11
+
+x-www-browser %U
+6
+0
+/usr/bin/x-www-browser
+
+
+
+-org.gnome.Zenity.desktop
+Zenity
+Display dialog boxes from the command line
+
+
+11
+
+zenity
+6
+0
+
+
+
+
+
++System
+Outils système
+Configuration et surveillance système
+applications-system
+lxde-system-tools.directory
+4
+0
+-lstopo.desktop
+Hardware Locality lstopo
+Show hardware topology
+hwloc
+
+11
+
+lstopo
+0
+0
+
+
+System
+System,Utility
+-pi-gpk-log.desktop
+Historique du paquet
+Afficher les tâches de gestion de paquets antérieures
+gpk-log
+
+11
+
+pi-gpk-log
+6
+0
+
+
+GNOME;GTK;System
+
+-pi-gpk-dbus-service.desktop
+Installation de logiciels
+Installer le logiciel sélectionné sur le système
+system-software-install
+
+11
+
+pi-gpk-dbus-service
+6
+0
+
+
+System
+
+-pi-gpk-install-local-file.desktop
+Installation de paquets
+Installer le paquet sélectionné sur le système
+system-software-install
+
+11
+
+pi-gpk-install-local-file %F
+6
+0
+
+
+System
+
+-minicom.desktop
+minicom
+Friendly menu driven serial communication program
+
+
+11
+
+minicom
+1
+0
+
+
+System;Network;Dialup;ConsoleOnly
+
+-pi-gpk-update-viewer.desktop
+Outil de mise à jour de paquets
+Met à jour les logiciels installés sur le système
+system-software-update
+
+11
+
+pi-gpk-update-viewer
+6
+-5
+
+
+GNOME;GTK;System
+
+-org.freedesktop.Xwayland.desktop
+Xwayland
+A rootful instance of the Xwayland X11 server
+
+
+11
+
+/usr/bin/Xwayland -decorate -displayfd 1
+4
+0
+
+
+System
+
+
++Accessories
+Accessoires
+Accessoires du bureau
+applications-accessories
+lxde-utility.directory
+4
+0
+-xarchiver.desktop
+Archiver
+Un gestionnaire d'archive pour GTK+
+xarchiver
+
+10
+Gestionnaire d'archives
+xarchiver %f
+2
+0
+xarchiver
+
+GTK;Archiving;Compression;Utility
+GTK,android,archiveur,archiver,bande dessinée,bibliothèque,compresser,compression,interface graphique,7-zip,7z,7za,7zip,7zr,7zz,apk,ar,arj,bz2,bzip2,cab,cbz,compress,cpio,deb,epub,exe,gtar,gunzip,gz,gzip,iso,jar,jsonlz4,lbzip2,lha,lrz,lrzip,lsar,lunzip,lz,lz4,lzh,lzip,lzma,lzo,lzop,mksquashfs,mozlz4,oxt,pbzip2,pigz,plzip,rar,rar4,rar5,rpm,snap,squashfs,tar,unar,unarchiver,unarj,unrar,unsquashfs,unzip,xpi,xz,zip,zpaq,zst,Zstandard,zstd
+-galculator.desktop
+Calculator
+Effectuer des calculs simples et scientifiques
+galculator
+
+10
+
+galculator
+2
+0
+galculator
+
+Utility
+
+-pcmanfm.desktop
+Gestionnaire de fichiers PCManFM
+Parcourir le système de fichiers et gérer les fichiers
+system-file-manager
+
+10
+Gestionnaire de fichiers
+pcmanfm %U
+2
+0
+pcmanfm
+
+FileTools;FileManager;Utility;Core;GTK
+
+-lxtask.desktop
+Gestionnaire des tâches
+Administre les processus en cours
+utilities-system-monitor
+
+10
+Gestionnaire des tâches
+lxtask
+2
+0
+lxtask
+
+GTK;Utility;Monitor
+task,kill,suspend,processor,memory,monitoring,performance
+-lxterminal.desktop
+LXTerminal
+Utiliser la ligne de commande
+lxterminal
+
+10
+Terminal
+lxterminal
+0
+0
+lxterminal
+
+GTK;Utility;TerminalEmulator
+console, ligne de commande, exécuter
+-org.xfce.mousepad.desktop
+Mousepad
+Éditeur de texte simple
+org.xfce.mousepad
+
+10
+Éditeur de texte
+mousepad %U
+2
+0
+mousepad
+
+Utility;TextEditor;GTK
+
+-agnostics.desktop
+Raspberry Pi Diagnostics
+Test the Raspberry Pi hardware
+agnostics
+
+11
+Raspberry Pi Diagnostics
+agnostics
+2
+0
+
+
+Utility
+
+-org.raspberrypi.rpi-imager.desktop
+Raspberry Pi Imager
+Tool for writing images to SD cards for Raspberry Pi
+rpi-imager
+
+11
+
+/usr/bin/rpi-imager %F
+0
+0
+
+
+Utility
+
+-piclone.desktop
+SD Card Copier
+Make a copy of the Raspbian SD card
+media-removable
+
+11
+SD Card Copier
+piclone
+2
+0
+
+
+Utility
+
+-sm.puri.Squeekboard.desktop
+Squeekboard
+Un clavier virtuel affiché à l’écran
+input-keyboard-symbolic
+
+11
+Clavier virtuel
+/usr/bin/squeekboard
+4
+32
+
+
+GTK;Utility
+
+-sm.puri.OSK0.desktop
+Squeekboard
+Un clavier virtuel affiché à l’écran
+input-keyboard-symbolic
+
+11
+Clavier virtuel
+/usr/bin/squeekboard
+4
+32
+
+
+GTK;Utility
+
+-vim.desktop
+Vim
+Éditer des fichiers texte
+gvim
+
+11
+Éditeur de texte
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+Texte,éditeur
+-org.gnome.Evince.desktop
+Visionneur de documents
+Afficher des documents multipages
+org.gnome.Evince
+
+10
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Utility;Viewer;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,présentation,visionneur,visualiseur,evince
+-code-url-handler.desktop
+Visual Studio Code - URL Handler
+Code Editing. Redefined.
+vscode
+
+11
+Text Editor
+/usr/share/code/code --open-url %U
+6
+0
+
+
+Utility;TextEditor;Development;IDE
+vscode
+
++Universal Access
+Accès universel
+Paramètres d'accès universel
+preferences-desktop-accessibility
+lxde-utility-accessibility.directory
+4
+4
+
++Electronics
+Electronique
+
+applications-electronics
+Electronics.directory
+4
+0
+-arduino.desktop
+Arduino IDE
+Open-source electronics prototyping platform
+arduino
+
+11
+Arduino IDE
+/usr/bin/arduino %f
+0
+0
+
+
+Development;Engineering;Electronics;IDE
+embedded electronics,electronics,avr,microcontroller
+
++Hamradio
+Radio amateur
+
+CQ
+HamRadio.directory
+4
+4
+
+-
++Help
+Help
+Reference material
+gnome-help
+lxde-help.directory
+4
+0
+-rp-bookshelf.desktop
+Bookshelf
+Download and read Raspberry Pi Press publications
+bookshelf
+
+11
+Bookshelf
+rp-bookshelf %u
+2
+0
+
+
+Help
+
+-userguide.desktop
+Guide de l'utilisateur
+Read the Raspberry Pi Beginner's Guide
+userguide
+
+11
+
+/usr/bin/userguide-open
+2
+0
+
+
+Help
+
+-debian-reference-common.desktop
+Guide de référence pour Debian
+Debian Reference Guide
+debian-reference
+
+10
+
+debian-reference
+0
+0
+debian-reference
+
+Help
+user,shell,command,documentation,manual,help,guide,debian
+
+-
++DesktopSettings
+Préférences
+Préférences personnelles
+preferences-desktop
+lxde-settings.directory
+4
+0
+-pi-packages.desktop
+Add / Remove Software
+Ajouter ou supprimer des logiciels installés sur le système
+system-software-install
+
+11
+
+pi-packages
+2
+-5
+
+
+GNOME;GTK;System;Settings;PackageManager
+Mises à jour,Mises à niveau,Sources,Dépôts,Préférences,Installation,Installer,Boutique
+-rpcc.desktop
+Control Centre
+Configure Raspberry Pi Desktop
+applications-system
+
+11
+
+rpcc
+2
+0
+rpcc
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-qt5ct.desktop
+Paramètres de Qt5
+Un outil de configuration de Qt5
+preferences-desktop-theme
+
+10
+
+qt5ct
+4
+0
+
+
+Settings;DesktopSettings;Qt
+settings,desktop,qt,qtsettings,qt5
+-rp-prefapps.desktop
+Recommended Software
+Install additional programs recommended for use on the Pi
+rpi
+
+11
+Recommended Software
+rp-prefapps
+2
+0
+
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+-pi-gpk-prefs.desktop
+Sources de paquets
+Active ou désactive des dépôts de paquets
+gpk-prefs
+
+11
+
+pi-gpk-prefs
+6
+-5
+
+
+Settings;X-GNOME-SystemSettings
+
+
+

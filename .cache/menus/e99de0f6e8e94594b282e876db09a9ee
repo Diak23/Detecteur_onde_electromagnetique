@@ -1,0 +1,588 @@
+1.2
+rpd-applications.menu
+18
+D/home/projeteea/.local/share/desktop-directories
+D~/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/raspi-ui-overrides/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/projeteea/.local/share/applications
+D~/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/raspi-ui-overrides/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/projeteea/.config/menus/applications-merged
+F/home/projeteea/.config/menus/rpd-applications.menu
+F/etc/xdg/menus/rpd-applications.menu
+Phosh;MATE;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+4
+0
++Development
+Programmation
+Outils de développement logiciel
+applications-development
+lxde-development.directory
+4
+0
+-arduino.desktop
+Arduino IDE
+Open-source electronics prototyping platform
+arduino
+
+11
+Arduino IDE
+/usr/bin/arduino %f
+0
+0
+
+
+Development;Engineering;Electronics;IDE
+embedded electronics,electronics,avr,microcontroller
+-geany.desktop
+Geany
+Un EDI rapide et léger utilisant GTK+
+geany
+
+10
+Environnement de Développement Intégré
+geany %F
+2
+0
+geany
+
+GTK;Development;IDE;TextEditor
+Texte,Éditeur
+-idle.desktop
+IDLE
+Integrated DeveLopment Environment for Python3
+/usr/share/pixmaps/idle.xpm
+
+11
+
+/usr/bin/idle %F
+2
+0
+/usr/bin/idle
+
+Application;Development
+
+-idle-python3.13.desktop
+IDLE (using Python-3.13)
+Integrated Development Environment for Python (using Python-3.13)
+/usr/share/pixmaps/python3.13.xpm
+
+11
+
+/usr/bin/idle-python3.13
+2
+0
+
+
+Application;Development
+
+-scratch.desktop
+Scratch
+Programming system and content development tool
+scratch
+
+10
+
+scratch %f
+0
+0
+scratch
+
+Application;Development;ComputerScience
+
+-org.thonny.Thonny.desktop
+Thonny
+Python IDE for beginners
+thonny
+
+11
+Python IDE
+/usr/bin/thonny %F
+0
+0
+
+
+Development;IDE
+programming,education
+-code.desktop
+Visual Studio Code
+Code Editing. Redefined.
+vscode
+
+11
+Text Editor
+/usr/share/code/code %F
+0
+0
+
+
+TextEditor;Development;IDE
+vscode
+
++Office
+Bureautique
+Applications bureautiques
+applications-office
+lxde-office.directory
+4
+0
+-libreoffice-draw.desktop
+LibreOffice Draw
+Create and edit drawings, flow charts and logos
+libreoffice-draw
+
+10
+Drawing Program
+libreoffice --draw %U
+2
+0
+libreoffice
+
+Office;FlowChart;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Microsoft Visio,Corel Draw,cdr,odg,svg,pdf,vsd
+
++Internet
+Internet
+Programmes pour accéder à Internet tels que le Web ou la messagerie
+applications-internet
+lxde-network.directory
+4
+0
+-firefox.desktop
+Firefox
+Navigue sur Internet
+firefox
+
+11
+Navigateur Web
+/usr/bin/firefox %u
+2
+0
+
+
+Network;WebBrowser
+
+-minicom.desktop
+minicom
+Friendly menu driven serial communication program
+
+
+11
+
+minicom
+1
+0
+
+
+System;Network;Dialup;ConsoleOnly
+
+-chromium.desktop
+Navigateur Web Chromium
+Explorer le Web
+chromium
+
+11
+Navigateur Web
+/usr/bin/chromium %U
+2
+0
+
+
+Network;WebBrowser
+browser
+-org.wireshark.Wireshark.desktop
+Wireshark
+Analyseur de trafic réseau
+org.wireshark.Wireshark
+
+11
+Analyseur réseau
+wireshark %f
+0
+0
+wireshark
+
+Network;Monitor;Qt
+
+
++Multimedia
+Son et vidéo
+Multimédia
+applications-multimedia
+lxde-audio-video.directory
+4
+0
+-vlc.desktop
+Lecteur multimédia VLC
+Lit, capture, diffuse vos flux multimédias
+vlc
+
+10
+Lecteur multimédia
+/usr/bin/vlc --started-from-file %U
+0
+0
+/usr/bin/vlc
+
+AudioVideo;Player;Recorder
+Player,Capture,DVD,Audio,Video,Server,Broadcast
+
++Graphics
+Graphisme
+Applications graphiques
+applications-graphics
+lxde-graphics.directory
+4
+0
+-eom.desktop
+Visionneuse d'images Eye of MATE
+Parcourir et faire pivoter les images
+eom
+
+10
+
+eom %U
+2
+0
+eom
+
+GTK;Graphics;2DGraphics;RasterGraphics;Viewer
+image,viewer,JPEG,PNG,TIFF,SVG,MATE,photos,browse,thumbnails,rotate
+
++System
+Outils système
+Configuration et surveillance système
+applications-system
+lxde-system-tools.directory
+4
+0
+-lstopo.desktop
+Hardware Locality lstopo
+Show hardware topology
+hwloc
+
+11
+
+lstopo
+0
+0
+
+
+System
+System,Utility
+-minicom.desktop
+minicom
+Friendly menu driven serial communication program
+
+
+11
+
+minicom
+1
+0
+
+
+System;Network;Dialup;ConsoleOnly
+
+
++Accessories
+Accessoires
+Accessoires du bureau
+applications-accessories
+lxde-utility.directory
+4
+0
+-xarchiver.desktop
+Archiver
+Un gestionnaire d'archive pour GTK+
+xarchiver
+
+10
+Gestionnaire d'archives
+xarchiver %f
+2
+0
+xarchiver
+
+GTK;Archiving;Compression;Utility
+GTK,android,archiveur,archiver,bande dessinée,bibliothèque,compresser,compression,interface graphique,7-zip,7z,7za,7zip,7zr,7zz,apk,ar,arj,bz2,bzip2,cab,cbz,compress,cpio,deb,epub,exe,gtar,gunzip,gz,gzip,iso,jar,jsonlz4,lbzip2,lha,lrz,lrzip,lsar,lunzip,lz,lz4,lzh,lzip,lzma,lzo,lzop,mksquashfs,mozlz4,oxt,pbzip2,pigz,plzip,rar,rar4,rar5,rpm,snap,squashfs,tar,unar,unarchiver,unarj,unrar,unsquashfs,unzip,xpi,xz,zip,zpaq,zst,Zstandard,zstd
+-galculator.desktop
+Calculator
+Effectuer des calculs simples et scientifiques
+galculator
+
+10
+
+galculator
+2
+0
+galculator
+
+Utility
+
+-pcmanfm.desktop
+Gestionnaire de fichiers PCManFM
+Parcourir le système de fichiers et gérer les fichiers
+system-file-manager
+
+10
+Gestionnaire de fichiers
+pcmanfm %U
+2
+0
+pcmanfm
+
+FileTools;FileManager;Utility;Core;GTK
+
+-lxtask.desktop
+Gestionnaire des tâches
+Administre les processus en cours
+utilities-system-monitor
+
+10
+Gestionnaire des tâches
+lxtask
+2
+0
+lxtask
+
+GTK;Utility;Monitor
+task,kill,suspend,processor,memory,monitoring,performance
+-lxterminal.desktop
+LXTerminal
+Utiliser la ligne de commande
+lxterminal
+
+10
+Terminal
+lxterminal
+0
+0
+lxterminal
+
+GTK;Utility;TerminalEmulator
+console, ligne de commande, exécuter
+-org.xfce.mousepad.desktop
+Mousepad
+Éditeur de texte simple
+org.xfce.mousepad
+
+10
+Éditeur de texte
+mousepad %U
+2
+0
+mousepad
+
+Utility;TextEditor;GTK
+
+-agnostics.desktop
+Raspberry Pi Diagnostics
+Test the Raspberry Pi hardware
+agnostics
+
+11
+Raspberry Pi Diagnostics
+agnostics
+2
+0
+
+
+Utility
+
+-org.raspberrypi.rpi-imager.desktop
+Raspberry Pi Imager
+Tool for writing images to SD cards for Raspberry Pi
+rpi-imager
+
+11
+
+/usr/bin/rpi-imager %F
+0
+0
+
+
+Utility
+
+-piclone.desktop
+SD Card Copier
+Make a copy of the Raspbian SD card
+media-removable
+
+11
+SD Card Copier
+piclone
+2
+0
+
+
+Utility
+
+-vim.desktop
+Vim
+Éditer des fichiers texte
+gvim
+
+11
+Éditeur de texte
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+Texte,éditeur
+-org.gnome.Evince.desktop
+Visionneur de documents
+Afficher des documents multipages
+org.gnome.Evince
+
+10
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Utility;Viewer;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,présentation,visionneur,visualiseur,evince
+
++Electronics
+Electronique
+
+applications-electronics
+Electronics.directory
+4
+0
+-arduino.desktop
+Arduino IDE
+Open-source electronics prototyping platform
+arduino
+
+11
+Arduino IDE
+/usr/bin/arduino %f
+0
+0
+
+
+Development;Engineering;Electronics;IDE
+embedded electronics,electronics,avr,microcontroller
+
+-
++Help
+Help
+Reference material
+gnome-help
+lxde-help.directory
+4
+0
+-rp-bookshelf.desktop
+Bookshelf
+Download and read Raspberry Pi Press publications
+bookshelf
+
+11
+Bookshelf
+rp-bookshelf %u
+2
+0
+
+
+Help
+
+-userguide.desktop
+Guide de l'utilisateur
+Read the Raspberry Pi Beginner's Guide
+userguide
+
+11
+
+/usr/bin/userguide-open
+2
+0
+
+
+Help
+
+-debian-reference-common.desktop
+Guide de référence pour Debian
+Debian Reference Guide
+debian-reference
+
+10
+
+debian-reference
+0
+0
+debian-reference
+
+Help
+user,shell,command,documentation,manual,help,guide,debian
+
+-
++DesktopSettings
+Préférences
+Préférences personnelles
+preferences-desktop
+lxde-settings.directory
+4
+0
+-pi-packages.desktop
+Add / Remove Software
+Ajouter ou supprimer des logiciels installés sur le système
+system-software-install
+
+11
+
+pi-packages
+2
+-5
+
+
+GNOME;GTK;System;Settings;PackageManager
+Mises à jour,Mises à niveau,Sources,Dépôts,Préférences,Installation,Installer,Boutique
+-rpcc.desktop
+Control Centre
+Configure Raspberry Pi Desktop
+applications-system
+
+11
+
+rpcc
+2
+0
+rpcc
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-rp-prefapps.desktop
+Recommended Software
+Install additional programs recommended for use on the Pi
+rpi
+
+11
+Recommended Software
+rp-prefapps
+2
+0
+
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+
+

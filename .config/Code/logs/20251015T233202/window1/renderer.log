@@ -1,0 +1,29 @@
+2025-10-15 23:32:07.891 [warning] Creation of workbench contribution 'workbench.contrib.chatSetup' took 30ms.
+2025-10-15 23:32:07.987 [warning] Creation of workbench contribution 'workbench.contrib.configurationDefaultOverridesContribution' took 23ms.
+2025-10-15 23:32:09.132 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-10-15 23:32:10.057 [info] Started local extension host with pid 2217.
+2025-10-15 23:32:10.710 [info] Started initializing default profile extensions in extensions installation folder. file:///home/projeteea/.vscode/extensions
+2025-10-15 23:32:12.710 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/projeteea/.vscode/extensions
+2025-10-15 23:32:17.405 [info] MCP Registry configured: https://api.mcp.github.com/2025-09-15
+2025-10-15 23:32:17.976 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-15 23:32:20.161 [info] [perf] Render performance baseline is 162ms
+2025-10-15 23:38:21.720 [error] Cancelled: Canceled: Canceled
+    at BJe.P (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:36760)
+    at async BJe.O (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:35489)
+    at async BJe.D (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:24298)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:23769
+    at async Promise.all (index 0)
+    at async BJe.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:23720)
+    at async BJe.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1352:22377)
+    at async Hht.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2485:15150)
+    at async kqs.Rc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2481:17026)
+    at async kqs.$c (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2481:19670)
+2025-10-15 23:40:55.411 [info] Extension host (LocalProcess pid: 2217) is unresponsive.
+2025-10-15 23:40:57.633 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-10-15 23:40:58.644 [info] Extension host (LocalProcess pid: 2217) is responsive.
+2025-10-15 23:40:58.649 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-10-15 23:40:59.440 [warning] UNRESPONSIVE extension host: 'ms-python.vscode-pylance' took 90.2159110954313% of 1022.868ms, saved PROFILE here: 'file:///tmp/exthost-4ab93c.cpuprofile'
+2025-10-15 23:42:53.689 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-15 23:46:19.694 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-15 23:51:21.610 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-15 23:54:00.850 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.workingCopyHistory

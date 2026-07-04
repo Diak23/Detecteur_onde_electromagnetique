@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "../..",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "arduino:samd:mkrwifi1010",
+  "hardwareFolders": "/home/projeteea/.arduino15/packages/arduino/hardware/samd/1.8.12,/home/projeteea/.arduino15/packages/arduino/hardware/samd/1.8.12",
+  "otherLibrariesFolders": "/home/projeteea/Arduino/libraries",
+  "sketchLocation": "/home/projeteea/acquisition_udp"
+}

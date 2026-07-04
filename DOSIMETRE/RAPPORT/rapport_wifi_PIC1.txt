@@ -1,0 +1,78 @@
+RAPPORT D'ACQUISITION RF / WI-FI
+================================
+
+Date : 2026-06-03 11:06:36.509114
+Fréquence sélectionnée : 2.4 GHz
+Durée acquisition : 442.37 s
+Nombre de mesures : 702
+Seuil de détection : -30 dBm
+
+STATISTIQUES RSSI
+-----------------
+RSSI moyen : -31.82 dBm
+RSSI max : -28.00 dBm
+RSSI min : -41.00 dBm
+
+ANALYSE ÉVÉNEMENTS / ÉNERGIE
+----------------------------
+Nombre d'événements : 50
+Puissance moyenne : 7.458e-07 W
+Puissance max : 1.585e-06 W
+Puissance min : 7.943e-08 W
+Énergie totale : 3.292e-04 J
+Durée moyenne des pics : 1.68 s
+Durée max des pics : 7.02 s
+Durée min des pics : 0.56 s
+
+DÉTAIL DES PICS
+----------------
+Pic 1 : début = 0.87 s, fin = 2.11 s, durée = 1.24 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.564e-06 J
+Pic 2 : début = 4.53 s, fin = 6.31 s, durée = 1.78 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.239e-06 J
+Pic 3 : début = 24.48 s, fin = 25.05 s, durée = 0.57 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.160e-07 J
+Pic 4 : début = 39.14 s, fin = 40.37 s, durée = 1.23 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.549e-06 J
+Pic 5 : début = 44.34 s, fin = 46.11 s, durée = 1.77 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.225e-06 J
+Pic 6 : début = 48.91 s, fin = 51.20 s, durée = 2.29 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.885e-06 J
+Pic 7 : début = 64.06 s, fin = 65.86 s, durée = 1.81 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.273e-06 J
+Pic 8 : début = 77.33 s, fin = 78.65 s, durée = 1.31 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.655e-06 J
+Pic 9 : début = 86.85 s, fin = 87.41 s, durée = 0.56 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.070e-07 J
+Pic 10 : début = 97.65 s, fin = 100.04 s, durée = 2.39 s, RSSI moyen = -28.25 dBm, Puissance moyenne = 1.496e-06 W, Énergie = 3.569e-06 J
+Pic 11 : début = 104.84 s, fin = 106.04 s, durée = 1.20 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.514e-06 J
+Pic 12 : début = 116.50 s, fin = 118.35 s, durée = 1.85 s, RSSI moyen = -28.67 dBm, Puissance moyenne = 1.359e-06 W, Énergie = 2.517e-06 J
+Pic 13 : début = 121.48 s, fin = 123.36 s, durée = 1.88 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.368e-06 J
+Pic 14 : début = 123.99 s, fin = 125.88 s, durée = 1.89 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.381e-06 J
+Pic 15 : début = 130.86 s, fin = 131.49 s, durée = 0.63 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.913e-07 J
+Pic 16 : début = 144.23 s, fin = 146.13 s, durée = 1.90 s, RSSI moyen = -28.67 dBm, Puissance moyenne = 1.359e-06 W, Énergie = 2.582e-06 J
+Pic 17 : début = 155.09 s, fin = 155.74 s, durée = 0.65 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.128e-07 J
+Pic 18 : début = 157.72 s, fin = 159.01 s, durée = 1.29 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.625e-06 J
+Pic 19 : début = 164.20 s, fin = 166.77 s, durée = 2.57 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 3.234e-06 J
+Pic 20 : début = 169.30 s, fin = 173.12 s, durée = 3.82 s, RSSI moyen = -28.83 dBm, Puissance moyenne = 1.308e-06 W, Énergie = 4.993e-06 J
+Pic 21 : début = 175.02 s, fin = 176.92 s, durée = 1.91 s, RSSI moyen = -28.67 dBm, Puissance moyenne = 1.359e-06 W, Énergie = 2.590e-06 J
+Pic 22 : début = 184.47 s, fin = 187.36 s, durée = 2.89 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 3.635e-06 J
+Pic 23 : début = 197.16 s, fin = 199.11 s, durée = 1.95 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.457e-06 J
+Pic 24 : début = 204.33 s, fin = 207.37 s, durée = 3.04 s, RSSI moyen = -28.80 dBm, Puissance moyenne = 1.318e-06 W, Énergie = 4.006e-06 J
+Pic 25 : début = 209.16 s, fin = 212.15 s, durée = 2.99 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 3.763e-06 J
+Pic 26 : début = 222.38 s, fin = 223.58 s, durée = 1.20 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.512e-06 J
+Pic 27 : début = 224.19 s, fin = 226.58 s, durée = 2.39 s, RSSI moyen = -28.75 dBm, Puissance moyenne = 1.334e-06 W, Énergie = 3.188e-06 J
+Pic 28 : début = 235.06 s, fin = 235.65 s, durée = 0.60 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.491e-07 J
+Pic 29 : début = 239.27 s, fin = 241.73 s, durée = 2.46 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 3.096e-06 J
+Pic 30 : début = 244.19 s, fin = 244.92 s, durée = 0.73 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 9.186e-07 J
+Pic 31 : début = 246.17 s, fin = 246.79 s, durée = 0.61 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.715e-07 J
+Pic 32 : début = 248.67 s, fin = 249.91 s, durée = 1.24 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.557e-06 J
+Pic 33 : début = 257.22 s, fin = 257.86 s, durée = 0.65 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.165e-07 J
+Pic 34 : début = 258.48 s, fin = 259.10 s, durée = 0.62 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.752e-07 J
+Pic 35 : début = 259.71 s, fin = 260.95 s, durée = 1.24 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.562e-06 J
+Pic 36 : début = 282.69 s, fin = 283.30 s, durée = 0.62 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 7.751e-07 J
+Pic 37 : début = 285.16 s, fin = 286.40 s, durée = 1.24 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.565e-06 J
+Pic 38 : début = 300.43 s, fin = 302.32 s, durée = 1.89 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.380e-06 J
+Pic 39 : début = 304.21 s, fin = 311.23 s, durée = 7.02 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.835e-06 J
+Pic 40 : début = 321.92 s, fin = 323.18 s, durée = 1.27 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.596e-06 J
+Pic 41 : début = 324.44 s, fin = 327.00 s, durée = 2.56 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 3.219e-06 J
+Pic 42 : début = 329.53 s, fin = 331.43 s, durée = 1.90 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.389e-06 J
+Pic 43 : début = 342.32 s, fin = 342.95 s, durée = 0.64 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.008e-07 J
+Pic 44 : début = 344.23 s, fin = 345.50 s, durée = 1.27 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.602e-06 J
+Pic 45 : début = 349.42 s, fin = 351.34 s, durée = 1.91 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.410e-06 J
+Pic 46 : début = 362.25 s, fin = 362.89 s, durée = 0.64 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.065e-07 J
+Pic 47 : début = 364.18 s, fin = 366.09 s, durée = 1.92 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.411e-06 J
+Pic 48 : début = 368.69 s, fin = 370.63 s, durée = 1.94 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 2.448e-06 J
+Pic 49 : début = 382.31 s, fin = 382.97 s, durée = 0.66 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 8.287e-07 J
+Pic 50 : début = 384.93 s, fin = 386.24 s, durée = 1.31 s, RSSI moyen = -29.00 dBm, Puissance moyenne = 1.259e-06 W, Énergie = 1.653e-06 J

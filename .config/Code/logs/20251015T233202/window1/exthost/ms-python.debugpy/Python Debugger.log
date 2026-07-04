@@ -1,0 +1,21 @@
+2025-10-15 23:41:02.767 [error] No workspace folder found
+2025-10-15 23:43:07.478 [info] No workspace folder found
+2025-10-15 23:43:07.621 [info] Resolving launch configuration with substituted variables
+2025-10-15 23:43:07.621 [info] No workspace folder found
+2025-10-15 23:43:07.707 [info] DAP Server launched with command: /usr/bin/python /home/projeteea/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/libs/debugpy/adapter
+2025-10-15 23:43:10.346 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:10.378 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:10.381 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:17.278 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:20.334 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:20.516 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:53.748 [info] No workspace folder found
+2025-10-15 23:43:53.785 [info] Resolving launch configuration with substituted variables
+2025-10-15 23:43:53.789 [info] No workspace folder found
+2025-10-15 23:43:54.013 [info] DAP Server launched with command: /usr/bin/python /home/projeteea/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/libs/debugpy/adapter
+2025-10-15 23:43:55.334 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:55.346 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:55.348 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:43:58.836 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:44:01.252 [info] Received 'debugpySockets' event from debugpy.
+2025-10-15 23:44:01.301 [info] Received 'debugpySockets' event from debugpy.

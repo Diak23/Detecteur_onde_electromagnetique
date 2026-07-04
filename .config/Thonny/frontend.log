@@ -1,0 +1,16 @@
+23:15:16.409 [MainThread] INFO    thonny: Thonny version: 4.1.7
+23:15:16.410 [MainThread] INFO    thonny: cwd: /home/projeteea
+23:15:16.410 [MainThread] INFO    thonny: original argv: ['/usr/bin/python3', '/usr/bin/thonny']
+23:15:16.410 [MainThread] INFO    thonny: sys.executable: /usr/bin/python3
+23:15:16.410 [MainThread] INFO    thonny: sys.argv: ['/usr/bin/thonny']
+23:15:16.411 [MainThread] INFO    thonny: sys.path: ['/usr/bin', '/usr/lib/python313.zip', '/usr/lib/python3.13', '/usr/lib/python3.13/lib-dynload', '/usr/local/lib/python3.13/dist-packages', '/usr/lib/python3/dist-packages']
+23:15:16.411 [MainThread] INFO    thonny: sys.flags: sys.flags(debug=0, inspect=0, interactive=0, optimize=0, dont_write_bytecode=0, no_user_site=0, no_site=0, ignore_environment=0, verbose=0, bytes_warning=0, quiet=0, hash_randomization=1, isolated=0, dev_mode=False, utf8_mode=0, warn_default_encoding=0, safe_path=False, int_max_str_digits=4300)
+23:15:16.550 [MainThread] INFO    thonny.workbench: Starting Workbench
+23:15:16.774 [MainThread] INFO    thonny.workbench: Creating runner
+23:15:16.787 [MainThread] INFO    thonny.workbench: Start loading plugins
+23:15:17.045 [MainThread] INFO    thonny.workbench: Done loading plugins
+23:15:17.357 [MainThread] INFO    thonny.workbench: Opening views
+23:15:17.903 [MainThread] INFO    thonny.plugins.cpython_frontend.cp_front: Creating LocalCPythonProxy
+23:15:17.904 [MainThread] INFO    thonny.running: Starting the backend: ['/usr/bin/python3', '-u', '-B', '/usr/lib/python3/dist-packages/thonny/plugins/cpython_backend/cp_launcher.py', '/home/projeteea/Documents/Python', "{'run.warn_module_shadowing': True}"] /home/projeteea/Documents/Python
+23:16:03.787 [MainThread] INFO    thonny.ui_utils: Restoring focus to .
+23:16:03.792 [MainThread] INFO    thonny.editors: Save dialog returned '/home/projeteea/Documents/Python/test_capteurbm280' with typevariable ''

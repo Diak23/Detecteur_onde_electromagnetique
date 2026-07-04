@@ -1,0 +1,29 @@
+RAPPORT ACQUISITION UDP + RSSI
+==============================
+
+Date : 2026-07-03 15:44:15.933919
+Dossier : acquisitions_udp/acquisition_021
+Port UDP : 5005
+Seuil RSSI : -30 dBm
+
+MESURES GLOBALES
+----------------
+Nombre de paquets reçus : 304
+Durée acquisition : 300.59 s
+RSSI moyen : -27.50 dBm
+RSSI max : -18.00 dBm
+RSSI min : -49.00 dBm
+Énergie totale : 7.186e-04 J
+
+PICS DÉTECTÉS
+-------------
+Nombre de pics : 9
+Pic 1 : début=0.00s, fin=78.60s, durée=78.60s, RSSI moyen=-25.91 dBm, énergie=2.014e-04 J
+Pic 2 : début=82.62s, fin=83.58s, durée=0.96s, RSSI moyen=-28.00 dBm, énergie=1.522e-06 J
+Pic 3 : début=108.61s, fin=218.61s, durée=110.01s, RSSI moyen=-25.23 dBm, énergie=3.301e-04 J
+Pic 4 : début=220.59s, fin=228.61s, durée=8.02s, RSSI moyen=-25.25 dBm, énergie=2.393e-05 J
+Pic 5 : début=244.61s, fin=255.61s, durée=10.99s, RSSI moyen=-24.45 dBm, énergie=3.942e-05 J
+Pic 6 : début=262.63s, fin=265.61s, durée=2.99s, RSSI moyen=-29.00 dBm, énergie=3.759e-06 J
+Pic 7 : début=278.60s, fin=279.60s, durée=1.00s, RSSI moyen=-28.00 dBm, énergie=1.582e-06 J
+Pic 8 : début=282.63s, fin=293.62s, durée=10.99s, RSSI moyen=-29.00 dBm, énergie=1.383e-05 J
+Pic 9 : début=297.63s, fin=299.63s, durée=2.00s, RSSI moyen=-29.00 dBm, énergie=2.512e-06 J

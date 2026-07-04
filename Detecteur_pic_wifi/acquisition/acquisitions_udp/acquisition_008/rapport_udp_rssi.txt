@@ -1,0 +1,43 @@
+RAPPORT ACQUISITION UDP + RSSI
+==============================
+
+Date : 2026-06-26 02:04:10.619258
+Dossier : acquisitions_udp/acquisition_008
+Port UDP : 5005
+Seuil RSSI : -30 dBm
+
+MESURES GLOBALES
+----------------
+Nombre de paquets reçus : 1007
+Durée acquisition : 997.91 s
+RSSI moyen : -27.06 dBm
+RSSI max : -15.00 dBm
+RSSI min : -57.00 dBm
+Énergie totale : 4.129e-03 J
+
+PICS DÉTECTÉS
+-------------
+Nombre de pics : 23
+Pic 1 : début=0.00s, fin=9.83s, durée=9.83s, RSSI moyen=-18.31 dBm, énergie=1.452e-04 J
+Pic 2 : début=10.65s, fin=21.06s, durée=10.42s, RSSI moyen=-27.15 dBm, énergie=2.006e-05 J
+Pic 3 : début=27.44s, fin=28.23s, durée=0.79s, RSSI moyen=-27.00 dBm, énergie=1.574e-06 J
+Pic 4 : début=59.07s, fin=60.09s, durée=1.02s, RSSI moyen=-29.00 dBm, énergie=1.283e-06 J
+Pic 5 : début=61.08s, fin=66.10s, durée=5.02s, RSSI moyen=-23.80 dBm, énergie=2.094e-05 J
+Pic 6 : début=69.08s, fin=71.11s, durée=2.02s, RSSI moyen=-21.50 dBm, énergie=1.432e-05 J
+Pic 7 : début=72.13s, fin=123.21s, durée=51.07s, RSSI moyen=-20.00 dBm, énergie=5.107e-04 J
+Pic 8 : début=215.37s, fin=220.38s, durée=5.01s, RSSI moyen=-28.40 dBm, énergie=7.241e-06 J
+Pic 9 : début=221.38s, fin=222.40s, durée=1.02s, RSSI moyen=-29.00 dBm, énergie=1.286e-06 J
+Pic 10 : début=224.38s, fin=226.39s, durée=2.01s, RSSI moyen=-29.00 dBm, énergie=2.530e-06 J
+Pic 11 : début=227.42s, fin=228.38s, durée=0.96s, RSSI moyen=-28.00 dBm, énergie=1.529e-06 J
+Pic 12 : début=235.44s, fin=371.69s, durée=136.25s, RSSI moyen=-24.46 dBm, énergie=4.875e-04 J
+Pic 13 : début=387.69s, fin=409.73s, durée=22.04s, RSSI moyen=-24.05 dBm, énergie=8.682e-05 J
+Pic 14 : début=448.82s, fin=451.81s, durée=3.00s, RSSI moyen=-29.00 dBm, énergie=3.772e-06 J
+Pic 15 : début=492.91s, fin=495.90s, durée=2.99s, RSSI moyen=-28.67 dBm, énergie=4.058e-06 J
+Pic 16 : début=496.94s, fin=501.94s, durée=5.00s, RSSI moyen=-28.80 dBm, énergie=6.592e-06 J
+Pic 17 : début=556.03s, fin=572.05s, durée=16.02s, RSSI moyen=-27.62 dBm, énergie=2.768e-05 J
+Pic 18 : début=573.08s, fin=577.08s, durée=3.99s, RSSI moyen=-27.75 dBm, énergie=6.704e-06 J
+Pic 19 : début=578.10s, fin=592.09s, durée=13.99s, RSSI moyen=-27.64 dBm, énergie=2.408e-05 J
+Pic 20 : début=593.12s, fin=612.14s, durée=19.02s, RSSI moyen=-27.37 dBm, énergie=3.487e-05 J
+Pic 21 : début=613.13s, fin=622.19s, durée=9.06s, RSSI moyen=-27.44 dBm, énergie=1.632e-05 J
+Pic 22 : début=634.18s, fin=662.22s, durée=28.04s, RSSI moyen=-19.82 dBm, énergie=2.922e-04 J
+Pic 23 : début=665.25s, fin=672.27s, durée=7.02s, RSSI moyen=-26.29 dBm, énergie=1.651e-05 J

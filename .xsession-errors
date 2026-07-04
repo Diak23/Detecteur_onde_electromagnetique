@@ -1,0 +1,166 @@
+Xsession: X session started for projeteea at ven. 03 juil. 2026 17:46:04 CEST
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+xrdb: Can't open display ''
+xhost:  unable to open display ""
+dbus-update-activation-environment: setting USER=projeteea
+dbus-update-activation-environment: setting LANGUAGE=fr_FR.UTF-8
+dbus-update-activation-environment: setting TEXTDOMAIN=pam_chksshpwd
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=wayland
+dbus-update-activation-environment: setting HOME=/home/projeteea
+dbus-update-activation-environment: setting DESKTOP_SESSION=rpd-labwc
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting LOGNAME=projeteea
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/home/projeteea/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting LANG=fr_FR.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=rpd-labwc
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/projeteea
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=rpd-labwc
+dbus-update-activation-environment: setting NO_AT_BRIDGE=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting LC_ALL=fr_FR.UTF-8
+dbus-update-activation-environment: setting PWD=/home/projeteea
+00:00:02.190 [ERROR] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+00:00:02.191 [ERROR] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+no profile matched
+pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
+Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
+Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+Échec : Aucune entité de ce type
+
+(polkit-mate-authentication-agent-1:1278): GLib-CRITICAL **: 17:46:09.741: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-mate-authentication-agent-1:1278): polkit-mate-1-WARNING **: 17:46:09.742: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (pcmanfm:1296): WARNING **: 17:46:09.821: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+** (wf-panel-pi:1299): WARNING **: 17:46:10.723: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: GFileInfo created without standard::edit-name
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: GFileInfo created without standard::size
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: GFileInfo created without standard::is-symlink
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: GFileInfo created without standard::is-hidden
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.955: GFileInfo created without standard::is-backup
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:46:10.956: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+00:00:05.878 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+** Message: 17:46:11.344: batt: battery 0 not found
+00:00:06.351 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+** Message: 17:46:11.796: up: No network connection - polling...
+00:00:19.486 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+00:00:19.486 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+00:00:19.855 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+00:00:19.855 [ERROR] [types/wlr_linux_dmabuf_v1.c:1240] Failed to get backend DRM FD
+** Message: 17:46:33.676: No keyring secrets found for eduroam 1/802-1x; asking user.
+** Message: 17:47:12.457: up: No network connection - polling...
+** Message: 17:48:12.462: up: No network connection - polling...
+applying profile '<anonymous at line 1, col 9>'
+applying profile output 'HDMI-A-1' on connected head 'HDMI-A-1'
+configuration for profile '<anonymous at line 1, col 9>' applied
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: GFileInfo created without standard::edit-name
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: GFileInfo created without standard::size
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: GFileInfo created without standard::is-symlink
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: GFileInfo created without standard::is-hidden
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: GFileInfo created without standard::is-backup
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 17:48:41.347: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+no profile matched
+applying profile '<anonymous at line 1, col 9>'
+applying profile output 'HDMI-A-1' on connected head 'HDMI-A-1'
+configuration for profile '<anonymous at line 1, col 9>' applied
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: GFileInfo created without standard::edit-name
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: GFileInfo created without standard::size
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: GFileInfo created without standard::is-symlink
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.462: GFileInfo created without standard::is-hidden
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.463: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.463: GFileInfo created without standard::is-backup
+
+(pcmanfm:1296): GLib-GIO-CRITICAL **: 13:41:17.463: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+** Message: 13:41:18.994: up: Checking for updates
+** Message: 13:41:23.183: up: Cache updated - comparing versions
+** Message: 13:41:31.822: up: Check complete - 442 updates available
+Segmentation fault
+
+** (pcmanfm:2047): WARNING **: 13:42:03.755: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: GFileInfo created without standard::edit-name
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: GFileInfo created without standard::size
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: GFileInfo created without standard::is-symlink
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: GFileInfo created without standard::is-hidden
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.048: GFileInfo created without standard::is-backup
+
+(pcmanfm:2047): GLib-GIO-CRITICAL **: 13:42:16.049: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+
+** (pcmanfm:2770): WARNING **: 13:43:14.875: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::edit-name
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::size
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::is-symlink
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::is-hidden
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::is-backup
+
+(pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached

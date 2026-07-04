@@ -1,0 +1,141 @@
+Xsession: X session started for projeteea at jeu. 02 juil. 2026 15:25:21 CEST
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+xrdb: Can't open display ''
+xhost:  unable to open display ""
+dbus-update-activation-environment: setting USER=projeteea
+dbus-update-activation-environment: setting LANGUAGE=fr_FR.UTF-8
+dbus-update-activation-environment: setting TEXTDOMAIN=pam_chksshpwd
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=wayland
+dbus-update-activation-environment: setting HOME=/home/projeteea
+dbus-update-activation-environment: setting DESKTOP_SESSION=rpd-labwc
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting LOGNAME=projeteea
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/home/projeteea/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting LANG=fr_FR.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=rpd-labwc
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/projeteea
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=rpd-labwc
+dbus-update-activation-environment: setting NO_AT_BRIDGE=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting LC_ALL=fr_FR.UTF-8
+dbus-update-activation-environment: setting PWD=/home/projeteea
+00:00:02.876 [ERROR] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+00:00:02.876 [ERROR] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+applying profile '<anonymous at line 1, col 9>'
+applying profile output 'HDMI-A-1' on connected head 'HDMI-A-1'
+configuration for profile '<anonymous at line 1, col 9>' applied
+pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
+Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+Échec : Aucune entité de ce type
+pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
+Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+
+(polkit-mate-authentication-agent-1:1298): GLib-CRITICAL **: 15:25:27.987: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-mate-authentication-agent-1:1298): polkit-mate-1-WARNING **: 15:25:27.988: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (pcmanfm:1319): WARNING **: 15:25:28.029: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+** (wf-panel-pi:1318): WARNING **: 15:25:29.024: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: GFileInfo created without standard::edit-name
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: file ../../../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: GFileInfo created without standard::size
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: file ../../../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: GFileInfo created without standard::is-symlink
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: file ../../../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: GFileInfo created without standard::is-hidden
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: file ../../../gio/gfileinfo.c: line 1647 (g_file_info_get_is_hidden): should not be reached
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: GFileInfo created without standard::is-backup
+
+(pcmanfm:1319): GLib-GIO-CRITICAL **: 15:25:29.156: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+** Message: 15:25:29.633: batt: battery 0 not found
+** Message: 15:25:30.012: up: No network connection - polling...
+** Message: 15:25:50.957: No keyring secrets found for eduroam 1/802-1x; asking user.
+** Message: 15:26:30.725: up: No network connection - polling...
+** Message: 15:27:30.725: up: No network connection - polling...
+00:02:38.844 [ERROR] [libinput] event0  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 29ms, your system is too slow
+
+** Message: 15:28:30.720: up: No network connection - polling...
+** Message: 15:29:30.725: up: No network connection - polling...
+** Message: 15:30:30.725: up: No network connection - polling...
+** Message: 15:31:30.725: up: No network connection - polling...
+** Message: 15:32:30.725: up: No network connection - polling...
+** Message: 15:27:24.452: up: Checking for updates
+** Message: 15:27:29.411: up: Cache updated - comparing versions
+** Message: 15:27:38.121: up: Check complete - 442 updates available
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 1202977
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+xsettingsd: Ignoring event of type 33
+00:19:48.110 [ERROR] [xwayland/xwm.c:1633] xcb error: op ConfigureWindow (no minor), code Match (no extension), sequence 223, value 4194335
+00:19:48.110 [ERROR] [xwayland/xwm.c:1633] xcb error: op ConfigureWindow (no minor), code Match (no extension), sequence 225, value 4194307
+00:30:49.656 [ERROR] [xwayland/xwm.c:1633] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 239, value 4194335
+00:30:49.657 [ERROR] [xwayland/xwm.c:1633] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 242, value 4194335
+00:30:49.657 [ERROR] [xwayland/xwm.c:1633] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 243, value 4194335
+00:34:53.417 [ERROR] [xwayland/xwm.c:1633] xcb error: op ConfigureWindow (no minor), code Match (no extension), sequence 334, value 4194335
+00:34:53.418 [ERROR] [xwayland/xwm.c:1633] xcb error: op ConfigureWindow (no minor), code Match (no extension), sequence 336, value 4194307
+
+(eom:3248): EOM-WARNING **: 16:01:03.119: Error loading Peas typelib: Typelib file for namespace 'Peas', version '1.0' not found
+
+
+(eom:3248): EOM-WARNING **: 16:01:03.119: Error loading PeasGtk typelib: Typelib file for namespace 'PeasGtk', version '1.0' not found
+
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+00:48:09.788 [ERROR] [xwayland/xwm.c:1633] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 380, value 4194335
+00:48:09.789 [ERROR] [xwayland/xwm.c:1633] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 383, value 4194335
+00:48:09.789 [ERROR] [xwayland/xwm.c:1633] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 384, value 4194335
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+** Message: 16:54:27.597: No keyring secrets found for eduroam 1/802-1x; asking user.
+** Message: 16:56:15.252: Cannot save connection due to error: Paramètre Sécurité Wi-Fi invalide : WPA-PSK invalide : longueur de clé 0 non valide. Doit être de [8,63] octets ou 64 chiffres hexa
+** Message: 16:56:21.128: Connection validates and can be saved
+** Message: 16:56:24.757: Cannot save connection due to error: Paramètre Sécurité Wi-Fi invalide : mot de passe manquant
+** Message: 16:56:28.984: Connection validates and can be saved
+
+(wf-panel-pi:1318): GLib-GObject-CRITICAL **: 16:58:38.288: g_signal_handler_block: assertion 'handler_id > 0' failed
+
+(wf-panel-pi:1318): GLib-GObject-CRITICAL **: 16:58:38.289: g_signal_handler_unblock: assertion 'handler_id > 0' failed
+** Message: 16:59:09.529: No keyring secrets found for eduroam/802-1x; asking user.
+** Message: 16:59:43.523: No keyring secrets found for eduroam/802-1x; asking user.
+** Message: 17:00:19.530: No keyring secrets found for eduroam 1/802-1x; asking user.
+** Message: 17:00:59.537: No keyring secrets found for eduroam/802-1x; asking user.
+** Message: 17:03:13.575: No keyring secrets found for eduroam 1/802-1x; asking user.
+** Message: 17:05:45.531: No keyring secrets found for eduroam 1/802-1x; asking user.
+
+(wf-panel-pi:1318): Gdk-WARNING **: 17:06:05.614: Tried to unmap the parent of a popup
+** Message: 17:07:46.519: No keyring secrets found for eduroam 1/802-1x; asking user.
+(EE) failed to read Wayland events: Broken pipe

@@ -1,0 +1,111 @@
+2025-10-15 23:32:13.993 [info] Extension host with pid 2217 started
+2025-10-15 23:32:14.933 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-10-15 23:32:15.299 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-15 23:32:16.090 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-10-15 23:32:16.183 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-10-15 23:32:16.531 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-10-15 23:32:17.275 [info] Eager extensions activated
+2025-10-15 23:32:17.354 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-15 23:32:17.367 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-15 23:36:49.171 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-10-15 23:40:52.152 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2025-10-15 23:40:54.316 [info] ExtensionService#_doActivateExtension ms-python.vscode-python-envs, startup: false, activationEvent: 'onLanguage:python'
+2025-10-15 23:40:54.617 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2025-10-15 23:41:01.746 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-10-15 23:41:10.306 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-15 23:41:14.826 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-15 23:41:17.611 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onCommand:json.validate'
+2025-10-15 23:42:11.547 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+2025-10-15 23:42:52.979 [error] Error: illegal state - object is disposed
+	at K3.j (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:100686)
+	at K3.delete (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:100204)
+	at W.forgetDocument (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:7992156)
+	at h.cleanUpDocument (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:8002356)
+	at od.value (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:8001656)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.D (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at od.I [as value] (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:1041034)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.D (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at Ky.$acceptTabOperation (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:25037)
+	at U4.S (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120964)
+	at U4.Q (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120744)
+	at U4.M (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:119833)
+	at U4.L (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:118938)
+	at od.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:117735)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ao.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:9458)
+	at od.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:8616)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ao.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:9458)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6908)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-15 23:42:52.982 [error] Error: illegal state - object is disposed
+	at K3.j (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:100686)
+	at K3.delete (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:100204)
+	at W.forgetDocument (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:7992156)
+	at h.cleanUpDocument (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:8002356)
+	at od.value (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:8001656)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.D (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at od.I [as value] (/home/projeteea/.vscode/extensions/ms-python.vscode-pylance-2025.8.3/dist/vendor.bundle.js:2:1041034)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.D (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at Ky.$acceptTabOperation (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:25037)
+	at U4.S (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120964)
+	at U4.Q (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120744)
+	at U4.M (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:119833)
+	at U4.L (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:118938)
+	at od.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:117735)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ao.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:9458)
+	at od.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:8616)
+	at $.C (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ao.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:9458)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6908)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-15 23:43:46.239 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-10-15 23:46:19.687 [error] TypeError: terminated
+	at Fetch.onAborted (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:2042:49)
+	at Fetch.emit (node:events:519:28)
+	at Fetch.terminate (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:92:10)
+	at Object.onError (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:2223:34)
+	at Request.onError (node:internal/deps/undici/undici:2094:31)
+	at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+	at Socket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+	at Socket.emit (node:events:531:35)
+	at TCP.<anonymous> (node:net:346:12)
+2025-10-15 23:51:21.600 [error] TypeError: terminated
+	at Fetch.onAborted (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:2042:49)
+	at Fetch.emit (node:events:519:28)
+	at Fetch.terminate (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:92:10)
+	at Object.onError (/usr/share/code/resources/app/node_modules/undici/lib/web/fetch/index.js:2223:34)
+	at Request.onError (node:internal/deps/undici/undici:2094:31)
+	at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+	at Socket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+	at Socket.emit (node:events:531:35)
+	at TCP.<anonymous> (node:net:346:12)
+2025-10-15 23:54:00.050 [info] Extension host terminating: renderer closed the MessagePort
+2025-10-15 23:54:00.233 [error] TypeError: Cannot read properties of undefined (reading 'subscriptions')
+	at Object.X [as deactivate] (/home/projeteea/.vscode/extensions/ms-python.vscode-python-envs-1.10.0-linux-arm64/dist/extension.js:2:668401)
+	at SZ.eb (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11797)
+	at file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9947
+	at Array.map (<anonymous>)
+	at SZ.$ (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9935)
+	at SZ.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10178)
+	at H3.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+	at Ss (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:10409)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6948)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-15 23:54:00.247 [info] Extension host with pid 2217 exiting with code 0

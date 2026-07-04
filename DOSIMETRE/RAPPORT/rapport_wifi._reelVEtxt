@@ -1,0 +1,22 @@
+RAPPORT D'ACQUISITION RF / WI-FI
+================================
+
+Date : 2026-06-03 11:19:56.047873
+Fréquence sélectionnée : 2.4 GHz
+Durée acquisition : 249.74 s
+Nombre de mesures : 399
+Seuil de détection : -30 dBm
+
+STATISTIQUES RSSI
+-----------------
+RSSI moyen : -33.50 dBm
+RSSI max : -28.00 dBm
+RSSI min : -43.00 dBm
+
+ANALYSE ÉVÉNEMENTS / ÉNERGIE
+----------------------------
+Nombre d'événements : 33
+Puissance moyenne : 6.166e-07 W
+Puissance max : 1.585e-06 W
+Puissance min : 5.012e-08 W
+Énergie totale : 1.545e-04 J

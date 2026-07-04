@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "executable": "/bin/python3",
+    "prefix": "/usr",
+    "version": "3.13.5.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/bin/python3"
+    ]
+  },
+  "symlinks": [
+    [
+      "/bin/python3",
+      {
+        "secs_since_epoch": 1750877722,
+        "nanos_since_epoch": 0
+      },
+      {
+        "secs_since_epoch": 1759277695,
+        "nanos_since_epoch": 25156331
+      }
+    ]
+  ]
+}
