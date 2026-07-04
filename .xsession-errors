@@ -164,3 +164,14 @@ Segmentation fault
 (pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: GFileInfo created without standard::is-backup
 
 (pcmanfm:2770): GLib-GIO-CRITICAL **: 13:43:15.250: file ../../../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+00:52:03.154 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
