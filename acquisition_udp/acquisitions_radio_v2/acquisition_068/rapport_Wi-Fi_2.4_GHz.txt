@@ -1,0 +1,20 @@
+RAPPORT D'ACQUISITION RADIO V2
+==============================
+
+Date : 2026-07-09 13:28:24.665419
+Technologie : Wi-Fi 2.4 GHz
+Dossier : acquisitions_radio_v2/acquisition_068
+Seuil RSSI : -30 dBm
+
+STATISTIQUES
+------------
+Nombre de mesures : 2
+Durée : 0.61 s
+RSSI moyen : -30.00 dBm
+RSSI max : -30.00 dBm
+RSSI min : -30.00 dBm
+Énergie totale : 5.998e-07 J
+Nombre de pics : 0
+
+PICS DÉTECTÉS
+-------------

@@ -1,0 +1,20 @@
+RAPPORT D'ACQUISITION RADIO V2
+==============================
+
+Date : 2026-07-08 03:24:39.495880
+Technologie : Bluetooth
+Dossier : acquisitions_radio_v2/acquisition_005
+Seuil RSSI : -30 dBm
+
+STATISTIQUES
+------------
+Nombre de mesures : 10
+Durée : 53.73 s
+RSSI moyen : -70.00 dBm
+RSSI max : -70.00 dBm
+RSSI min : -70.00 dBm
+Énergie totale : 9.668e-10 J
+Nombre de pics : 0
+
+PICS DÉTECTÉS
+-------------

@@ -1,0 +1,20 @@
+RAPPORT ACQUISITION WIFI / LORA
+===============================
+
+Date : 2026-07-08 02:20:25.559790
+Mode : Wi-Fi 2.4 GHz
+Dossier : acquisitions_wifi_lora/acquisition_001
+Seuil RSSI : -30 dBm
+
+MESURES GLOBALES
+----------------
+Nombre de mesures : 9
+Durée acquisition : 97.67 s
+RSSI moyen : -35.89 dBm
+RSSI max : -34.00 dBm
+RSSI min : -46.00 dBm
+Énergie totale : 2.989e-05 J
+
+PICS DÉTECTÉS
+-------------
+Nombre de pics : 0

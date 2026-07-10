@@ -1,0 +1,20 @@
+RAPPORT D'ACQUISITION RADIO V2
+==============================
+
+Date : 2026-07-09 13:25:01.030454
+Technologie : Beacons BLE
+Dossier : acquisitions_radio_v2/acquisition_064
+Seuil RSSI : -30 dBm
+
+STATISTIQUES
+------------
+Nombre de mesures : 947
+Durée : 1003.69 s
+RSSI moyen : -62.31 dBm
+RSSI max : -37.00 dBm
+RSSI min : -96.00 dBm
+Énergie totale : 3.004e-05 J
+Nombre de pics : 0
+
+PICS DÉTECTÉS
+-------------

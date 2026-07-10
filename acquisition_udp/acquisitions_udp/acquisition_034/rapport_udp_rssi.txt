@@ -1,0 +1,23 @@
+RAPPORT ACQUISITION UDP + RSSI
+==============================
+
+Date : 2026-07-06 17:22:24.291146
+Dossier : acquisitions_udp/acquisition_034
+Port UDP : 5005
+Seuil RSSI : -30 dBm
+
+MESURES GLOBALES
+----------------
+Nombre de paquets reçus : 108
+Durée acquisition : 64.07 s
+RSSI moyen : -26.57 dBm
+RSSI max : -24.00 dBm
+RSSI min : -30.00 dBm
+Énergie totale : 1.455e-04 J
+
+PICS DÉTECTÉS
+-------------
+Nombre de pics : 3
+Pic 1 : début=0.00s, fin=8.11s, durée=8.11s, RSSI moyen=-26.69 dBm, énergie=1.736e-05 J
+Pic 2 : début=8.69s, fin=10.30s, durée=1.60s, RSSI moyen=-27.00 dBm, énergie=3.200e-06 J
+Pic 3 : début=11.40s, fin=48.36s, durée=36.96s, RSSI moyen=-26.41 dBm, énergie=8.443e-05 J

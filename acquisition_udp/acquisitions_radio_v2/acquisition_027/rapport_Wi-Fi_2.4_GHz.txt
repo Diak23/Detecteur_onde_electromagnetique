@@ -1,0 +1,29 @@
+RAPPORT D'ACQUISITION RADIO V2
+==============================
+
+Date : 2026-07-08 16:18:52.417096
+Technologie : Wi-Fi 2.4 GHz
+Dossier : acquisitions_radio_v2/acquisition_027
+Seuil RSSI : -66 dBm
+
+STATISTIQUES
+------------
+Nombre de mesures : 50
+Durée : 235.40 s
+RSSI moyen : -65.00 dBm
+RSSI max : -62.00 dBm
+RSSI min : -68.00 dBm
+Énergie totale : 8.267e-12 J
+Nombre de pics : 9
+
+PICS DÉTECTÉS
+-------------
+Pic 1 : début=135.04s, fin=144.43s, durée=9.38s, RSSI moyen=-63.38 dBm, énergie=1.084e-12 J
+Pic 2 : début=145.55s, fin=154.71s, durée=9.16s, RSSI moyen=-64.25 dBm, énergie=8.646e-13 J
+Pic 3 : début=155.94s, fin=157.13s, durée=1.19s, RSSI moyen=-63.00 dBm, énergie=1.500e-13 J
+Pic 4 : début=158.23s, fin=159.32s, durée=1.09s, RSSI moyen=-64.00 dBm, énergie=1.093e-13 J
+Pic 5 : début=161.85s, fin=164.40s, durée=2.55s, RSSI moyen=-64.50 dBm, énergie=2.274e-13 J
+Pic 6 : début=170.41s, fin=171.59s, durée=1.18s, RSSI moyen=-65.00 dBm, énergie=9.396e-14 J
+Pic 7 : début=180.77s, fin=190.44s, durée=9.67s, RSSI moyen=-64.00 dBm, énergie=9.673e-13 J
+Pic 8 : début=200.30s, fin=205.51s, durée=5.20s, RSSI moyen=-64.00 dBm, énergie=5.204e-13 J
+Pic 9 : début=210.65s, fin=235.40s, durée=24.75s, RSSI moyen=-64.20 dBm, énergie=2.364e-12 J

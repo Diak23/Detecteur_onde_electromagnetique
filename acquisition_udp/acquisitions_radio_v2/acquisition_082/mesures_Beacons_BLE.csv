@@ -1,0 +1,2 @@
+temps_s,mode,message,rssi_dbm,puissance_w,snr_ou_intervalle,energie_totale_j
+15.042046308517456,Beacons BLE,Beacon BLE | MAC=6A:84:92:50:42:BD | RSSI=-59 dBm | Intervalle=0.000 s,-59,1.2589254117941663e-09,0.0,0.0
