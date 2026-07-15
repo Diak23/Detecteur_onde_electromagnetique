@@ -1,0 +1,12 @@
+mesure,valeur,unite
+nombre_trames,12581,trames
+duree_moyenne,137.63484619664573,us
+duree_min,80.0,us
+duree_max,584.0,us
+payload_moyen,7.2043557745807165,octets
+rssi_moyen,-56.081948970670055,dBm
+rssi_min,-98,dBm
+rssi_max,-46,dBm
+nombre_trames_canal_37,2611,trames
+nombre_trames_canal_38,4202,trames
+nombre_trames_canal_39,5768,trames

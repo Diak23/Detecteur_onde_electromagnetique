@@ -1,0 +1,33 @@
+RAPPORT D'ACQUISITION BLE V5
+============================
+
+Date : 2026-07-15 05:01:44.397334
+Matériel : Adafruit Bluefruit LE Sniffer nRF51822
+PHY : LE 1M
+Filtre : inconnue
+Nombre de trames : 3216
+Nombre d'appareils détectés : 792
+
+DURÉE DES TRAMES
+-----------------
+Moyenne : 136.910 µs
+Minimum : 80.000 µs
+Maximum : 536.000 µs
+
+PAYLOAD
+-------
+Moyenne : 7.114 octets
+Minimum : 0 octets
+Maximum : 57 octets
+
+RSSI
+----
+Moyenne : -56.43 dBm
+Minimum : -97 dBm
+Maximum : -46 dBm
+
+RÉPARTITION PAR CANAL
+---------------------
+Canal 37 : 688 trames
+Canal 38 : 985 trames
+Canal 39 : 1543 trames

@@ -1,0 +1,25 @@
+RAPPORT D'ACQUISITION BLE
+=========================
+
+Date : 2026-07-13 16:09:23.253129
+Matériel : Adafruit Bluefruit LE Sniffer nRF51822
+PHY : LE 1M
+Nombre de trames : 3279
+
+DURÉE DES TRAMES
+-----------------
+Durée moyenne : 319.551 µs
+Durée minimale : 80.000 µs
+Durée maximale : 536.000 µs
+
+RSSI
+----
+RSSI moyen : -74.80 dBm
+RSSI minimal : -98 dBm
+RSSI maximal : -44 dBm
+
+RÉPARTITION PAR CANAL
+---------------------
+Canal 37 : 1093 trames
+Canal 38 : 1093 trames
+Canal 39 : 1093 trames
