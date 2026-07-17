@@ -1,5 +1,11 @@
 build_cache:
-    compilation_count_since_last_purge: 5
+    compilation_count_since_last_purge: 0
+cache:
+    api2:
+        arduino:
+            cc/boards/v1/boards?vid-pid=0x10c4-0xea60:
+                data: '[]'
+                ts: 2026-07-08T22:57:09.955041423+02:00
 installation:
     id: ae348c86-3f43-42be-abf2-bc4afb966d15
     secret: ae5cbe69-2d1a-4faa-9511-062ef7c468df

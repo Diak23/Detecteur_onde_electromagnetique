@@ -427,8 +427,8 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/projeteea/token" added="2026-06-03T10:46:22.675648Z" modified="2026-07-04T12:38:36.154099Z" visited="2026-06-03T10:46:22.675650Z">
-    <desc>Language: ; Encoding: UTF-8; Cursor: 3:0;</desc>
+  <bookmark href="file:///home/projeteea/token" added="2026-06-03T10:46:22.675648Z" modified="2026-07-04T13:26:51.703605Z" visited="2026-06-03T10:46:22.675650Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 9:98;</desc>
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -436,7 +436,7 @@
           <bookmark:group>Mousepad</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-04T12:38:36.154093Z" count="11"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-04T13:26:51.703599Z" count="12"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -880,6 +880,943 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-04T12:38:28.751511Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_udp/acquisition_034/graphe_udp_rssi.png" added="2026-07-06T15:22:59.358194Z" modified="2026-07-06T15:22:59.358219Z" visited="2026-07-06T15:22:59.358197Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-06T15:22:59.358205Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/interface_wifi_lora_v1.py" added="2026-07-07T16:09:55.767652Z" modified="2026-07-07T16:09:55.767669Z" visited="2026-07-07T16:09:55.767654Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-07T16:09:55.767659Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_011/graphes_Wi-Fi_2.4_GHz.png" added="2026-07-08T13:41:58.984706Z" modified="2026-07-08T13:41:58.984730Z" visited="2026-07-08T13:41:58.984709Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-08T13:41:58.984720Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_011/rapport_Wi-Fi_2.4_GHz.txt" added="2026-07-08T13:42:34.721495Z" modified="2026-07-08T13:42:52.109993Z" visited="2026-07-08T13:42:34.721497Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-08T13:42:52.109979Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_064/graphes_Beacons_BLE.png" added="2026-07-09T11:31:54.134639Z" modified="2026-07-09T11:31:54.134662Z" visited="2026-07-09T11:31:54.134643Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-09T11:31:54.134651Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_064/mesures_Beacons_BLE.csv" added="2026-07-09T11:34:44.371582Z" modified="2026-07-09T11:36:15.447320Z" visited="2026-07-09T11:34:44.371585Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-09T11:36:15.447313Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_064/pics_Beacons_BLE.csv" added="2026-07-09T11:36:10.548301Z" modified="2026-07-09T11:36:15.439547Z" visited="2026-07-09T11:36:10.548304Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-09T11:36:15.439539Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_064/rapport_Beacons_BLE.txt" added="2026-07-09T11:36:20.719120Z" modified="2026-07-09T12:26:53.889834Z" visited="2026-07-09T11:36:20.719122Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-09T12:26:53.889827Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_069/graphes_Wi-Fi_2.4_GHz.png" added="2026-07-09T11:38:28.159102Z" modified="2026-07-09T11:38:38.353466Z" visited="2026-07-09T11:38:28.159104Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-09T11:38:38.353458Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/interface_nRF_BLE_beacons.py" added="2026-07-09T13:02:40.723901Z" modified="2026-07-09T13:02:40.723918Z" visited="2026-07-09T13:02:40.723903Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-09T13:02:40.723909Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_radio_v2_ble_interval_corrige.py" added="2026-07-09T13:40:09.499343Z" modified="2026-07-09T13:40:09.499386Z" visited="2026-07-09T13:40:09.499350Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-09T13:40:09.499364Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_radio_v2_ble_wifi_interval_corrige.py" added="2026-07-09T14:24:13.260852Z" modified="2026-07-09T14:24:13.260882Z" visited="2026-07-09T14:24:13.260856Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-09T14:24:13.260869Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_083/graphes_Beacons_BLE.png" added="2026-07-10T14:06:21.996479Z" modified="2026-07-10T14:06:21.996512Z" visited="2026-07-10T14:06:21.996484Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-10T14:06:21.996496Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_083/mesures_Beacons_BLE.csv" added="2026-07-10T14:06:21.996603Z" modified="2026-07-10T14:06:21.996618Z" visited="2026-07-10T14:06:21.996605Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-10T14:06:21.996611Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_083/pics_Beacons_BLE.csv" added="2026-07-10T14:06:21.996713Z" modified="2026-07-10T14:06:21.996726Z" visited="2026-07-10T14:06:21.996714Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-10T14:06:21.996719Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_radio_v2/acquisition_083/rapport_Beacons_BLE.txt" added="2026-07-10T14:06:21.996765Z" modified="2026-07-10T14:06:21.996776Z" visited="2026-07-10T14:06:21.996766Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-10T14:06:21.996769Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/ble_frame_driver_corrige.py" added="2026-07-13T13:47:43.798306Z" modified="2026-07-13T13:47:43.798331Z" visited="2026-07-13T13:47:43.798310Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-13T13:47:43.798318Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v3.py" added="2026-07-13T14:04:25.778930Z" modified="2026-07-13T14:04:25.778952Z" visited="2026-07-13T14:04:25.778933Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-13T14:04:25.778942Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v4_filtre_appareil.py" added="2026-07-13T14:35:15.441317Z" modified="2026-07-13T14:35:15.441336Z" visited="2026-07-13T14:35:15.441319Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-13T14:35:15.441324Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v4/graphes_ble.png" added="2026-07-13T18:11:44.855951Z" modified="2026-07-16T13:46:23.366513Z" visited="2026-07-13T18:11:44.855954Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T13:46:23.366461Z" count="3"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T18:36:40.181278Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_interface/graphes_ble.png" added="2026-07-13T18:12:03.402343Z" modified="2026-07-16T14:32:05.850712Z" visited="2026-07-13T18:12:03.402345Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T14:32:05.850706Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble/trames_ble.csv" added="2026-07-13T18:13:02.247007Z" modified="2026-07-13T18:13:14.679300Z" visited="2026-07-13T18:13:02.247009Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T18:13:14.679286Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v4/trames_ble_filtrees.csv" added="2026-07-13T18:13:35.308713Z" modified="2026-07-16T14:26:38.060279Z" visited="2026-07-13T18:13:35.308714Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-16T14:26:38.060270Z" count="4"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T18:36:40.181308Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v4/rapport_ble.txt" added="2026-07-13T18:36:40.126575Z" modified="2026-07-16T14:26:38.728492Z" visited="2026-07-13T18:36:40.126577Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T18:36:40.181227Z" count="2"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-16T14:26:38.728476Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v4/trames_ble_brutes.csv" added="2026-07-13T18:36:40.126593Z" modified="2026-07-16T14:26:38.074307Z" visited="2026-07-13T18:36:40.126594Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T18:36:40.181333Z" count="2"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-16T14:26:38.074298Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v5.py" added="2026-07-13T19:16:26.766352Z" modified="2026-07-13T19:16:26.766370Z" visited="2026-07-13T19:16:26.766355Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-13T19:16:26.766360Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/graphes_ble_v5.png" added="2026-07-13T19:56:46.132580Z" modified="2026-07-15T03:13:00.189622Z" visited="2026-07-13T19:56:46.132583Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:13:00.189568Z" count="7"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469230Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble001/chronologie_ble.png" added="2026-07-13T20:00:37.314540Z" modified="2026-07-13T20:00:37.314563Z" visited="2026-07-13T20:00:37.314543Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-13T20:00:37.314554Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble001/rapport_ble_v5.txt" added="2026-07-13T20:01:01.512422Z" modified="2026-07-13T20:12:13.973065Z" visited="2026-07-13T20:01:01.512424Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:12:13.973058Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble001/statistiques_ble.csv" added="2026-07-13T20:01:44.052532Z" modified="2026-07-13T20:12:13.965568Z" visited="2026-07-13T20:01:44.052536Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:12:13.965559Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble001/trames_ble_brutes.csv" added="2026-07-13T20:02:04.772030Z" modified="2026-07-13T20:12:13.858475Z" visited="2026-07-13T20:02:04.772033Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:12:13.858467Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble001/trames_ble_filtrees.csv" added="2026-07-13T20:02:14.130295Z" modified="2026-07-13T20:12:13.848971Z" visited="2026-07-13T20:02:14.130298Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:12:13.848964Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/chronologie_ble.png" added="2026-07-13T20:08:15.664608Z" modified="2026-07-15T03:12:36.573880Z" visited="2026-07-13T20:08:15.664611Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:12:36.573872Z" count="6"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469195Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/rapport_ble_v5.txt" added="2026-07-13T20:09:21.855587Z" modified="2026-07-13T20:10:38.469298Z" visited="2026-07-13T20:09:21.855589Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:09:21.855596Z" count="1"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469295Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/statistiques_ble.csv" added="2026-07-13T20:09:26.450381Z" modified="2026-07-13T20:10:38.469255Z" visited="2026-07-13T20:09:26.450383Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:09:26.450391Z" count="1"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469252Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/trames_ble_brutes.csv" added="2026-07-13T20:09:31.908726Z" modified="2026-07-13T20:10:38.469277Z" visited="2026-07-13T20:09:31.908729Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:09:31.908736Z" count="1"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469273Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/trames_ble_filtrees.csv" added="2026-07-13T20:09:35.623944Z" modified="2026-07-13T20:10:38.469319Z" visited="2026-07-13T20:09:35.623946Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-13T20:09:35.623955Z" count="1"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:10:38.469316Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble002/rapport_ble_v5.txt" added="2026-07-13T20:12:46.175295Z" modified="2026-07-13T20:12:46.216355Z" visited="2026-07-13T20:12:46.175298Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:12:46.216348Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble002/statistiques_ble.csv" added="2026-07-13T20:18:32.366260Z" modified="2026-07-13T20:18:32.422248Z" visited="2026-07-13T20:18:32.366263Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:18:32.422234Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble002/trames_ble_brutes.csv" added="2026-07-13T20:18:32.366325Z" modified="2026-07-13T20:18:32.422304Z" visited="2026-07-13T20:18:32.366325Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:18:32.422299Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/ble002/trames_ble_filtrees.csv" added="2026-07-13T20:18:32.366341Z" modified="2026-07-13T20:20:40.886953Z" visited="2026-07-13T20:18:32.366342Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-13T20:20:40.886946Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/ble_frame_driver_corrige_v2.py" added="2026-07-13T20:57:22.742606Z" modified="2026-07-13T20:57:22.742630Z" visited="2026-07-13T20:57:22.742610Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-13T20:57:22.742620Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/ble_frame_driver_corrige2.py" added="2026-07-13T20:59:30.593382Z" modified="2026-07-13T20:59:30.593396Z" visited="2026-07-13T20:59:30.593384Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-07-13T20:59:30.593390Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v5_amelioree.py" added="2026-07-15T00:29:12.934791Z" modified="2026-07-15T00:30:35.511702Z" visited="2026-07-15T00:29:12.934797Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T00:29:12.934808Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-07-15T00:30:35.511694Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v6_selection_appareil.py" added="2026-07-15T01:14:44.888483Z" modified="2026-07-15T01:14:44.888523Z" visited="2026-07-15T01:14:44.888491Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T01:14:44.888504Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/BLE005/graphes_ble_v5.png" added="2026-07-15T02:37:49.369728Z" modified="2026-07-15T02:37:49.369753Z" visited="2026-07-15T02:37:49.369731Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T02:37:49.369742Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ble_v5_amelioree_onglets.py" added="2026-07-15T03:11:02.764357Z" modified="2026-07-15T03:11:02.764386Z" visited="2026-07-15T03:11:02.764361Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T03:11:02.764370Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/BLE007/graphes_ble_v5.png" added="2026-07-15T03:12:25.978994Z" modified="2026-07-15T03:13:12.731148Z" visited="2026-07-15T03:12:25.978997Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:13:12.731137Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/BLE007/chronologie_ble.png" added="2026-07-15T03:13:08.673907Z" modified="2026-07-15T03:13:08.673932Z" visited="2026-07-15T03:13:08.673911Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:13:08.673920Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/rssi_et_duree.png" added="2026-07-15T03:24:28.514102Z" modified="2026-07-15T22:55:32.649473Z" visited="2026-07-15T03:24:28.514104Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T22:55:32.649466Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/histogramme_et_canaux.png" added="2026-07-15T03:24:34.513843Z" modified="2026-07-15T03:24:50.946475Z" visited="2026-07-15T03:24:34.513847Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:24:50.946465Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ble_v5/BLEo008/histogramme_et_canaux.png" added="2026-07-15T03:25:02.716217Z" modified="2026-07-15T03:25:02.716235Z" visited="2026-07-15T03:25:02.716219Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-15T03:25:02.716228Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/ble_beacon%20(1).py" added="2026-07-15T17:40:59.331140Z" modified="2026-07-15T17:40:59.331154Z" visited="2026-07-15T17:40:59.331142Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-07-15T17:40:59.331149Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/BLE_beacon1.py" added="2026-07-15T18:07:30.246360Z" modified="2026-07-15T18:07:30.298184Z" visited="2026-07-15T18:07:30.246362Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-15T18:07:30.298176Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/BLE_beacon1_corrige.py" added="2026-07-15T18:19:00.234612Z" modified="2026-07-15T18:19:00.234632Z" visited="2026-07-15T18:19:00.234615Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T18:19:00.234622Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/BLE_beacon1_broadcast.py" added="2026-07-15T18:49:26.495363Z" modified="2026-07-15T18:49:26.535012Z" visited="2026-07-15T18:49:26.495364Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-15T18:49:26.535003Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/BLE_beacon1_broadcast_corrige.py" added="2026-07-15T19:06:27.036463Z" modified="2026-07-15T19:06:27.036490Z" visited="2026-07-15T19:06:27.036468Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T19:06:27.036474Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/pibeacon-ibeacon-with-a-raspberry-pi.pdf" added="2026-07-15T21:48:33.435318Z" modified="2026-07-15T21:49:50.057349Z" visited="2026-07-15T21:48:33.435320Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-15T21:49:50.057342Z" count="4"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T21:48:33.986413Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ibeacon_nrf51822.py" added="2026-07-15T23:24:30.592658Z" modified="2026-07-15T23:24:30.592700Z" visited="2026-07-15T23:24:30.592664Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-15T23:24:30.592678Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon/acquisition_20260716_012818/trames_ibeacon.csv" added="2026-07-15T23:32:27.256828Z" modified="2026-07-15T23:58:25.066722Z" visited="2026-07-15T23:32:27.256830Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-15T23:58:25.066708Z" count="2"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-07-15T23:40:59.872164Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ibeacon_evenements_v2.py" added="2026-07-16T11:55:10.766938Z" modified="2026-07-16T11:55:10.766959Z" visited="2026-07-16T11:55:10.766940Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-16T11:55:10.766947Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon/acquisition_20260716_142104/trames_ibeacon.csv" added="2026-07-16T12:34:08.415930Z" modified="2026-07-16T12:34:21.067164Z" visited="2026-07-16T12:34:08.415932Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-16T12:34:21.067149Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/Images/20260716_14h34m34s_grim.png" added="2026-07-16T12:34:48.651782Z" modified="2026-07-16T12:34:48.651806Z" visited="2026-07-16T12:34:48.651785Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:34:48.651795Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/01_rssi_evenements.png" added="2026-07-16T12:35:51.049593Z" modified="2026-07-16T12:35:51.049621Z" visited="2026-07-16T12:35:51.049598Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:35:51.049607Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/02_intervalles_evenements.png" added="2026-07-16T12:35:58.946208Z" modified="2026-07-16T12:35:58.946238Z" visited="2026-07-16T12:35:58.946214Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:35:58.946227Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/03_duree_trames.png" added="2026-07-16T12:36:03.614517Z" modified="2026-07-16T12:36:03.614549Z" visited="2026-07-16T12:36:03.614519Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:36:03.614531Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/04_duree_evenements.png" added="2026-07-16T12:36:11.529363Z" modified="2026-07-16T12:36:11.529391Z" visited="2026-07-16T12:36:11.529365Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:36:11.529375Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/05_repartition_canaux.png" added="2026-07-16T12:36:25.725473Z" modified="2026-07-16T12:36:25.725498Z" visited="2026-07-16T12:36:25.725476Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:36:25.725487Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/06_histogramme_intervalles.png" added="2026-07-16T12:36:31.706940Z" modified="2026-07-16T12:36:31.706964Z" visited="2026-07-16T12:36:31.706943Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:36:31.706953Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/07_taux_perte.png" added="2026-07-16T12:36:35.919634Z" modified="2026-07-16T12:36:35.919667Z" visited="2026-07-16T12:36:35.919639Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-16T12:36:35.919658Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/rapport_ibeacon.pdf" added="2026-07-16T12:36:42.908546Z" modified="2026-07-16T12:36:42.908559Z" visited="2026-07-16T12:36:42.908548Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;org.gnome.Evince %u&apos;" modified="2026-07-16T12:36:42.908552Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/acquisitions_ibeacon_evenements/acquisition_20260716_135604/statistiques.json" added="2026-07-16T12:37:01.664731Z" modified="2026-07-16T12:37:07.584797Z" visited="2026-07-16T12:37:01.664733Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-07-16T12:37:07.584788Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/bluez/bluez-5.11/android/hal-bluetooth.c" added="2026-07-16T12:37:29.845288Z" modified="2026-07-16T12:37:29.845303Z" visited="2026-07-16T12:37:29.845290Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csrc"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-07-16T12:37:29.845297Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ibeacon_nrf51822_v2.py" added="2026-07-16T14:24:28.293235Z" modified="2026-07-16T14:24:28.293312Z" visited="2026-07-16T14:24:28.293246Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-16T14:24:28.293276Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/interface_ibeacon_nrf51822_v3.py" added="2026-07-16T14:51:09.277095Z" modified="2026-07-16T14:51:09.277157Z" visited="2026-07-16T14:51:09.277103Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-16T14:51:09.277126Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/ble_beacon_studio(2).py" added="2026-07-16T22:37:06.629273Z" modified="2026-07-16T22:46:26.912689Z" visited="2026-07-16T22:37:06.629277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-16T22:46:26.912672Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/ble_beacon_studio(2)(1).py" added="2026-07-16T22:37:46.595016Z" modified="2026-07-16T22:37:46.595052Z" visited="2026-07-16T22:37:46.595023Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-16T22:37:46.595035Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

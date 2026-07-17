@@ -1,0 +1,10 @@
+[ERROR crash_helper_server::ipc_server] Error Child process 2 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 3 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 4 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 5 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 6 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 7 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 8 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 9 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 10 is not dumpable when handling a message of kind RegisterChildProcess
+[ERROR crash_helper_server::ipc_server] Error Child process 11 is not dumpable when handling a message of kind RegisterChildProcess

@@ -24,14 +24,14 @@ Phosh;MATE;
 Applications
 Applications
 applications-other
-lxde-menu-applications.directory
+rpd-applications.directory
 4
 0
 +Development
 Programmation
 Outils de développement logiciel
 applications-development
-lxde-development.directory
+rpd-development.directory
 4
 0
 -arduino.desktop
@@ -164,8 +164,16 @@ vscode
 +Education
 Éducation
 
+applications-engineering
+rpd-education.directory
+4
+4
+
++Science
+Sciences
+Applications scientifiques
 applications-science
-lxde-education.directory
+rpd-science.directory
 4
 4
 
@@ -173,7 +181,7 @@ lxde-education.directory
 Bureautique
 Applications bureautiques
 applications-office
-lxde-office.directory
+rpd-office.directory
 4
 0
 -org.gnome.Evince-previewer.desktop
@@ -205,11 +213,11 @@ libreoffice
 Office;FlowChart;2DGraphics;VectorGraphics
 Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Microsoft Visio,Corel Draw,cdr,odg,svg,pdf,vsd
 
-+Internet
++Network
 Internet
 Programmes pour accéder à Internet tels que le Web ou la messagerie
 applications-internet
-lxde-network.directory
+rpd-network.directory
 4
 0
 -firefox.desktop
@@ -254,20 +262,6 @@ Navigateur Web
 
 Network;WebBrowser
 browser
--realvnc-vncserver-service.desktop
-VNC Server
-Start VNC Server in Service Mode
-/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
-
-10
-VNC Server
-/usr/bin/pkexec /etc/vnc/vncservice start vncserver-x11-serviced
-4
-0
-
-
-Application;Network;RemoteAccess
-
 -org.wireshark.Wireshark.desktop
 Wireshark
 Analyseur de trafic réseau
@@ -283,11 +277,11 @@ wireshark
 Network;Monitor;Qt
 
 
-+Multimedia
++AudioVideo
 Son et vidéo
 Multimédia
 applications-multimedia
-lxde-audio-video.directory
+rpd-audio-video.directory
 4
 0
 -vlc.desktop
@@ -309,7 +303,7 @@ Player,Capture,DVD,Audio,Video,Server,Broadcast
 Graphisme
 Applications graphiques
 applications-graphics
-lxde-graphics.directory
+rpd-graphics.directory
 4
 0
 -org.gnome.Evince-previewer.desktop
@@ -341,11 +335,11 @@ eom
 GTK;Graphics;2DGraphics;RasterGraphics;Viewer
 image,viewer,JPEG,PNG,TIFF,SVG,MATE,photos,browse,thumbnails,rotate
 
-+Games
++Game
 Jeux
 Jeux et divertissements
 applications-games
-lxde-game.directory
+rpd-game.directory
 4
 4
 
@@ -353,7 +347,7 @@ lxde-game.directory
 Autre
 Applications qui n'entraient dans aucune autre catégorie
 applications-other
-lxde-other.directory
+rpd-other.directory
 4
 0
 -gcr-viewer.desktop
@@ -490,6 +484,20 @@ security-medium
 11
 
 /usr/libexec/gcr-prompter
+4
+0
+
+
+
+
+-libfm-pref-apps.desktop
+
+
+
+
+10
+
+
 4
 0
 
@@ -650,6 +658,48 @@ applications-system-symbolic
 
 
 
+-qt5ct.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-qt6ct.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
+-realvnc-vncserver-service.desktop
+
+
+
+
+10
+
+
+4
+0
+
+
+
+
 -notification-daemon.desktop
 Service de notification
 Afficher les notifications
@@ -658,20 +708,6 @@ Afficher les notifications
 11
 
 /usr/lib/notification-daemon/notification-daemon
-4
-0
-
-
-
-
--pishutdown.desktop
-Shutdown
-
-system-shutdown
-
-11
-
-pishutdown
 4
 0
 
@@ -739,7 +775,7 @@ zenity
 Outils système
 Configuration et surveillance système
 applications-system
-lxde-system-tools.directory
+rpd-system-tools.directory
 4
 0
 -lstopo.desktop
@@ -841,11 +877,11 @@ A rootful instance of the Xwayland X11 server
 System
 
 
-+Accessories
++Utility
 Accessoires
 Accessoires du bureau
 applications-accessories
-lxde-utility.directory
+rpd-utility.directory
 4
 0
 -xarchiver.desktop
@@ -946,14 +982,14 @@ agnostics
 
 Utility
 
--org.raspberrypi.rpi-imager.desktop
+-com.raspberrypi.rpi-imager.desktop
 Raspberry Pi Imager
 Tool for writing images to SD cards for Raspberry Pi
 rpi-imager
 
 11
 
-/usr/bin/rpi-imager %F
+/usr/bin/rpi-imager %u
 0
 0
 
@@ -1045,14 +1081,6 @@ Text Editor
 Utility;TextEditor;Development;IDE
 vscode
 
-+Universal Access
-Accès universel
-Paramètres d'accès universel
-preferences-desktop-accessibility
-lxde-utility-accessibility.directory
-4
-4
-
 +Electronics
 Electronique
 
@@ -1088,7 +1116,7 @@ HamRadio.directory
 Help
 Reference material
 gnome-help
-lxde-help.directory
+rpd-help.directory
 4
 0
 -rp-bookshelf.desktop
@@ -1135,11 +1163,11 @@ Help
 user,shell,command,documentation,manual,help,guide,debian
 
 -
-+DesktopSettings
++Settings
 Préférences
 Préférences personnelles
 preferences-desktop
-lxde-settings.directory
+rpd-settings.directory
 4
 0
 -pi-packages.desktop
@@ -1154,7 +1182,7 @@ pi-packages
 -5
 
 
-GNOME;GTK;System;Settings;PackageManager
+Settings;PackageManager
 Mises à jour,Mises à niveau,Sources,Dépôts,Préférences,Installation,Installer,Boutique
 -rpcc.desktop
 Control Centre
@@ -1170,24 +1198,10 @@ rpcc
 
 GTK;Settings;HardwareSettings;X-LXDE-Settings
 
--qt5ct.desktop
-Paramètres de Qt5
-Un outil de configuration de Qt5
-preferences-desktop-theme
-
-10
-
-qt5ct
-4
-0
-
-
-Settings;DesktopSettings;Qt
-settings,desktop,qt,qtsettings,qt5
 -rp-prefapps.desktop
 Recommended Software
 Install additional programs recommended for use on the Pi
-rpi
+rp-prefapps
 
 11
 Recommended Software
@@ -1212,5 +1226,35 @@ pi-gpk-prefs
 
 Settings;X-GNOME-SystemSettings
 
+
+-
+-gui-runcmd.desktop
+Exécuter
+Run a command-line application
+system-run
+
+11
+
+gui-runcmd
+0
+0
+
+
+Applications
+
+-
+-pishutdown.desktop
+Déconnexion
+Shutdown and logout options
+system-shutdown
+
+11
+
+pishutdown
+0
+0
+
+
+Applications
 
 

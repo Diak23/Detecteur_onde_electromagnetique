@@ -1,0 +1,29 @@
+RAPPORT STATISTIQUE - IBEACON RASPBERRY PI
+================================================
+
+MAC : DC:A6:32:65:E5:71
+UUID : e20a39f4-73f5-4bc4-a12f-17d1ad07a961
+Major : 0
+Minor : 0
+
+Trames brutes : 539
+Evenements regroupes : 266
+Evenements complets 37/38/39 : 64
+Taux d'evenements complets : 24.06 %
+Duree acquisition : 339.689 s
+
+RSSI moyen : -44.973 dBm
+RSSI median : -44.000 dBm
+Intervalle moyen : 1301.071 ms
+Intervalle median : 1281.956 ms
+Intervalle nominal estime : 1281.956 ms
+
+Evenements manquants estimes : 5
+Taux de perte d'evenements : 1.88 %
+Taux de perte paquets/canaux : 32.46 %
+
+Canal 37 : 66
+Canal 38 : 213
+Canal 39 : 260
+
+Methode : regroupement des paquets 37/38/39 portant les memes donnees dans une fenetre de 80.0 ms.

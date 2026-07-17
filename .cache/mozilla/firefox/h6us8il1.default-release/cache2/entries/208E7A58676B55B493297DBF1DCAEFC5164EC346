@@ -1,0 +1,637 @@
+#!/usr/bin/env python3
+"""
+interface_ble_v3.py
+
+Interface graphique pour l'analyse des trames BLE capturées avec
+l'Adafruit Bluefruit LE Sniffer nRF51822.
+
+Dépendance locale :
+    ble_frame_driver_corrige.py
+
+Fonctions :
+- démarrage/arrêt de la capture ;
+- affichage de la dernière trame ;
+- courbe RSSI en temps réel ;
+- courbe durée des trames en temps réel ;
+- statistiques min/max/moyenne ;
+- compteur de trames ;
+- sauvegarde PNG ;
+- génération d'un rapport TXT ;
+- CSV automatique géré par le driver.
+"""
+
+from __future__ import annotations
+
+import queue
+import statistics
+import time
+import tkinter as tk
+from datetime import datetime
+from pathlib import Path
+from tkinter import messagebox, ttk
+from typing import Optional
+
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+from ble_frame_driver_corrige import BLEFrame, BLESnifferDriver
+
+
+# ---------------------------------------------------------------------------
+# CONFIGURATION
+# ---------------------------------------------------------------------------
+
+DOSSIER_SORTIE = Path("acquisitions_ble_interface")
+FICHIER_CSV = DOSSIER_SORTIE / "trames_ble_interface.csv"
+FICHIER_PNG = DOSSIER_SORTIE / "graphes_ble.png"
+FICHIER_RAPPORT = DOSSIER_SORTIE / "rapport_ble.txt"
+
+NOMBRE_POINTS_AFFICHES = 300
+PERIODE_MAJ_MS = 100
+
+
+# ---------------------------------------------------------------------------
+# APPLICATION
+# ---------------------------------------------------------------------------
+
+class InterfaceBLE:
+    def __init__(self, fenetre: tk.Tk) -> None:
+        self.fenetre = fenetre
+        self.fenetre.title("Analyseur BLE nRF51822 - Durée des trames")
+        self.fenetre.geometry("1450x850")
+        self.fenetre.minsize(1100, 700)
+
+        self.driver: Optional[BLESnifferDriver] = None
+        self.file_trames: queue.Queue[BLEFrame] = queue.Queue()
+        self.capture_active = False
+        self.heure_debut: Optional[float] = None
+
+        self.trames: list[BLEFrame] = []
+        self.temps_relatifs: list[float] = []
+        self.rssi: list[int] = []
+        self.durees: list[float] = []
+
+        DOSSIER_SORTIE.mkdir(parents=True, exist_ok=True)
+
+        self._configurer_style()
+        self._construire_interface()
+        self._configurer_graphes()
+
+        self.fenetre.protocol("WM_DELETE_WINDOW", self.fermer)
+        self.fenetre.after(PERIODE_MAJ_MS, self._traiter_file)
+
+    # ------------------------------------------------------------------
+    # INTERFACE
+    # ------------------------------------------------------------------
+
+    def _configurer_style(self) -> None:
+        style = ttk.Style()
+        try:
+            style.theme_use("clam")
+        except tk.TclError:
+            pass
+
+        style.configure("Titre.TLabel", font=("Arial", 19, "bold"))
+        style.configure("Valeur.TLabel", font=("Arial", 11, "bold"))
+        style.configure("Etat.TLabel", font=("Arial", 11))
+
+    def _construire_interface(self) -> None:
+        conteneur = ttk.Frame(self.fenetre, padding=10)
+        conteneur.pack(fill="both", expand=True)
+
+        # Panneau gauche
+        panneau = ttk.Frame(conteneur, width=300)
+        panneau.pack(side="left", fill="y", padx=(0, 10))
+        panneau.pack_propagate(False)
+
+        ttk.Label(
+            panneau,
+            text="Analyseur BLE V3",
+            style="Titre.TLabel",
+        ).pack(pady=(0, 10))
+
+        cadre_commandes = ttk.LabelFrame(
+            panneau,
+            text="Acquisition",
+            padding=10,
+        )
+        cadre_commandes.pack(fill="x", pady=5)
+
+        self.bouton_demarrer = ttk.Button(
+            cadre_commandes,
+            text="Démarrer",
+            command=self.demarrer,
+        )
+        self.bouton_demarrer.pack(fill="x", pady=3)
+
+        self.bouton_arreter = ttk.Button(
+            cadre_commandes,
+            text="Arrêter",
+            command=self.arreter,
+            state="disabled",
+        )
+        self.bouton_arreter.pack(fill="x", pady=3)
+
+        ttk.Button(
+            cadre_commandes,
+            text="Réinitialiser l'affichage",
+            command=self.reinitialiser,
+        ).pack(fill="x", pady=3)
+
+        cadre_sauvegarde = ttk.LabelFrame(
+            panneau,
+            text="Sauvegardes",
+            padding=10,
+        )
+        cadre_sauvegarde.pack(fill="x", pady=5)
+
+        ttk.Button(
+            cadre_sauvegarde,
+            text="Sauvegarder les graphes PNG",
+            command=self.sauvegarder_png,
+        ).pack(fill="x", pady=3)
+
+        ttk.Button(
+            cadre_sauvegarde,
+            text="Générer le rapport TXT",
+            command=self.generer_rapport,
+        ).pack(fill="x", pady=3)
+
+        cadre_etat = ttk.LabelFrame(
+            panneau,
+            text="État",
+            padding=10,
+        )
+        cadre_etat.pack(fill="x", pady=5)
+
+        self.label_etat = ttk.Label(
+            cadre_etat,
+            text="En attente",
+            style="Etat.TLabel",
+            wraplength=250,
+        )
+        self.label_etat.pack(anchor="w")
+
+        self.label_interface = ttk.Label(
+            cadre_etat,
+            text="Interface : détection automatique",
+            wraplength=250,
+        )
+        self.label_interface.pack(anchor="w", pady=(5, 0))
+
+        self.label_csv = ttk.Label(
+            cadre_etat,
+            text=f"CSV : {FICHIER_CSV}",
+            wraplength=250,
+        )
+        self.label_csv.pack(anchor="w", pady=(5, 0))
+
+        # Zone droite
+        droite = ttk.Frame(conteneur)
+        droite.pack(side="left", fill="both", expand=True)
+
+        cadre_trame = ttk.LabelFrame(
+            droite,
+            text="Dernière trame BLE",
+            padding=10,
+        )
+        cadre_trame.pack(fill="x", pady=(0, 8))
+
+        self.vars_trame = {
+            "numero": tk.StringVar(value="Trame : ---"),
+            "mac": tk.StringVar(value="MAC : ---"),
+            "rssi": tk.StringVar(value="RSSI : ---"),
+            "canal": tk.StringVar(value="Canal : ---"),
+            "longueur": tk.StringVar(value="Payload : ---"),
+            "duree": tk.StringVar(value="Durée : ---"),
+            "debut": tk.StringVar(value="Début : ---"),
+            "fin": tk.StringVar(value="Fin : ---"),
+            "type": tk.StringVar(value="Type PDU : ---"),
+        }
+
+        positions = [
+            ("numero", 0, 0),
+            ("mac", 0, 1),
+            ("rssi", 1, 0),
+            ("canal", 1, 1),
+            ("longueur", 2, 0),
+            ("duree", 2, 1),
+            ("debut", 3, 0),
+            ("fin", 3, 1),
+            ("type", 4, 0),
+        ]
+
+        for nom, ligne, colonne in positions:
+            ttk.Label(
+                cadre_trame,
+                textvariable=self.vars_trame[nom],
+                style="Valeur.TLabel",
+            ).grid(
+                row=ligne,
+                column=colonne,
+                sticky="w",
+                padx=12,
+                pady=3,
+            )
+
+        cadre_trame.columnconfigure(0, weight=1)
+        cadre_trame.columnconfigure(1, weight=1)
+
+        cadre_stats = ttk.LabelFrame(
+            droite,
+            text="Statistiques",
+            padding=10,
+        )
+        cadre_stats.pack(fill="x", pady=(0, 8))
+
+        self.vars_stats = {
+            "nb": tk.StringVar(value="Nombre de trames : 0"),
+            "duree_moy": tk.StringVar(value="Durée moyenne : ---"),
+            "duree_min": tk.StringVar(value="Durée min : ---"),
+            "duree_max": tk.StringVar(value="Durée max : ---"),
+            "rssi_moy": tk.StringVar(value="RSSI moyen : ---"),
+            "rssi_min": tk.StringVar(value="RSSI min : ---"),
+            "rssi_max": tk.StringVar(value="RSSI max : ---"),
+            "temps": tk.StringVar(value="Temps acquisition : 0,0 s"),
+        }
+
+        for index, variable in enumerate(self.vars_stats.values()):
+            ligne = index // 4
+            colonne = index % 4
+            ttk.Label(
+                cadre_stats,
+                textvariable=variable,
+            ).grid(
+                row=ligne,
+                column=colonne,
+                sticky="w",
+                padx=12,
+                pady=3,
+            )
+
+        for colonne in range(4):
+            cadre_stats.columnconfigure(colonne, weight=1)
+
+        cadre_graphes = ttk.LabelFrame(
+            droite,
+            text="Graphes temps réel",
+            padding=8,
+        )
+        cadre_graphes.pack(fill="both", expand=True)
+
+        self.figure, (self.ax_rssi, self.ax_duree) = plt.subplots(
+            2,
+            1,
+            figsize=(10, 7),
+        )
+        self.figure.subplots_adjust(hspace=0.48)
+
+        self.canvas = FigureCanvasTkAgg(
+            self.figure,
+            master=cadre_graphes,
+        )
+        self.canvas.get_tk_widget().pack(fill="both", expand=True)
+
+    # ------------------------------------------------------------------
+    # DRIVER ET ACQUISITION
+    # ------------------------------------------------------------------
+
+    def _callback_driver(self, trame: BLEFrame) -> None:
+        self.file_trames.put(trame)
+
+    def demarrer(self) -> None:
+        if self.capture_active:
+            return
+
+        try:
+            self.driver = BLESnifferDriver(
+                interface=None,
+                fichier_csv=FICHIER_CSV,
+                callback=self._callback_driver,
+            )
+            self.driver.demarrer()
+
+            self.capture_active = True
+            self.heure_debut = time.time()
+
+            self.label_etat.config(text="Capture BLE en cours")
+            self.label_interface.config(
+                text=f"Interface : {self.driver.interface}"
+            )
+
+            self.bouton_demarrer.config(state="disabled")
+            self.bouton_arreter.config(state="normal")
+
+        except Exception as erreur:
+            messagebox.showerror(
+                "Erreur de démarrage",
+                str(erreur),
+            )
+            self.label_etat.config(text=f"Erreur : {erreur}")
+
+    def arreter(self) -> None:
+        if self.driver is not None:
+            self.driver.arreter()
+
+        self.capture_active = False
+        self.driver = None
+
+        self.label_etat.config(text="Capture arrêtée")
+        self.bouton_demarrer.config(state="normal")
+        self.bouton_arreter.config(state="disabled")
+
+    def fermer(self) -> None:
+        self.arreter()
+        self.fenetre.destroy()
+
+    def _traiter_file(self) -> None:
+        nouvelles_trames = 0
+
+        while True:
+            try:
+                trame = self.file_trames.get_nowait()
+            except queue.Empty:
+                break
+
+            self._ajouter_trame(trame)
+            nouvelles_trames += 1
+
+        if nouvelles_trames:
+            self._mettre_a_jour_graphes()
+            self._mettre_a_jour_stats()
+
+        if self.capture_active and self.heure_debut is not None:
+            duree = time.time() - self.heure_debut
+            self.vars_stats["temps"].set(
+                f"Temps acquisition : {duree:.1f} s"
+            )
+
+        self.fenetre.after(PERIODE_MAJ_MS, self._traiter_file)
+
+    def _ajouter_trame(self, trame: BLEFrame) -> None:
+        if not self.trames:
+            origine = trame.debut_s
+        else:
+            origine = self.trames[0].debut_s
+
+        self.trames.append(trame)
+        self.temps_relatifs.append(trame.debut_s - origine)
+        self.durees.append(trame.duree_us)
+
+        if trame.rssi_dbm is not None:
+            self.rssi.append(trame.rssi_dbm)
+        else:
+            self.rssi.append(float("nan"))
+
+        self.vars_trame["numero"].set(f"Trame : {trame.numero}")
+        self.vars_trame["mac"].set(f"MAC : {trame.mac}")
+        self.vars_trame["rssi"].set(
+            f"RSSI : {trame.rssi_dbm if trame.rssi_dbm is not None else '---'} dBm"
+        )
+        self.vars_trame["canal"].set(
+            f"Canal : {trame.canal if trame.canal is not None else '---'}"
+        )
+        self.vars_trame["longueur"].set(
+            f"Payload : {trame.longueur_payload_octets} octets"
+        )
+        self.vars_trame["duree"].set(
+            f"Durée : {trame.duree_us:.1f} µs"
+        )
+        self.vars_trame["debut"].set(
+            f"Début : {trame.debut_s:.9f} s"
+        )
+        self.vars_trame["fin"].set(
+            f"Fin : {trame.fin_s:.9f} s"
+        )
+        self.vars_trame["type"].set(
+            f"Type PDU : {trame.type_pdu}"
+        )
+
+    # ------------------------------------------------------------------
+    # GRAPHES ET STATISTIQUES
+    # ------------------------------------------------------------------
+
+    def _configurer_graphes(self) -> None:
+        self.ax_rssi.set_title("RSSI des trames BLE")
+        self.ax_rssi.set_xlabel("Temps relatif (s)")
+        self.ax_rssi.set_ylabel("RSSI (dBm)")
+        self.ax_rssi.grid(True)
+
+        self.ax_duree.set_title("Durée radio des trames BLE")
+        self.ax_duree.set_xlabel("Temps relatif (s)")
+        self.ax_duree.set_ylabel("Durée (µs)")
+        self.ax_duree.grid(True)
+
+        self.canvas.draw()
+
+    def _mettre_a_jour_graphes(self) -> None:
+        debut = max(0, len(self.trames) - NOMBRE_POINTS_AFFICHES)
+
+        temps = self.temps_relatifs[debut:]
+        rssi = self.rssi[debut:]
+        durees = self.durees[debut:]
+
+        self.ax_rssi.clear()
+        self.ax_duree.clear()
+
+        self.ax_rssi.plot(temps, rssi)
+        self.ax_duree.plot(temps, durees)
+
+        self._configurer_graphes()
+
+    def _mettre_a_jour_stats(self) -> None:
+        if not self.trames:
+            return
+
+        rssis_valides = [
+            valeur for valeur in self.rssi
+            if valeur == valeur
+        ]
+
+        self.vars_stats["nb"].set(
+            f"Nombre de trames : {len(self.trames)}"
+        )
+        self.vars_stats["duree_moy"].set(
+            f"Durée moyenne : {statistics.mean(self.durees):.1f} µs"
+        )
+        self.vars_stats["duree_min"].set(
+            f"Durée min : {min(self.durees):.1f} µs"
+        )
+        self.vars_stats["duree_max"].set(
+            f"Durée max : {max(self.durees):.1f} µs"
+        )
+
+        if rssis_valides:
+            self.vars_stats["rssi_moy"].set(
+                f"RSSI moyen : {statistics.mean(rssis_valides):.1f} dBm"
+            )
+            self.vars_stats["rssi_min"].set(
+                f"RSSI min : {min(rssis_valides)} dBm"
+            )
+            self.vars_stats["rssi_max"].set(
+                f"RSSI max : {max(rssis_valides)} dBm"
+            )
+
+    # ------------------------------------------------------------------
+    # SAUVEGARDE
+    # ------------------------------------------------------------------
+
+    def sauvegarder_png(self) -> None:
+        if not self.trames:
+            messagebox.showwarning(
+                "Aucune donnée",
+                "Aucune trame n'a encore été capturée.",
+            )
+            return
+
+        self.figure.savefig(FICHIER_PNG, dpi=300)
+        self.label_etat.config(
+            text=f"Graphes sauvegardés : {FICHIER_PNG}"
+        )
+
+    def generer_rapport(self) -> None:
+        if not self.trames:
+            messagebox.showwarning(
+                "Aucune donnée",
+                "Aucune trame n'a encore été capturée.",
+            )
+            return
+
+        rssis_valides = [
+            valeur for valeur in self.rssi
+            if valeur == valeur
+        ]
+
+        with FICHIER_RAPPORT.open("w", encoding="utf-8") as rapport:
+            rapport.write("RAPPORT D'ACQUISITION BLE\n")
+            rapport.write("=========================\n\n")
+            rapport.write(f"Date : {datetime.now()}\n")
+            rapport.write("Matériel : Adafruit Bluefruit LE Sniffer nRF51822\n")
+            rapport.write("PHY : LE 1M\n")
+            rapport.write(f"Nombre de trames : {len(self.trames)}\n\n")
+
+            rapport.write("DURÉE DES TRAMES\n")
+            rapport.write("-----------------\n")
+            rapport.write(
+                f"Durée moyenne : {statistics.mean(self.durees):.3f} µs\n"
+            )
+            rapport.write(
+                f"Durée minimale : {min(self.durees):.3f} µs\n"
+            )
+            rapport.write(
+                f"Durée maximale : {max(self.durees):.3f} µs\n\n"
+            )
+
+            if rssis_valides:
+                rapport.write("RSSI\n")
+                rapport.write("----\n")
+                rapport.write(
+                    f"RSSI moyen : {statistics.mean(rssis_valides):.2f} dBm\n"
+                )
+                rapport.write(
+                    f"RSSI minimal : {min(rssis_valides)} dBm\n"
+                )
+                rapport.write(
+                    f"RSSI maximal : {max(rssis_valides)} dBm\n\n"
+                )
+
+            rapport.write("RÉPARTITION PAR CANAL\n")
+            rapport.write("---------------------\n")
+
+            for canal in (37, 38, 39):
+                nombre = sum(
+                    1 for trame in self.trames
+                    if trame.canal == canal
+                )
+                rapport.write(f"Canal {canal} : {nombre} trames\n")
+
+        self.label_etat.config(
+            text=f"Rapport généré : {FICHIER_RAPPORT}"
+        )
+
+    def reinitialiser(self) -> None:
+        self.trames.clear()
+        self.temps_relatifs.clear()
+        self.rssi.clear()
+        self.durees.clear()
+
+        for nom, variable in self.vars_trame.items():
+            libelle = {
+                "numero": "Trame",
+                "mac": "MAC",
+                "rssi": "RSSI",
+                "canal": "Canal",
+                "longueur": "Payload",
+                "duree": "Durée",
+                "debut": "Début",
+                "fin": "Fin",
+                "type": "Type PDU",
+            }[nom]
+            variable.set(f"{libelle} : ---")
+
+        self.vars_stats["nb"].set("Nombre de trames : 0")
+        self.vars_stats["duree_moy"].set("Durée moyenne : ---")
+        self.vars_stats["duree_min"].set("Durée min : ---")
+        self.vars_stats["duree_max"].set("Durée max : ---")
+        self.vars_stats["rssi_moy"].set("RSSI moyen : ---")
+        self.vars_stats["rssi_min"].set("RSSI min : ---")
+        self.vars_stats["rssi_max"].set("RSSI max : ---")
+        self.vars_stats["temps"].set("Temps acquisition : 0,0 s")
+
+        self.ax_rssi.clear()
+        self.ax_duree.clear()
+        self._configurer_graphes()
+
+        self.label_etat.config(text="Affichage réinitialisé")
+
+
+def main() -> None:
+    fenetre = tk.Tk()
+    InterfaceBLE(fenetre)
+    fenetre.mainloop()
+
+
+if __name__ == "__main__":
+    main()
+�!�m      jT�jT�I��jT�:      O^partitionKey=%28https%2Cchatgpt.com%29,a,:https://chatgpt.com/backend-api/estuary/content?id=file_00000000bcc871fdba85d4b65e69be1a&fn=interface_ble_v3.py&cd=attachment&ts=495542&p=fs&cid=1&sig=3a1dc3bd105125d47d48b9560153ca03844d2012c00a71e4c0dafd4c942ef7c3&v=0 strongly-framed 1 security-info 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 request-method GET auth Bearer response-head HTTP/2 200 
+date: Mon, 13 Jul 2026 14:03:00 GMT
+content-type: text/x-python
+server: cloudflare
+last-modified: Mon, 13 Jul 2026 13:56:40 GMT
+accept-ranges: bytes
+etag: "0x8DEE0E69062CB5E"
+content-security-policy: sandbox allow-scripts; default-src 'none'
+x-robots-tag: noindex
+content-disposition: attachment; filename="interface_ble_v3.py"; filename*=UTF-8''interface_ble_v3.py
+x-oai-request-id: 4b5eab6f-0177-4195-a76d-20a87a50b078
+cross-origin-opener-policy: same-origin-allow-popups
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l7eFkS1ud65FlJ%2FxRa1bobDnNefNaYuZ29PA5O3rMXSyAmusAuYWXqLUtQxXXAI%2Fw5%2FK2MXbIURc0OeiY%2BV7eUCq96X4FZIlIK6iVCdH9pBf4BYCxATiRcGqsdeX"}]}
+referrer-policy: strict-origin-when-cross-origin
+cf-ray: a1a8d41d694403f5-CDG
+X-Firefox-Spdy: h2
+ original-response-headers date: Mon, 13 Jul 2026 14:03:00 GMT
+content-type: text/x-python
+server: cloudflare
+last-modified: Mon, 13 Jul 2026 13:56:40 GMT
+accept-ranges: bytes
+etag: "0x8DEE0E69062CB5E"
+content-security-policy: sandbox allow-scripts; default-src 'none'
+x-robots-tag: noindex
+content-disposition: attachment; filename="interface_ble_v3.py"; filename*=UTF-8''interface_ble_v3.py
+x-oai-request-id: 4b5eab6f-0177-4195-a76d-20a87a50b078
+cross-origin-opener-policy: same-origin-allow-popups
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l7eFkS1ud65FlJ%2FxRa1bobDnNefNaYuZ29PA5O3rMXSyAmusAuYWXqLUtQxXXAI%2Fw5%2FK2MXbIURc0OeiY%2BV7eUCq96X4FZIlIK6iVCdH9pBf4BYCxATiRcGqsdeX"}]}
+set-cookie: __cf_bm=1rAx4pjS.WSSMn9yE4MuLp57mroEXD1X1vEZ6ddzw7Q-1783951380.066939-1.0.1.1-8ykxYKTLbgdm.Z_phNYRVTJDEyD67YAAKxUykY6zeZZZBSeC_wuPp.T8lu8.BBL6mPm8EODsqo63PsJlc5y1JirVZDPwQ4XLATNY7NnQMG58XuEv6tbJxf9mdzd1KkvL; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com; Expires=Mon, 13 Jul 2026 14:33:00 GMT
+set-cookie: __cflb=04dTofELUVCxHqRn2XjHjEjy4wAEyaLkwrno9qty6b; HttpOnly; SameSite=None; Secure; Path=/; Expires=Mon, 13 Jul 2026 15:03:00 GMT
+referrer-policy: strict-origin-when-cross-origin
+cf-ray: a1a8d41d694403f5-CDG
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 800 net-response-time-onstop 810   H�

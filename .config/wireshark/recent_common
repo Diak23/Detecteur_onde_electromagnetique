@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 4.4.15.
+# Common recent settings file for Wireshark 4.4.16.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -16,14 +16,18 @@ recent.capture_file: /home/projeteea/wifi_5min.pcapng
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 20
-gui.geometry_main_y: 20
-gui.geometry_main_width: 750
-gui.geometry_main_height: 550
+gui.geometry_main_x: 0
+gui.geometry_main_y: 0
+gui.geometry_main_width: 917
+gui.geometry_main_height: 651
 
 # Main window maximized.
 # true or false (case-insensitive).
 gui.geometry_main_maximized: false
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb000300000000000000000000000003940000028a0000000000000000000003940000028a000000000000000007800000000000000000000003940000028a
 
 # Leftalign Action Buttons.
 # true or false (case-insensitive).
@@ -68,6 +72,91 @@ gui.search_multiple_occurs: false
 # One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
 gui.search_type: DISPLAY_FILTER
 
+# Geometry and maximized state of BluetoothAttServerAttributesDialog window.
+# Decimal integers.
+gui.geom.BluetoothAttServerAttributesDialog.x: 499
+gui.geom.BluetoothAttServerAttributesDialog.y: 283
+gui.geom.BluetoothAttServerAttributesDialog.width: 902
+gui.geom.BluetoothAttServerAttributesDialog.height: 434
+# true or false (case-insensitive).
+gui.geom.BluetoothAttServerAttributesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.BluetoothAttServerAttributesDialog.qt_geometry: 01d9d0cb00030000000001f30000011b00000578000002cc000001f30000011b00000578000002cc00000000000000000780000001f30000011b00000578000002cc
+
+# Geometry and maximized state of A-Interface DTAP Supplementary Services window.
+# Decimal integers.
+gui.geom.A-Interface DTAP Supplementary Services.x: 657
+gui.geom.A-Interface DTAP Supplementary Services.y: 271
+gui.geom.A-Interface DTAP Supplementary Services.width: 587
+gui.geom.A-Interface DTAP Supplementary Services.height: 459
+# true or false (case-insensitive).
+gui.geom.A-Interface DTAP Supplementary Services.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.A-Interface DTAP Supplementary Services.qt_geometry: 01d9d0cb00030000000002910000010f000004db000002d9000002910000010f000004db000002d900000000000000000780000002910000010f000004db000002d9
+
+# Geometry and maximized state of BluetoothHciSummaryDialog window.
+# Decimal integers.
+gui.geom.BluetoothHciSummaryDialog.x: 520
+gui.geom.BluetoothHciSummaryDialog.y: 283
+gui.geom.BluetoothHciSummaryDialog.width: 866
+gui.geom.BluetoothHciSummaryDialog.height: 434
+# true or false (case-insensitive).
+gui.geom.BluetoothHciSummaryDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.BluetoothHciSummaryDialog.qt_geometry: 01d9d0cb00030000000002080000011b00000569000002cc000002080000011b00000569000002cc00000000000000000780000002080000011b00000569000002cc
+
+# Geometry and maximized state of ancp window.
+# Decimal integers.
+gui.geom.ancp.x: 550
+gui.geom.ancp.y: 271
+gui.geom.ancp.width: 800
+gui.geom.ancp.height: 459
+# true or false (case-insensitive).
+gui.geom.ancp.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ancp.qt_geometry: 01d9d0cb00030000000002260000010f00000545000002d9000002260000010f00000545000002d900000000000000000780000002260000010f00000545000002d9
+
+# Geometry and maximized state of BluetoothDevicesDialog window.
+# Decimal integers.
+gui.geom.BluetoothDevicesDialog.x: 584
+gui.geom.BluetoothDevicesDialog.y: 283
+gui.geom.BluetoothDevicesDialog.width: 733
+gui.geom.BluetoothDevicesDialog.height: 434
+# true or false (case-insensitive).
+gui.geom.BluetoothDevicesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.BluetoothDevicesDialog.qt_geometry: 01d9d0cb00030000000002480000011b00000524000002cc000002480000011b00000524000002cc00000000000000000780000002480000011b00000524000002cc
+
+# Geometry and maximized state of IOGraphDialog window.
+# Decimal integers.
+gui.geom.IOGraphDialog.x: 321
+gui.geom.IOGraphDialog.y: 180
+gui.geom.IOGraphDialog.width: 1258
+gui.geom.IOGraphDialog.height: 640
+# true or false (case-insensitive).
+gui.geom.IOGraphDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.IOGraphDialog.qt_geometry: 01d9d0cb0003000000000141000000b40000062a0000033300000141000000b40000062a000003330000000000000000078000000141000000b40000062a00000333
+
+# Geometry and maximized state of plen window.
+# Decimal integers.
+gui.geom.plen.x: 550
+gui.geom.plen.y: 271
+gui.geom.plen.width: 800
+gui.geom.plen.height: 459
+# true or false (case-insensitive).
+gui.geom.plen.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.plen.qt_geometry: 01d9d0cb00030000000002260000010f00000545000002d9000002260000010f00000545000002d900000000000000000780000002260000010f00000545000002d9
+
 # Custom colors.
 # List of custom colors selected in Qt color picker.
 gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

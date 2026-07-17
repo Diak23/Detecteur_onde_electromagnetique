@@ -9,7 +9,7 @@ char pass[] = "Diakllo23";
 WiFiUDP udp;
 
 // Adresse IP du Raspberry Pi
-IPAddress raspberryIP(10, 138, 218, 110);
+IPAddress raspberryIP(10, 71, 76, 110);
 
 unsigned int raspberryPort = 5005;
 unsigned int localPort = 2390;
@@ -17,17 +17,18 @@ unsigned int localPort = 2390;
 unsigned long compteur = 0;
 
 String messages[] = {
- "A",
+ "Welcome to new project",
+ "Detection d'onde electromagnétique Université de montpellier"
 };
 
-int nombreMessages = 1;
+int nombreMessages = 2;
 int indexMessage = 0;
 
-#line 24 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
+#line 25 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
 void setup();
-#line 43 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
+#line 44 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
 void loop();
-#line 24 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
+#line 25 "/home/projeteea/acquisition_udp/acquisition_udp.ino"
 void setup() {
   Serial.begin(9600);
   while (!Serial);
@@ -74,7 +75,7 @@ void loop() {
     indexMessage = 0;
   }
 
-  delay(1000);
+  delay(5000);
 }
 
 

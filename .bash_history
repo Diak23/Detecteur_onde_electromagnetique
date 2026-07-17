@@ -1116,3 +1116,676 @@ sudo shark -i wlan0 udp
 ls
 cd acquisition_udp
 ls
+cd Detecteur_pic_wifi
+ls
+cd acquisition 
+ls
+cd acquisition_udp
+ls
+cd acquisitions_udp
+ls
+touch acquisitions_udp/.gitkeep
+cd .;
+cd ..
+touch acquisitions_udp/.gitkeep
+ls
+cd acquisitions_udp
+ls
+cd ..
+ls -la acquisitions_udp
+cd
+git status
+git init
+git add .
+git status
+git status 
+git commit -m "Prémier depot du projet Detecteur pic wifi
+git commit -m "premier deppto du projet detecteur pic wifi"
+git status
+git add .
+git status 
+git commit -m " ajout du projet detecteur OEM "
+git status
+cd
+ls
+git remote add origin https://github.com/Diak23/Detecteur_onde_electromagnetique.git
+git remote set-url origin https://github.com/Diak23/Detecteur_onde_electromagnetique.git
+git add .
+git commit -m "Ajout du projet détecteur d'ondes électromagnétiques"
+git branch -M main
+git push -u origin main
+ls -la ~/.ssh
+ssh-keygen -t ed25519 -C "Diak23@github.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh~/id_ed25519
+cat  ~/.ssh~/id_ed25519
+~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+git remote set-url origin git@github.com:Diak23/Detecteur_onde_electromagnetique.git
+git remote -v
+git add .
+git commit -m "Add new project electromagnetic wave"
+git branch -M main
+git push -u origin main
+arduino-cli --version
+arduino-cli
+arduino --version
+sudo apt update
+sudo apt install bluetooth bluez
+bluetoothclt
+bluetoothctl
+minicom -D /dev/ttyACM0 -b 9600
+ls
+cd acquisition_udp
+ls
+nano interface_wifi_lora.py
+source venv/bin/activate
+python interface_wifi_lora.py
+nano acquisition_udp.ino
+arduino-cli compile --fqbn arduino:samd:mkrwifi1010
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkrwifi1010
+python interface_udp_rssi.py
+ls
+cd  acquisition_udp
+ls
+nano interface_wifi_lora.py
+nano interface_wifi_lora_v1.py
+source venv/bin/activate
+python interface_wifi_lora_v1.py
+minicom -D /dev/ttyACM0 -b 9600
+s
+ls
+cd acquisition_udp
+ls
+nano interface_wifi_lora_v1.py
+source venv/bin/activate 
+python interface_wifi_lora_v1.py
+nano interface_wifi_lora_v1.py
+nano interface_wifi_lora_v2.py
+nano interface_wifi_lora_v1.py
+source venv/bin/activate
+python interface_wifi_lora_v2.py
+ls
+cd  acquisition_udp 
+ls
+source venv/bin/activate
+python interface_wifi_lora_v2.py
+power on
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+systemctl status bluetooth
+bluetoothctl
+minicom -D /dev/ttyACM0 -9600
+minicom -D /dev/ttyACM0 -b 9600
+3s
+ls
+cd acquisition_udp
+ls
+source venv/bin/activate
+python interface_radio_v2.py
+iw dev
+sudo ip link set wlan0 down
+sudo iw dev wlan0 set type monitor
+sudo ip link set wlan0 down
+sudo iw dev wlan0 set type monitor
+iw list
+hostname -I
+ls
+cd acquisition_udp
+ls
+nano acquisition_udp.ino
+arduino-cli compile --fqbn arduino:samd:mkrwifi1010
+nano acquisition_udp.ino
+arduino-cli compile --fqbn arduino:samd:mkrwifi1010
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkrwifi1010
+source venv/bin/activate
+python interface_radio_v2.py
+3s
+ls
+cd acquisition_udp
+ls
+nano acquisition_udp.ino
+nano interface_wifi_lora_v2.py
+source venv/bin/activate
+python interface_wifi_lora_v2.py
+nano interface_wifi_lora_v2.py
+python interface_wifi_lora_v2.py
+nano acquisition_udp.ino
+nano interface_wifi_lora_v2.py
+minicom -D /dev/ttyACM0 -b 9600
+ls
+cd acquisition_udp
+ls
+nano acquisition_udp.ino
+arduino-cli compile --fqnb arduino:samd:mkrwifi1010
+arduino-cli compile --fqbn arduino:samd:mkrwifi1010
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino 
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkrwifi1010
+minicom -D /dev/ttyACM0 -b 9600
+ls
+nano interface_radio_BLE.py
+source venv/bin/activate
+python interface_radio_BLE.py
+iw dev
+sudo apt update
+suo apt install tshark aircrack-ng
+sudo apt install tshark aircrack-ng
+sudo airmon-ng start wlan0
+iw dev
+ls
+cd acquisition_udp 
+ls
+nano interface_radio_BLE.py
+source venv/bin/activate
+python interface_radio_BLE.py
+minicom -D /dev/ttyACM0 -b 9600
+hostname - I
+hostname -I
+tshark -D
+hciconfig
+bluetoothctl list
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+systemctl status bluetooth
+bluetoothctl
+ls
+cd acquisition_udp 
+ls
+arduino-cli compile --fqbn arduino:samd:mkrwifi1010
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkrwifi1010
+source venv/bin/activate
+python interface_radio_v2.py
+sudo btmon
+ls
+cd acquisition_udp 
+ls
+nano acquisition_udp.ino 
+nano interface_radio_v2.py
+nano interface_nRF_BLE.py
+nano interface_nRF_BLE_v1.py
+source ~/acquisition_udp/venv/bin/activate
+python interface_nRF_BLE_v1.py
+interface_nRF_BLE_v1.py
+source ~/acquisition_udp/venv/bin/activate
+python interface_nRF_BLE_v1.py
+ls
+cd acquisition_udp
+ls
+python3 interface_nRF_BLE_v1.py
+source venv/bin/activate
+python interface_nRF_BLE_v1.py
+minicom -D /dev/ttyACM0 -b 9600
+ls
+cd acquisition_udp
+ls
+source venv/bin/activate
+python interface_nRF_BLE_v1.py
+mincom -D /dev/ttyACM0 -b 9600
+minicom -D /dev/ttyACM0 -b 9600
+ls
+cd acquisition_udp
+ls
+nano interface_nRF_BLE_v1.py
+source venv/bin/activate
+python interface_nRF_BLE_v1.py
+bluetoothctl
+ls
+cd acquisition_udp 
+ls
+nano interface_nRF_BLE_beacons.py
+source venv/bin/activate
+python interface_nRF_BLE_beacons.py
+nano interface_nRF_BLE_beacons.py
+python interface_nRF_BLE_beacons.py
+ls
+python interface_radio_v2_ble_interval_corrige.py
+ls
+cd acquisition_udp
+git status
+git add .
+git add acquisitions_radio_v2/
+git status
+git commit -m "Ajout de l'interface d'acquisition WIFI BLE LORA "
+git push origin main
+ls
+nano interface_radio_v2_ble_interval_corrige.py
+tshark -D
+lsusb
+dmesg | tail -30
+ls /dev/ttyACM*
+ls /dev/ttyUSB*
+sudo apt update
+sudo apt upgrade
+sudo apt install wireshark tshark git python3-pip
+wireshark --version
+tshark -v
+git clone https://github.com/NordicSemiconductor/pc-nrfconnect-sniffer.git
+sudo apt install wireshark tshark git python3-pip 
+wireshark --version
+tshark -v
+git clone https://github.com/NordicSemiconductor/pc-nrfconnect-sniffer.git
+lsusb
+ls /dev/ttyUSB*
+udevadm info --query=all --name=/dev/ttyUSB0
+lsusb
+sudo usermod - aG
+sudo usermod -aG dialout $USER
+sudo reboot
+ls
+cd  acquisition_udp
+ls 
+nano interface_ble_v3.py
+ls
+sourve venv/bin/activate
+source venv/bin/activate
+python interface_ble_v4_filtre_appareil.py
+ls -l §
+ls -l /dev/ttyUSB0
+gr64-
+gr64
+groups
+cd ~/acquisition_udp 
+source venv/bin/activate
+pip install pyserial
+python -m serial.tools.list_ports -vj
+python -m serial.tools.list_ports -v
+wireshark --version
+tshark --version
+wireshark --version
+tshark --version
+[200~ls /usr/lib/*/wireshark/extcap/~
+ls /usr/lib/*/wireshark/extcap/
+find /usr -name extcap -type d
+find /usr -iname "*nrf*"
+tshark --extcap-interfaces
+wireshark
+cd ~/acquisition_udp
+wget -O nrf_sniffer_ble.zip "https://cdn-learn.adafruit.com/assets/assets/000/141/637/original/nrf_sniffer_for_bluetooth_le_4.1.1.zip"
+cd ~/acquisition_udp
+unzip nrf_sniffer_ble.zip -d nrf_sniffer_ble
+find nrf_sniffer_ble -maxdepth 3 -type f
+source ~/acquisition_udp/venv/bin/activate
+pip install pyserial packaging
+/dev/ttyUSB0
+groupe dialout
+sudo cp -r ~/acquisition_udp/nrf_sniffer_ble/extcap/* /usr/lib/aarch64-linux-gnu/wireshark/extcap/
+sudo chmod +x /usr/lib/aarch64-linux-gnu/wireshark/extcap/*.py
+mkdir -p ~/.local/lib/wireshark/extcap
+cp -r ~/acquisition_udp/nrf_sniffer_ble/extcap/* ~/.local/lib/wireshark/extcap/
+chmod +x ~/.local/lib/wireshark/extcap/*.py
+find ~/.local/lib/wireshark/extcap -name "nrf_sniffer_ble.py"
+python ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py --extcap-interfaces
+pip install psutil
+python ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py --extcap-interfaces
+tshark -D
+nano ble_frame_driver.py
+sudo rm -rf /usr/lib/aarch64-linux-gnu/wireshark/extcap/nrf_sniffer_ble.py
+sudo rm -rf /usr/lib/aarch64-linux-gnu/wireshark/extcap/nrf_sniffer_ble.sh
+sudo rm -rf /usr/lib/aarch64-linux-gnu/wireshark/extcap/SnifferAPI
+tshark -D
+tshark -i 11 -c 10
+tshark -i "/dev/ttyUSB0-4.4" -c 10
+tshark -i 11 -Y "btle" -T fields -E separator=";" -e frame.time_epoch -e btle.advertising_address -e btle.length -e btle.advertising_header.pdu_type -e nordic_ble.rssi -e nordic_ble.channel -c 20
+ls
+nano ble_frame_driver.py
+python ble_frame_driver.py
+ble_frame_driver02.py
+nan6 
+nano ble_frame_driver02.py
+python ble_frame_driver02.py
+nano ble_frame_driver02.py
+python ble_frame_driver02.py
+ls
+python ble_frame_driver_corrige.py
+ls
+python interface_ble_v3.py
+bluetoothctl
+python interface_ble_v3.py
+qu acquisition_udp
+bluetoothctl
+ls
+cd acquisition_udp
+source venv/bin/activate
+ls
+python interface_ble_v4_filtre_appareil.py
+ls
+cd acquisition_upd
+cd acquisition_udp
+ls
+python3 interface_nRF_BLE_beacons.py
+python3 ble_frame_driver_corrige.py
+python3 interface_ble_v3.py
+python3 interface_ble_v4_filtre_appareil.py
+ls
+python3
+python3 interface_nRF_BLE_v5.py 
+python3 interface_nRF_BLE_v5.py
+source venv/bin/activate
+python interface_nRF_BLE_v5.py
+python ble_frame_driver_corrige2.py
+bluetoothctl
+ls
+cd acquisition_udp 
+ls
+source venv/bin/activate
+python interface_nRF_BLE_v5.py
+ls
+python interface_ble_v5_amelioree.py
+3s
+ls
+python interface_ble_v4_filtre_appareil.py
+ls
+python interface_ble_v5_amelioree.py
+ls
+python interface_ble_v5_amelioree_onglets.py
+git status
+git add .
+git commit -m "ajout nouvelle BLE avec interface graphique"
+git push
+ls
+cd  acquisition_udp
+ls
+python3 ble_beacon (1).py
+python3 le_beacon.py 
+python ble_beacon.py 
+nano BLE_beacon1.py
+python3 BLE_beacon1.py
+sudo apt update
+sudo apt install -y bluez bluetooth python3-dbus python3-gi
+pip install dbus
+python3 -c "import dbus; print('dbus OK')"
+python3 -c "from gi.repository import GLib; print('GLib OK')"
+source ~/acquisition_udp/venv/bin/activate
+python -c "import dbus"
+python3 -m venv --system-site-packages venv
+bluetoothctl --version
+python3 -c "import dbus; print('dbus OK')"
+python3 -c "from gi.repository import GLib; print('GLib OK')"
+bluetoothctl --version
+hciconfig
+sudo python3 "ble_beacon (1).py"
+sudo python3 ble_beacon.py
+ls
+python BLE_beacon1.py 
+ls
+python BLE_beacon1_corrige.py
+sudo systemctl restart bluetooth
+sudo python3 BLE_beacon1_corrige.py
+sudo btmgmt info
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 SupportedInstances
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+SupportedInstances > 0
+sudo journalctl -u bluetooth -f
+ls
+nano BLE_beacon1_corrige.py
+cd ~/acquisition_udp
+cp BLE_beacon1_corrige.py BLE_beacon1_broadcast.py
+nano BLE_beacon1_broadcast.py
+sudo systemctl restart bluetooth
+sudo python3 BLE_beacon1_broadcast.py
+ls
+python BLE_beacon1_broadcast.py
+ls
+cd ~/acquisition_udp
+sudo systemctl restart bluetooth
+sudo python3 BLE_beacon1_broadcast_corrige.py
+cd ~/acquisition_udp
+sudo systemctl restart bluetooth
+sudo python3 BLE_beacon1_broadcast_corrige.py
+bluetoothctl
+sudo systemctl stop bluetooth
+sudo btmgmt -i hci0 power off
+sudo btmgmt -i hci0 le on
+sudo btmgmt -i hci0 power on
+sudo btmgmt -i hci0 advertising on
+sudo btmgmt -i hci0 info
+sudo btmgmt -i hci0 advertising off
+sudo systemctl start bluetooth
+sudo systemctl restart bluetooth
+sudo python3 BLE_beacon1_corrige.py
+ls
+cd acquisition_udp
+ls
+python interface_ble_v5_amelioree_onglets.py
+ls
+cd acquisition_udp
+ls
+source venv/bin/activate
+python interface_ble_v5_amelioree_onglets.py
+ls
+cd acquisition_udp 
+ls
+python3 interface_ble_v5_amelioree_onglets.py
+ls
+python3 interface_ibeacon_nrf51822.py
+ls
+cd  acquisition_udp
+ls
+source venv/bin/activate
+python BLE_beacon1_broadcast_corrige.py
+sudo apt-get install bluez
+dpkg --status bluez | grep "^Version:'
+dpkg --status bluez | grep '^Version:
+a
+
+
+udo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev
+sudo apt-get install libical-dev
+sudo apt-get install libreadline-dev
+sudo mkdir bluez
+cd bluez
+sudo wget www.kernel.org/pub/linux/bluetooth/bluez-5.11.tar.xz
+sudo unxz bluez-5.11.tar.xz
+sudo tar xvf bluez-5.11.tar
+cd bluez-5.11
+sudo ./configure --disable-systemd
+sudo make
+sudo make install
+sudo hciconfig hci0 up
+sudo hciconfig hci0 leadv 3
+sudo hciconfig hci0 noscan
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73
+F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo apt-get install bluez
+dpkg --status bluez
+sudo hciconfig hci0 up
+sudo hciconfig hci0 leadv 3
+sudo hciconfig hci0 noscan
+sudo systemctl stop bluetooth
+sudo systemctl status bluetooth
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+systemctl status bluetooth.service
+q
+pgrep -a bluetoothd
+sudo killall bluetoothd
+pgrep -a bluetoothd
+sudo hciconfig hci0 noleadv 2>/dev/null
+sudo hciconfig hci0 down
+sleep 1
+sudo hciconfig hci0 up
+hciconfig hci0
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl unmask --runtime bluetooth.service
+sudo systemctl start bluetooth.service
+systemctl status bluetooth.service
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo systemctl unmask --runtime bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl unmask --runtime bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl unmask --runtime bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo apt install -y tshark python3-tk python3-matplotlib
+cp ~/Téléchargements/interface_ibeacon_evenements_v2.py ~/acquisition_udp/
+cd ~/acquisition_udp
+python3 interface_ibeacon_evenements_v2.py
+ls
+python3 interface_ibeacon_nrf51822.py
+python3 interface_ble_v5_amelioree_onglets.py
+python3 interface_ibeacon_nrf51822_v2.py
+ls
+cd  acquisition_udp
+ls
+cd bluez 
+ls
+cd bluez-5.11
+ls
+cd emulator
+ls
+nano main.c
+cd ..
+cd monitor
+ls
+nano packet.c
+cd..
+cd;;
+cd..
+cd ..
+ls
+cd  bluez-5.11.tar
+cd ..
+ls
+cd bluez
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+udo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+cd ~/acquisition_udp/bluez
+python3 interface_ibeacon_nrf51822_v2.py
+sudo systemctl stop bluetooth.service
+sudo systemctl restart bluetooth
+bluetoothctl
+power on
+menu advertise
+clear
+uuids feaa
+service 0xfeaa 0x00 0xc5 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x11 0x12 0x13 0x14 0x15 0x16 0x00 0x00
+discoverable on
+back
+advertise on
+sudo systemctl restart bluetooth
+systemctl status bluetooth
+systemctl is-enabled bluetooth
+ls -l /etc/systemd/system/bluetooth.service
+sudo systemctl unmask bluetooth
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+systemctl status bluetooth
+systemctl is-enabled bluetooth
+ls -l /etc/systemd/system/bluetooth.service
+ls
+cd acquisition_udp
+ls
+python3 interface_radio_BLE.py
+interface_nRF_BLE_beacons.py
+interface_ble_v5_amelioree.py
+python3 interface_nRF_BLE_beacons.py
+python3 interface_ble_v5_amelioree.py
+python3 interface_ble_v4_filtre_appareil.py
+python3 interface_ibeacon_nrf51822_v3.py
+ls -l /run/systemd/system/bluetooth.service
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+sudo rm -f /run/systemd/system/bluetooth.service
+sudo systemctl daemon-reload
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+systemctl status bluetooth
+cat /proc/cmdline
+cd ~/acquisition_udp/bluez
+python3 ble_beacon_studio.py
+ls
+cd..
+cd ..
+ls
+python3 ble_beacon_studio.py
+cd ~/acquisition_udp/bluez
+python3 ble_beacon_studio.py
+3s
+ls
+cd
+ls
+cd acquisition_udp
+ls
+cd bluez 
+python3 ble_beacon_studio.py
+cd ~/acquisition_udp
+ls -l ble_beacon_studio.py
+python3 -u ble_beacon_studio.py
+bluetoothctl

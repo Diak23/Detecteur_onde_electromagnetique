@@ -1,0 +1,64 @@
+{
+  "target": {
+    "mac": "DC:A6:32:65:E5:71",
+    "uuid": "e20a39f4-73f5-4bc4-a12f-17d1ad07a961",
+    "major": 0,
+    "minor": 0
+  },
+  "configuration": {
+    "event_group_window_ms": 80.0
+  },
+  "acquisition": {
+    "raw_frame_count": 539,
+    "event_count": 266,
+    "complete_event_count": 64,
+    "complete_event_rate_percent": 24.06015037593985,
+    "duration_s": 339.6894791126251
+  },
+  "rssi_dbm": {
+    "count": 266,
+    "mean": -44.97305764411028,
+    "median": -44.0,
+    "minimum": -69.0,
+    "maximum": -44.0,
+    "stdev": 2.6332029438338287
+  },
+  "event_interval_ms": {
+    "count": 261,
+    "mean": 1301.0711542034514,
+    "median": 1281.9559574127197,
+    "minimum": 103.93786430358887,
+    "maximum": 5098.971128463745,
+    "stdev": 279.6111611841398
+  },
+  "mean_frame_duration_us": {
+    "count": 266,
+    "mean": 365.83458646616543,
+    "median": 368.0,
+    "minimum": 176.0,
+    "maximum": 368.0,
+    "stdev": 20.313089172135708
+  },
+  "event_span_ms": {
+    "count": 266,
+    "mean": 23.968938598059175,
+    "median": 22.301673889160156,
+    "minimum": 0.17595291137695312,
+    "maximum": 80.27505874633789,
+    "stdev": 21.341806101893837
+  },
+  "loss": {
+    "nominal_interval_ms": 1281.9559574127197,
+    "estimated_missing_events": 5,
+    "event_loss_rate_percent": 1.8796992481203008,
+    "expected_channel_packets": 798,
+    "observed_unique_channel_packets": 539,
+    "missing_channel_packets": 259,
+    "channel_packet_loss_rate_percent": 32.45614035087719
+  },
+  "channels": {
+    "37": 66,
+    "38": 213,
+    "39": 260
+  }
+}

@@ -1,0 +1,147 @@
+RAPPORT D'ACQUISITION BLE V4
+============================
+
+Date : 2026-07-13 20:11:12.715880
+Matériel : Adafruit Bluefruit LE Sniffer nRF51822
+PHY : LE 1M
+Filtre : inconnue
+Nombre d'appareils détectés : 117
+Nombre de trames analysées : 377
+
+DURÉE DES TRAMES
+-----------------
+Durée moyenne : 136.255 µs
+Durée minimale : 96.000 µs
+Durée maximale : 272.000 µs
+
+RSSI
+----
+RSSI moyen : -62.83 dBm
+RSSI minimal : -94 dBm
+RSSI maximal : -52 dBm
+
+RÉPARTITION PAR CANAL
+---------------------
+Canal 37 : 126 trames
+Canal 38 : 121 trames
+Canal 39 : 130 trames
+
+APPAREILS DÉTECTÉS
+-------------------
+Inconnu | 47:fb:d9:3e:63:22 | 636 trames | RSSI moyen=-70.09119496855345 | Durée moyenne=263.8616352201258 µs
+Inconnu | inconnue | 377 trames | RSSI moyen=-62.827586206896555 | Durée moyenne=136.25464190981432 µs
+Inconnu | 7f:e4:8c:4b:2c:d2 | 223 trames | RSSI moyen=-82.79820627802691 | Durée moyenne=269.8116591928251 µs
+Inconnu | 47:59:95:84:cd:46 | 73 trames | RSSI moyen=-82.95890410958904 | Durée moyenne=281.2054794520548 µs
+Inconnu | 7c:09:76:b4:ec:6b | 63 trames | RSSI moyen=-71.41269841269842 | Durée moyenne=219.8095238095238 µs
+Inconnu | cc:d7:e4:7f:23:b3 | 42 trames | RSSI moyen=-68.38095238095238 | Durée moyenne=192.0 µs
+Inconnu | e8:e0:7f:6f:8d:33 | 35 trames | RSSI moyen=-79.57142857142857 | Durée moyenne=334.4 µs
+Inconnu | e7:a7:8b:25:52:37 | 23 trames | RSSI moyen=-82.47826086956522 | Durée moyenne=192.0 µs
+Inconnu | 53:a4:dc:39:df:58 | 11 trames | RSSI moyen=-76.27272727272727 | Durée moyenne=251.63636363636363 µs
+Inconnu | cd:f9:41:62:2a:7f | 9 trames | RSSI moyen=-84.44444444444444 | Durée moyenne=192.0 µs
+Inconnu | 5b:d7:8d:c8:f8:e1 | 6 trames | RSSI moyen=-48.833333333333336 | Durée moyenne=176.0 µs
+Inconnu | 76:e6:97:dd:ea:ee | 4 trames | RSSI moyen=-47.5 | Durée moyenne=176.0 µs
+Inconnu | c0:1f:bb:fd:63:b9 | 4 trames | RSSI moyen=-81 | Durée moyenne=326.0 µs
+Inconnu | e1:72:fe:74:e1:2c | 2 trames | RSSI moyen=-90 | Durée moyenne=192.0 µs
+Inconnu | 7f:e4:8c:4b:2c:d6 | 2 trames | RSSI moyen=-89.5 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:84:cf:46 | 2 trames | RSSI moyen=-88 | Durée moyenne=248.0 µs
+Inconnu | 47:59:95:84:cd:47 | 2 trames | RSSI moyen=-88.5 | Durée moyenne=280.0 µs
+Inconnu | 7f:e0:8c:4b:2c:d2 | 2 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:84:4b:2c:d2 | 1 trames | RSSI moyen=-88 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:8c:53:24:d2 | 1 trames | RSSI moyen=-89 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:8c:4b:28:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 81:02:47:5b:8b:84 | 1 trames | RSSI moyen=-92 | Durée moyenne=408.0 µs
+Inconnu | 47:fb:dd:3e:83:22 | 1 trames | RSSI moyen=-87 | Durée moyenne=264.0 µs
+Inconnu | 7f:e4:8c:4a:ac:d2 | 1 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | 47:f9:d5:3e:63:22 | 1 trames | RSSI moyen=-78 | Durée moyenne=264.0 µs
+Inconnu | 7f:e4:8c:4b:2c:32 | 1 trames | RSSI moyen=-89 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:84:4d:c6 | 1 trames | RSSI moyen=-92 | Durée moyenne=144.0 µs
+Inconnu | 47:fb:c9:3e:63:22 | 1 trames | RSSI moyen=-84 | Durée moyenne=264.0 µs
+Inconnu | c7:fb:99:3e:63:22 | 1 trames | RSSI moyen=-84 | Durée moyenne=264.0 µs
+Inconnu | 47:fa:d9:3e:63:22 | 1 trames | RSSI moyen=-84 | Durée moyenne=264.0 µs
+Inconnu | 47:fb:db:3e:63:22 | 1 trames | RSSI moyen=-84 | Durée moyenne=264.0 µs
+Inconnu | 67:fb:d9:3e:63:22 | 1 trames | RSSI moyen=-87 | Durée moyenne=264.0 µs
+Inconnu | 47:fb:d9:3e:62:e2 | 1 trames | RSSI moyen=-76 | Durée moyenne=264.0 µs
+Inconnu | 47:fb:d9:3e:63:21 | 1 trames | RSSI moyen=-72 | Durée moyenne=264.0 µs
+Inconnu | 7f:84:8c:8b:2c:c2 | 1 trames | RSSI moyen=-89 | Durée moyenne=272.0 µs
+Inconnu | 87:59:95:84:cd:46 | 1 trames | RSSI moyen=-86 | Durée moyenne=280.0 µs
+Inconnu | 43:59:0d:84:cd:46 | 1 trames | RSSI moyen=-93 | Durée moyenne=280.0 µs
+Inconnu | 7f:e4:8c:0b:2c:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | e1:72:fd:74:e1:2c | 1 trames | RSSI moyen=-93 | Durée moyenne=192.0 µs
+Inconnu | 5b:d7:8d:ce:f8:e1 | 1 trames | RSSI moyen=-94 | Durée moyenne=280.0 µs
+Inconnu | 47:5d:95:a4:c5:47 | 1 trames | RSSI moyen=-94 | Durée moyenne=272.0 µs
+Inconnu | cd:f9:41:62:2a:ff | 1 trames | RSSI moyen=-91 | Durée moyenne=176.0 µs
+Inconnu | c0:1f:bb:7d:63:b1 | 1 trames | RSSI moyen=-92 | Durée moyenne=376.0 µs
+Inconnu | 47:d9:95:80:cd:46 | 1 trames | RSSI moyen=-91 | Durée moyenne=280.0 µs
+Inconnu | cd:f9:41:42:2a:bf | 1 trames | RSSI moyen=-89 | Durée moyenne=192.0 µs
+Inconnu | 47:99:95:84:cd:46 | 1 trames | RSSI moyen=-94 | Durée moyenne=280.0 µs
+Inconnu | 77:e4:8c:48:2c:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 70:1f:20:ac:40:53 | 1 trames | RSSI moyen=-91 | Durée moyenne=376.0 µs
+Inconnu | c7:59:95:84:cd:46 | 1 trames | RSSI moyen=-90 | Durée moyenne=280.0 µs
+Inconnu | 43:59:b5:84:cd:86 | 1 trames | RSSI moyen=-92 | Durée moyenne=280.0 µs
+Inconnu | 7f:e3:cc:50:2c:d2 | 1 trames | RSSI moyen=-84 | Durée moyenne=272.0 µs
+Inconnu | c0:1f:bf:fd:63:b9 | 1 trames | RSSI moyen=-94 | Durée moyenne=376.0 µs
+Inconnu | 53:a4:dc:39:df:ce | 1 trames | RSSI moyen=-90 | Durée moyenne=280.0 µs
+Inconnu | 77:e4:8c:4b:ac:d2 | 1 trames | RSSI moyen=-82 | Durée moyenne=528.0 µs
+Inconnu | 7f:e4:8c:db:2c:d2 | 1 trames | RSSI moyen=-84 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:8c:4b:6c:92 | 1 trames | RSSI moyen=-89 | Durée moyenne=272.0 µs
+Inconnu | 71:48:00:af:f9:8c | 1 trames | RSSI moyen=-51 | Durée moyenne=176.0 µs
+Inconnu | 5e:84:ec:fb:df:d8 | 1 trames | RSSI moyen=-89 | Durée moyenne=280.0 µs
+Inconnu | 7b:e4:8c:4b:2c:d2 | 1 trames | RSSI moyen=-85 | Durée moyenne=272.0 µs
+Inconnu | 47:59:55:84:cd:46 | 1 trames | RSSI moyen=-91 | Durée moyenne=152.0 µs
+Inconnu | 53:a0:dc:39:df:58 | 1 trames | RSSI moyen=-89 | Durée moyenne=280.0 µs
+Inconnu | e7:a7:8b:25:52:3f | 1 trames | RSSI moyen=-86 | Durée moyenne=192.0 µs
+Inconnu | e8:e0:77:6f:8d:33 | 1 trames | RSSI moyen=-80 | Durée moyenne=216.0 µs
+Inconnu | 7f:e4:cc:4b:2c:d2 | 1 trames | RSSI moyen=-88 | Durée moyenne=272.0 µs
+Inconnu | cd:f9:41:62:2a:01 | 1 trames | RSSI moyen=-94 | Durée moyenne=184.0 µs
+Inconnu | 7f:e4:ec:4b:2c:d2 | 1 trames | RSSI moyen=-88 | Durée moyenne=272.0 µs
+Inconnu | 40:1f:bb:fd:63:b9 | 1 trames | RSSI moyen=-91 | Durée moyenne=376.0 µs
+Inconnu | 47:59:15:84:cd:46 | 1 trames | RSSI moyen=-93 | Durée moyenne=280.0 µs
+Inconnu | 7b:e4:8c:4b:2d:d2 | 1 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | e8:a0:7f:ef:8d:33 | 1 trames | RSSI moyen=-78 | Durée moyenne=344.0 µs
+Inconnu | e8:e0:7f:6f:84:33 | 1 trames | RSSI moyen=-87 | Durée moyenne=344.0 µs
+Inconnu | 01:02:47:59:95:80 | 1 trames | RSSI moyen=-88 | Durée moyenne=280.0 µs
+Inconnu | 47:59:14:84:cd:46 | 1 trames | RSSI moyen=-91 | Durée moyenne=280.0 µs
+Inconnu | 4b:c8:b5:84:ed:c6 | 1 trames | RSSI moyen=-91 | Durée moyenne=280.0 µs
+Inconnu | 07:59:95:b4:cd:45 | 1 trames | RSSI moyen=-98 | Durée moyenne=280.0 µs
+Inconnu | 2f:48:29:3e:63:22 | 1 trames | RSSI moyen=-84 | Durée moyenne=264.0 µs
+Inconnu | 7f:e4:8c:5b:2c:d2 | 1 trames | RSSI moyen=-86 | Durée moyenne=272.0 µs
+Inconnu | 7f:e5:6c:4b:2c:d2 | 1 trames | RSSI moyen=-82 | Durée moyenne=272.0 µs
+Inconnu | 7f:e5:cc:4b:2c:ce | 1 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:0c:4b:2c:d2 | 1 trames | RSSI moyen=-84 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:85:cd:46 | 1 trames | RSSI moyen=-87 | Durée moyenne=280.0 µs
+Inconnu | c0:1f:bb:cd:63:b9 | 1 trames | RSSI moyen=-89 | Durée moyenne=376.0 µs
+Inconnu | 47:fa:c9:3e:63:22 | 1 trames | RSSI moyen=-75 | Durée moyenne=520.0 µs
+Inconnu | cd:f9:01:62:2a:7f | 1 trames | RSSI moyen=-94 | Durée moyenne=192.0 µs
+Inconnu | 47:59:95:84:fd:44 | 1 trames | RSSI moyen=-89 | Durée moyenne=280.0 µs
+Inconnu | 7f:64:8c:4b:2c:d2 | 1 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:84:c9:46 | 1 trames | RSSI moyen=-84 | Durée moyenne=280.0 µs
+Inconnu | 07:59:95:84:cd:56 | 1 trames | RSSI moyen=-84 | Durée moyenne=280.0 µs
+Inconnu | e8:e4:7d:2f:8d:33 | 1 trames | RSSI moyen=-82 | Durée moyenne=344.0 µs
+Inconnu | 53:a4:dc:39:5f:58 | 1 trames | RSSI moyen=-91 | Durée moyenne=280.0 µs
+Inconnu | 7f:e4:8c:4b:2c:d3 | 1 trames | RSSI moyen=-92 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:8c:4b:2e:d2 | 1 trames | RSSI moyen=-88 | Durée moyenne=272.0 µs
+Inconnu | ff:c0:ce:4b:2c:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:84:c5:46 | 1 trames | RSSI moyen=-77 | Durée moyenne=280.0 µs
+Inconnu | 7f:e5:4c:4b:2c:d6 | 1 trames | RSSI moyen=-85 | Durée moyenne=272.0 µs
+Inconnu | 47:19:95:84:cd:46 | 1 trames | RSSI moyen=-79 | Durée moyenne=280.0 µs
+Inconnu | f7:e4:0c:4b:2c:d6 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 47:19:95:84:fd:46 | 1 trames | RSSI moyen=-77 | Durée moyenne=280.0 µs
+Inconnu | c0:1f:bb:dd:63:b8 | 1 trames | RSSI moyen=-93 | Durée moyenne=376.0 µs
+Inconnu | 53:a5:dc:39:cf:58 | 1 trames | RSSI moyen=-87 | Durée moyenne=280.0 µs
+Inconnu | e1:72:ff:74:e1:2c | 1 trames | RSSI moyen=-92 | Durée moyenne=192.0 µs
+Inconnu | 53:c4:dc:39:df:48 | 1 trames | RSSI moyen=-91 | Durée moyenne=280.0 µs
+Inconnu | 45:59:95:80:cd:46 | 1 trames | RSSI moyen=-94 | Durée moyenne=280.0 µs
+Inconnu | 7f:e4:8f:4b:2a:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 7f:e4:88:4b:2c:d2 | 1 trames | RSSI moyen=-91 | Durée moyenne=272.0 µs
+Inconnu | 0f:e4:8c:4b:2c:d2 | 1 trames | RSSI moyen=-85 | Durée moyenne=144.0 µs
+Inconnu | 47:59:95:84:cd:c6 | 1 trames | RSSI moyen=-86 | Durée moyenne=280.0 µs
+Inconnu | 47:59:95:84:cd:56 | 1 trames | RSSI moyen=-83 | Durée moyenne=280.0 µs
+Inconnu | c0:1f:3b:fd:63:b9 | 1 trames | RSSI moyen=-93 | Durée moyenne=376.0 µs
+Inconnu | 53:a5:dc:39:df:52 | 1 trames | RSSI moyen=-88 | Durée moyenne=408.0 µs
+Inconnu | 7f:64:8c:43:2c:d2 | 1 trames | RSSI moyen=-94 | Durée moyenne=272.0 µs
+Inconnu | e7:a7:8b:25:50:37 | 1 trames | RSSI moyen=-87 | Durée moyenne=192.0 µs
+Inconnu | 7f:e4:8c:4b:6a:d2 | 1 trames | RSSI moyen=-87 | Durée moyenne=272.0 µs
+Inconnu | 47:59:95:84:cd:44 | 1 trames | RSSI moyen=-82 | Durée moyenne=280.0 µs
+Inconnu | 53:a4:dc:39:df:5a | 1 trames | RSSI moyen=-89 | Durée moyenne=280.0 µs
+Inconnu | 7f:e4:8c:4b:2c:92 | 1 trames | RSSI moyen=-83 | Durée moyenne=272.0 µs
+Inconnu | 47:5b:15:84:cd:46 | 1 trames | RSSI moyen=-95 | Durée moyenne=280.0 µs
