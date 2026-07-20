@@ -1,10 +1,10 @@
-from pathlib import Path
-import ast
-import textwrap
+#from pathlib import Path
+#import ast
+#import textwrap
 
-dst = Path("/mnt/data/interface_ibeacon_nrf51822_v5_emission_reception.py")
+#dst = Path("/mnt/data/interface_ibeacon_nrf51822_v5_emission_reception.py")
 
-code = r'''#!/usr/bin/env python3
+#code = r'''#!/usr/bin/env python3
 """
 Plateforme BLE iBeacon V5 : émission, capture, décodage, calibration et export.
 
