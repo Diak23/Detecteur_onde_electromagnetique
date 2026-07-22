@@ -1,0 +1,1 @@
+numero;timestamp_s;temps_relatif_s;mac;longueur_payload_octets;type_pdu;rssi_brut_dbm;rssi_calibre_dbm;offset_db;canal;duree_estimee_us;timestamp_fin_s;intervalle_ms;company_id;donnees_brutes;uuid_cible;major_cible;minor_cible

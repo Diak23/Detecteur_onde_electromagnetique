@@ -1,0 +1,1652 @@
+Bluetooth monitor ver 5.82
+btmon[10853]: = Note: Linux version 6.18.34+rpt-rpi-v8 (aarch64)       0.447424
+btmon[10853]: = Note: Bluetooth subsystem version 2.22                 0.447436
+= New Index: DC:A6:32:65:E5:71 (Primary,UART,hci0)              [hci0] 0.447439
+= Open Index: DC:A6:32:65:E5:71                                 [hci0] 0.447441
+= Index Info: DC:A6:32:65:E5:71 (Cypress Semiconductor)         [hci0] 0.447443
+bluetoothd[10576]: @ MGMT Open:... (privileged) version 1.23  {0x0001} 0.447447
+btmgmt[10996]: @ MGMT Open: bt.. (privileged) version 1.23  {0x0002} 154.226721
+btmgmt[10996]: @ MGMT Command: Se.. (0x0029) plen 1  {0x0002} [hci0] 154.226883
+        Advertising: Disabled (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 7       {0x0002} [hci0] 154.226894
+      Set Advertising (0x0029) plen 4
+        Status: Success (0x00)
+        Current settings: 0x00000ad1
+          Powered
+          Bondable
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Secure Connections
+btmgmt[10996]: @ MGMT Close: btmgmt                         {0x0002} 154.227086
+bluetoothd[10576]: = Terminating                                     154.320233
+bluetoothd[10576]: @ MGMT Command.. (0x0005) plen 1  {0x0001} [hci0] 154.315441
+        Powered: Disabled (0x00)
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1      #1 [hci0] 154.319864
+        Scan enable: No Scans (0x00)
+> HCI Event: Command Complete (0x0e) plen 4                #2 [hci0] 154.321732
+      Write Scan Enable (0x03|0x001a) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 7       {0x0001} [hci0] 154.321849
+      Set Powered (0x0005) plen 4
+        Status: Success (0x00)
+        Current settings: 0x00000ad0
+          Bondable
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Secure Connections
+@ MGMT Event: Class Of Device Cha.. (0x0007) plen 3  {0x0001} [hci0] 154.321875
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+= Close Index: DC:A6:32:65:E5:71                              [hci0] 154.321913
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322739
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322861
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322896
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322925
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322955
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.322983
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.323069
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.323115
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.323149
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.323635
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335150
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335582
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335685
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335746
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335817
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335881
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.335938
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.336002
+bluetoothd[10576]: = Endpoint unregistered: sender=:1.27 path=/M..   154.336062
+bluetoothd[10576]: = Battery Provider Manager destroyed              154.404299
+bluetoothd[10576]: @ MGMT Close: bluetoothd                 {0x0001} 154.406954
+bluetoothd[10576]: = Stopping SDP server                             154.407424
+bluetoothd[10576]: = Exit                                            154.408276
+bluetoothd[11016]: = Bluetooth daemon 5.82                           154.629488
+bluetoothd[11016]: @ MGMT Open.. (privileged) version 1.23  {0x0001} 154.642467
+bluetoothd[11016]: = Starting SDP server                             154.643066
+bluetoothd[11016]: @ MGMT Command: Read... (0x0001) plen 0  {0x0001} 154.657313
+@ MGMT Event: Command Complete (0x0001) plen 6              {0x0001} 154.657339
+      Read Management Version Information (0x0001) plen 3
+        Status: Success (0x00)
+        Version: 1.23
+bluetoothd[11016]: = Bluetooth management interface 1.23 initial..   154.659241
+bluetoothd[11016]: @ MGMT Command: Read... (0x0002) plen 0  {0x0001} 154.657553
+@ MGMT Event: Command Complete (0x0001) plen 273            {0x0001} 154.657564
+      Read Management Supported Commands (0x0002) plen 270
+        Status: Success (0x00)
+        Commands: 89
+          Read Controller Index List (0x0003)
+          Read Controller Information (0x0004)
+          Set Powered (0x0005)
+          Set Discoverable (0x0006)
+          Set Connectable (0x0007)
+          Set Fast Connectable (0x0008)
+          Set Bondable (0x0009)
+          Set Link Security (0x000a)
+          Set Secure Simple Pairing (0x000b)
+          Set High Speed (0x000c)
+          Set Low Energy (0x000d)
+          Set Device Class (0x000e)
+          Set Local Name (0x000f)
+          Add UUID (0x0010)
+          Remove UUID (0x0011)
+          Load Link Keys (0x0012)
+          Load Long Term Keys (0x0013)
+          Disconnect (0x0014)
+          Get Connections (0x0015)
+          PIN Code Reply (0x0016)
+          PIN Code Negative Reply (0x0017)
+          Set IO Capability (0x0018)
+          Pair Device (0x0019)
+          Cancel Pair Device (0x001a)
+          Unpair Device (0x001b)
+          User Confirmation Reply (0x001c)
+          User Confirmation Negative Reply (0x001d)
+          User Passkey Reply (0x001e)
+          User Passkey Negative Reply (0x001f)
+          Read Local Out Of Band Data (0x0020)
+          Add Remote Out Of Band Data (0x0021)
+          Remove Remote Out Of Band Data (0x0022)
+          Start Discovery (0x0023)
+          Stop Discovery (0x0024)
+          Confirm Name (0x0025)
+          Block Device (0x0026)
+          Unblock Device (0x0027)
+          Set Device ID (0x0028)
+          Set Advertising (0x0029)
+          Set BR/EDR (0x002a)
+          Set Static Address (0x002b)
+          Set Scan Parameters (0x002c)
+          Set Secure Connections (0x002d)
+          Set Debug Keys (0x002e)
+          Set Privacy (0x002f)
+          Load Identity Resolving Keys (0x0030)
+          Get Connection Information (0x0031)
+          Get Clock Information (0x0032)
+          Add Device (0x0033)
+          Remove Device (0x0034)
+          Load Connection Parameters (0x0035)
+          Read Unconfigured Controller Index List (0x0036)
+          Read Controller Configuration Information (0x0037)
+          Set External Configuration (0x0038)
+          Set Public Address (0x0039)
+          Start Service Discovery (0x003a)
+          Read Local Out Of Band Extended Data (0x003b)
+          Read Extended Controller Index List (0x003c)
+          Read Advertising Features (0x003d)
+          Add Advertising (0x003e)
+          Remove Advertising (0x003f)
+          Get Advertising Size Information (0x0040)
+          Start Limited Discovery (0x0041)
+          Read Extended Controller Information (0x0042)
+          Set Appearance (0x0043)
+          Get PHY Configuration (0x0044)
+          Set PHY Configuration (0x0045)
+          Set Blocked Keys (0x0046)
+          Set Wideband Speech (0x0047)
+          Read Controller Capabilities (0x0048)
+          Read Experimental Features Information (0x0049)
+          Set Experimental Feature (0x004a)
+          Read Default System Configuration (0x004b)
+          Set Default System Configuration (0x004c)
+          Read Default Runtime Configuration (0x004d)
+          Set Default Runtime Configuration (0x004e)
+          Get Device Flags (0x004f)
+          Set Device Flags (0x0050)
+          Read Advertisement Monitor Features (0x0051)
+          Add Advertisement Patterns Monitor (0x0052)
+          Remove Advertisement Monitor (0x0053)
+          Add Extended Advertising Parameters (0x0054)
+          Add Extended Advertising Data (0x0055)
+          Add Advertisement Patterns Monitor With RSSI Threshold (0x0056)
+          Set Mesh Receiver (0x0057)
+          Read Mesh Features (0x0058)
+          Mesh Send (0x0059)
+          Mesh Send Cancel (0x005a)
+          Send HCI command and wait for event (0x005b)
+        Events: 44
+          Controller Error (0x0003)
+          Index Added (0x0004)
+          Index Removed (0x0005)
+          New Settings (0x0006)
+          Class Of Device Changed (0x0007)
+          Local Name Changed (0x0008)
+          New Link Key (0x0009)
+          New Long Term Key (0x000a)
+          Device Connected (0x000b)
+          Device Disconnected (0x000c)
+          Connect Failed (0x000d)
+          PIN Code Request (0x000e)
+          User Confirmation Request (0x000f)
+          User Passkey Request (0x0010)
+          Authentication Failed (0x0011)
+          Device Found (0x0012)
+          Discovering (0x0013)
+          Device Blocked (0x0014)
+          Device Unblocked (0x0015)
+          Device Unpaired (0x0016)
+          Passkey Notify (0x0017)
+          New Identity Resolving Key (0x0018)
+          New Signature Resolving Key (0x0019)
+          Device Added (0x001a)
+          Device Removed (0x001b)
+          New Connection Parameter (0x001c)
+          Unconfigured Index Added (0x001d)
+          Unconfigured Index Removed (0x001e)
+          New Configuration Options (0x001f)
+          Extended Index Added (0x0020)
+          Extended Index Removed (0x0021)
+          Local Out Of Band Extended Data Updated (0x0022)
+          Advertising Added (0x0023)
+          Advertising Removed (0x0024)
+          Extended Controller Information Changed (0x0025)
+          PHY Configuration Changed (0x0026)
+          Experimental Feature Changed (0x0027)
+          Device Flags Changed (0x002a)
+          Advertisement Monitor Added (0x002b)
+          Advertisement Monitor Removed (0x002c)
+          Controller Suspended (0x002d)
+          Controller Resumed (0x002e)
+          ADV Monitor Device Found (0x002f)
+          ADV Monitor Device Lost (0x0030)
+bluetoothd[11016]: @ MGMT Command: Read... (0x0003) plen 0  {0x0001} 154.657640
+@ MGMT Event: Command Complete (0x0001) plen 7              {0x0001} 154.657647
+      Read Controller Index List (0x0003) plen 4
+        Status: Success (0x00)
+        Controllers: 1
+          hci0
+bluetoothd[11016]: @ MGMT Command.. (0x0053) plen 2  {0x0001} [hci0] 154.657856
+        Handle: 0
+@ MGMT Event: Command Complete (0x0001) plen 5       {0x0001} [hci0] 154.657931
+      Remove Advertisement Monitor (0x0053) plen 2
+        Status: Success (0x00)
+        Handle: 0
+bluetoothd[11016]: @ MGMT Command.. (0x0049) plen 0  {0x0001} [hci0] 154.658355
+@ MGMT Event: Command Complete (0x0001) plen 65      {0x0001} [hci0] 154.658374
+      Read Experimental Features Information (0x0049) plen 62
+        Status: Success (0x00)
+        Features: 3
+        UUID: BlueZ Experimental Simultaneous Central and Peripheral
+        Flags: 0x00000000
+        UUID: BlueZ Experimental ISO Socket
+        Flags: 0x00000000
+        UUID: Vendor specific
+        Flags: 0x00000000
+bluetoothd[11016]: @ MGMT Command.. (0x0004) plen 0  {0x0001} [hci0] 154.658452
+@ MGMT Event: Command Complete (0x0001) plen 283     {0x0001} [hci0] 154.658461
+      Read Controller Information (0x0004) plen 280
+        Status: Success (0x00)
+        Address: DC:A6:32:65:E5:71 (Raspberry Pi Trading Ltd)
+        Version: Bluetooth 5.0 (0x09)
+        Manufacturer: Cypress Semiconductor (305)
+        Supported settings: 0x0001feff
+          Powered
+          Connectable
+          Fast Connectable
+          Discoverable
+          Bondable
+          Link Security
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Advertising
+          Secure Connections
+          Debug Keys
+          Privacy
+          Controller Configuration
+          Static Address
+          PHY Configuration
+        Current settings: 0x00000ad0
+          Bondable
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Secure Connections
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+        Name: raspberrypi
+        Short name: 
+bluetoothd[11016]: = Battery Provider Manager created                154.660306
+bluetoothd[11016]: @ MGMT Comman.. (0x0011) plen 16  {0x0001} [hci0] 154.662375
+        UUID: Vendor specific
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.662462
+      Remove UUID (0x0011) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Command.. (0x0034) plen 7  {0x0001} [hci0] 154.662565
+        BR/EDR Address: 00:00:00:00:00:00 (OUI 00-00-00)
+@ MGMT Event: Command Complete (0x0001) plen 10      {0x0001} [hci0] 154.662576
+      Remove Device (0x0034) plen 7
+        Status: Success (0x00)
+        BR/EDR Address: 00:00:00:00:00:00 (OUI 00-00-00)
+bluetoothd[11016]: @ MGMT Comman.. (0x002f) plen 17  {0x0001} [hci0] 154.662659
+        Privacy: Disabled (0x00)
+        Key[16]: 00000000000000000000000000000000
+@ MGMT Event: Command Complete (0x0001) plen 7       {0x0001} [hci0] 154.662667
+      Set Privacy (0x002f) plen 4
+        Status: Success (0x00)
+        Current settings: 0x00000ad0
+          Bondable
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Secure Connections
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.662751
+        UUID: Generic Access Profile
+        Service class: 0x00
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.662802
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.662917
+        UUID: Generic Attribute Profile
+        Service class: 0x00
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.662948
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.663036
+        UUID: Device Information
+        Service class: 0x00
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.663059
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Command.. (0x003d) plen 0  {0x0001} [hci0] 154.663136
+@ MGMT Event: Command Complete (0x0001) plen 12      {0x0001} [hci0] 154.663145
+      Read Advertising Features (0x003d) plen 9
+        Status: Success (0x00)
+        Flags: 0x0001f07f
+          Switch into Connectable mode
+          Advertise as Discoverable
+          Advertise as Limited Discoverable
+          Add Flags field to Advertising Data
+          Add TX Power field to Advertising Data
+          Add Appearance field to Scan Response
+          Add Local Name in Scan Response
+          Use provided duration parameter
+          Use provided timeout parameter
+          Use provided interval parameters
+          Use provided tx power parameter
+          Contain Scan Response Data
+        Advertising data length: 31
+        Scan response length: 31
+        Max instances: 5
+        Instances: 1
+          1
+bluetoothd[11016]: @ MGMT Command.. (0x0048) plen 0  {0x0001} [hci0] 154.663256
+@ MGMT Event: Command Complete (0x0001) plen 16      {0x0001} [hci0] 154.663262
+      Read Controller Capabilities (0x0048) plen 13
+        Status: Success (0x00)
+        0b 00 02 01 0f 03 02 10 00 03 03 10 00           .............   
+bluetoothd[11016]: @ MGMT Command.. (0x0005) plen 1  {0x0001} [hci0] 154.663339
+        Powered: Enabled (0x01)
+= Open Index: DC:A6:32:65:E5:71                               [hci0] 154.663366
+< HCI Command: Reset (0x03|0x0003) plen 0                  #3 [hci0] 154.663399
+> HCI Event: Command Complete (0x0e) plen 4                #4 [hci0] 154.666527
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Supporte.. (0x04|0x0003) plen 0  #5 [hci0] 154.666684
+> HCI Event: Command Complete (0x0e) plen 12               #6 [hci0] 154.667043
+      Read Local Supported Features (0x04|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0xbf 0xfe 0xcf 0xfe 0xdb 0xff 0x7b 0x87
+          3 slot packets
+          5 slot packets
+          Encryption
+          Slot offset
+          Timing accuracy
+          Role switch
+          Sniff mode
+          Power control requests
+          Channel quality driven data rate (CQDDR)
+          SCO link
+          HV2 packets
+          HV3 packets
+          u-law log synchronous data
+          A-law log synchronous data
+          CVSD synchronous data
+          Paging parameter negotiation
+          Power control
+          Transparent synchronous data
+          Flow control lag (most significant bit)
+          Broadcast Encryption
+          Enhanced Data Rate ACL 2 Mbps mode
+          Enhanced Data Rate ACL 3 Mbps mode
+          Enhanced inquiry scan
+          Interlaced inquiry scan
+          Interlaced page scan
+          RSSI with inquiry results
+          Extended SCO link (EV3 packets)
+          EV4 packets
+          EV5 packets
+          AFH capable peripheral
+          AFH classification peripheral
+          LE Supported (Controller)
+          3-slot Enhanced Data Rate ACL packets
+          5-slot Enhanced Data Rate ACL packets
+          Sniff subrating
+          Pause encryption
+          AFH capable central
+          AFH classification central
+          Enhanced Data Rate eSCO 2 Mbps mode
+          Enhanced Data Rate eSCO 3 Mbps mode
+          3-slot Enhanced Data Rate eSCO packets
+          Extended Inquiry Response
+          Simultaneous LE and BR/EDR (Controller)
+          Secure Simple Pairing
+          Encapsulated PDU
+          Erroneous Data Reporting
+          Non-flushable Packet Boundary Flag
+          Link Supervision Timeout Changed Event
+          Inquiry TX Power Level
+          Enhanced Power Control
+          Extended features
+< HCI Command: Read Local Version... (0x04|0x0001) plen 0  #7 [hci0] 154.667855
+> HCI Event: Command Complete (0x0e) plen 12               #8 [hci0] 154.668557
+      Read Local Version Information (0x04|0x0001) ncmd 1
+        Status: Success (0x00)
+        HCI version: Bluetooth 5.0 (0x09) - Revision 382 (0x017e)
+        LMP version: Bluetooth 5.0 (0x09) - Subversion 24857 (0x6119)
+        Manufacturer: Cypress Semiconductor (305)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0           #9 [hci0] 154.668636
+> HCI Event: Command Complete (0x0e) plen 10              #10 [hci0] 154.669024
+      Read BD ADDR (0x04|0x0009) ncmd 1
+        Status: Success (0x00)
+        Address: DC:A6:32:65:E5:71 (Raspberry Pi Trading Ltd)
+< HCI Command: Read Local Support.. (0x04|0x0002) plen 0  #11 [hci0] 154.669094
+> HCI Event: Command Complete (0x0e) plen 68              #12 [hci0] 154.670382
+      Read Local Supported Commands (0x04|0x0002) ncmd 1
+        Status: Success (0x00)
+        Commands: 204 entries
+          Inquiry (Octet 0 - Bit 0)
+          Inquiry Cancel (Octet 0 - Bit 1)
+          Periodic Inquiry Mode (Octet 0 - Bit 2)
+          Exit Periodic Inquiry Mode (Octet 0 - Bit 3)
+          Create Connection (Octet 0 - Bit 4)
+          Disconnect (Octet 0 - Bit 5)
+          Add SCO Connection (Octet 0 - Bit 6)
+          Create Connection Cancel (Octet 0 - Bit 7)
+          Accept Connection Request (Octet 1 - Bit 0)
+          Reject Connection Request (Octet 1 - Bit 1)
+          Link Key Request Reply (Octet 1 - Bit 2)
+          Link Key Request Negative Reply (Octet 1 - Bit 3)
+          PIN Code Request Reply (Octet 1 - Bit 4)
+          PIN Code Request Negative Reply (Octet 1 - Bit 5)
+          Change Connection Packet Type (Octet 1 - Bit 6)
+          Authentication Requested (Octet 1 - Bit 7)
+          Set Connection Encryption (Octet 2 - Bit 0)
+          Change Connection Link Key (Octet 2 - Bit 1)
+          Temporary Link Key (Octet 2 - Bit 2)
+          Remote Name Request (Octet 2 - Bit 3)
+          Remote Name Request Cancel (Octet 2 - Bit 4)
+          Read Remote Supported Features (Octet 2 - Bit 5)
+          Read Remote Extended Features (Octet 2 - Bit 6)
+          Read Remote Version Information (Octet 2 - Bit 7)
+          Read Clock Offset (Octet 3 - Bit 0)
+          Read LMP Handle (Octet 3 - Bit 1)
+          Sniff Mode (Octet 4 - Bit 2)
+          Exit Sniff Mode (Octet 4 - Bit 3)
+          QoS Setup (Octet 4 - Bit 6)
+          Role Discovery (Octet 4 - Bit 7)
+          Switch Role (Octet 5 - Bit 0)
+          Read Link Policy Settings (Octet 5 - Bit 1)
+          Write Link Policy Settings (Octet 5 - Bit 2)
+          Read Default Link Policy Settings (Octet 5 - Bit 3)
+          Write Default Link Policy Settings (Octet 5 - Bit 4)
+          Flow Specification (Octet 5 - Bit 5)
+          Set Event Mask (Octet 5 - Bit 6)
+          Reset (Octet 5 - Bit 7)
+          Set Event Filter (Octet 6 - Bit 0)
+          Flush (Octet 6 - Bit 1)
+          Read PIN Type (Octet 6 - Bit 2)
+          Write PIN Type (Octet 6 - Bit 3)
+          Read Stored Link Key (Octet 6 - Bit 5)
+          Write Stored Link Key (Octet 6 - Bit 6)
+          Delete Stored Link Key (Octet 6 - Bit 7)
+          Write Local Name (Octet 7 - Bit 0)
+          Read Local Name (Octet 7 - Bit 1)
+          Read Connection Accept Timeout (Octet 7 - Bit 2)
+          Write Connection Accept Timeout (Octet 7 - Bit 3)
+          Read Page Timeout (Octet 7 - Bit 4)
+          Write Page Timeout (Octet 7 - Bit 5)
+          Read Scan Enable (Octet 7 - Bit 6)
+          Write Scan Enable (Octet 7 - Bit 7)
+          Read Page Scan Activity (Octet 8 - Bit 0)
+          Write Page Scan Activity (Octet 8 - Bit 1)
+          Read Inquiry Scan Activity (Octet 8 - Bit 2)
+          Write Inquiry Scan Activity (Octet 8 - Bit 3)
+          Read Authentication Enable (Octet 8 - Bit 4)
+          Write Authentication Enable (Octet 8 - Bit 5)
+          Read Encryption Mode (Octet 8 - Bit 6)
+          Write Encryption Mode (Octet 8 - Bit 7)
+          Read Class of Device (Octet 9 - Bit 0)
+          Write Class of Device (Octet 9 - Bit 1)
+          Read Voice Setting (Octet 9 - Bit 2)
+          Write Voice Setting (Octet 9 - Bit 3)
+          Read Automatic Flush Timeout (Octet 9 - Bit 4)
+          Write Automatic Flush Timeout (Octet 9 - Bit 5)
+          Read Num Broadcast Retransmissions (Octet 9 - Bit 6)
+          Write Num Broadcast Retransmissions (Octet 9 - Bit 7)
+          Read Transmit Power Level (Octet 10 - Bit 2)
+          Read Sync Flow Control Enable (Octet 10 - Bit 3)
+          Set Controller To Host Flow Control (Octet 10 - Bit 5)
+          Host Buffer Size (Octet 10 - Bit 6)
+          Host Number of Completed Packets (Octet 10 - Bit 7)
+          Read Link Supervision Timeout (Octet 11 - Bit 0)
+          Write Link Supervision Timeout (Octet 11 - Bit 1)
+          Read Number of Supported IAC (Octet 11 - Bit 2)
+          Read Current IAC LAP (Octet 11 - Bit 3)
+          Write Current IAC LAP (Octet 11 - Bit 4)
+          Set AFH Host Channel Classification (Octet 12 - Bit 1)
+          Read Inquiry Scan Type (Octet 12 - Bit 4)
+          Write Inquiry Scan Type (Octet 12 - Bit 5)
+          Read Inquiry Mode (Octet 12 - Bit 6)
+          Write Inquiry Mode (Octet 12 - Bit 7)
+          Read Page Scan Type (Octet 13 - Bit 0)
+          Write Page Scan Type (Octet 13 - Bit 1)
+          Read AFH Channel Assessment Mode (Octet 13 - Bit 2)
+          Write AFH Channel Assessment Mode (Octet 13 - Bit 3)
+          Read Local Version Information (Octet 14 - Bit 3)
+          Read Local Supported Features (Octet 14 - Bit 5)
+          Read Local Extended Features (Octet 14 - Bit 6)
+          Read Buffer Size (Octet 14 - Bit 7)
+          Read BD ADDR (Octet 15 - Bit 1)
+          Read Failed Contact Counter (Octet 15 - Bit 2)
+          Reset Failed Contact Counter (Octet 15 - Bit 3)
+          Read Link Quality (Octet 15 - Bit 4)
+          Read RSSI (Octet 15 - Bit 5)
+          Read AFH Channel Map (Octet 15 - Bit 6)
+          Read Clock (Octet 15 - Bit 7)
+          Read Loopback Mode (Octet 16 - Bit 0)
+          Write Loopback Mode (Octet 16 - Bit 1)
+          Enable Device Under Test Mode (Octet 16 - Bit 2)
+          Setup Synchronous Connection (Octet 16 - Bit 3)
+          Accept Synchronous Connection Request (Octet 16 - Bit 4)
+          Reject Synchronous Connection Request (Octet 16 - Bit 5)
+          Read Extended Inquiry Response (Octet 17 - Bit 0)
+          Write Extended Inquiry Response (Octet 17 - Bit 1)
+          Refresh Encryption Key (Octet 17 - Bit 2)
+          Sniff Subrating (Octet 17 - Bit 4)
+          Read Simple Pairing Mode (Octet 17 - Bit 5)
+          Write Simple Pairing Mode (Octet 17 - Bit 6)
+          Read Local OOB Data (Octet 17 - Bit 7)
+          Read Inquiry Response TX Power Level (Octet 18 - Bit 0)
+          Write Inquiry Transmit Power Level (Octet 18 - Bit 1)
+          Read Default Erroneous Data Reporting (Octet 18 - Bit 2)
+          Write Default Erroneous Data Reporting (Octet 18 - Bit 3)
+          IO Capability Request Reply (Octet 18 - Bit 7)
+          User Confirmation Request Reply (Octet 19 - Bit 0)
+          User Confirmation Request Neg Reply (Octet 19 - Bit 1)
+          User Passkey Request Reply (Octet 19 - Bit 2)
+          User Passkey Request Negative Reply (Octet 19 - Bit 3)
+          Remote OOB Data Request Reply (Octet 19 - Bit 4)
+          Write Simple Pairing Debug Mode (Octet 19 - Bit 5)
+          Enhanced Flush (Octet 19 - Bit 6)
+          Remote OOB Data Request Neg Reply (Octet 19 - Bit 7)
+          Send Keypress Notification (Octet 20 - Bit 2)
+          IO Capability Request Negative Reply (Octet 20 - Bit 3)
+          Read Encryption Key Size (Octet 20 - Bit 4)
+          Set Event Mask Page 2 (Octet 22 - Bit 2)
+          Read Enhanced Transmit Power Level (Octet 24 - Bit 0)
+          Read LE Host Supported (Octet 24 - Bit 5)
+          Write LE Host Supported (Octet 24 - Bit 6)
+          LE Set Event Mask (Octet 25 - Bit 0)
+          LE Read Buffer Size (Octet 25 - Bit 1)
+          LE Read Local Supported Features (Octet 25 - Bit 2)
+          LE Set Random Address (Octet 25 - Bit 4)
+          LE Set Advertising Parameters (Octet 25 - Bit 5)
+          LE Read Advertising Channel TX Power (Octet 25 - Bit 6)
+          LE Set Advertising Data (Octet 25 - Bit 7)
+          LE Set Scan Response Data (Octet 26 - Bit 0)
+          LE Set Advertise Enable (Octet 26 - Bit 1)
+          LE Set Scan Parameters (Octet 26 - Bit 2)
+          LE Set Scan Enable (Octet 26 - Bit 3)
+          LE Create Connection (Octet 26 - Bit 4)
+          LE Create Connection Cancel (Octet 26 - Bit 5)
+          LE Read Accept List Size (Octet 26 - Bit 6)
+          LE Clear Accept List (Octet 26 - Bit 7)
+          LE Add Device To Accept List (Octet 27 - Bit 0)
+          LE Remove Device From Accept List (Octet 27 - Bit 1)
+          LE Connection Update (Octet 27 - Bit 2)
+          LE Set Host Channel Classification (Octet 27 - Bit 3)
+          LE Read Channel Map (Octet 27 - Bit 4)
+          LE Read Remote Used Features (Octet 27 - Bit 5)
+          LE Encrypt (Octet 27 - Bit 6)
+          LE Rand (Octet 27 - Bit 7)
+          LE Start Encryption (Octet 28 - Bit 0)
+          LE Long Term Key Request Reply (Octet 28 - Bit 1)
+          LE Long Term Key Request Neg Reply (Octet 28 - Bit 2)
+          LE Read Supported States (Octet 28 - Bit 3)
+          LE Receiver Test (Octet 28 - Bit 4)
+          LE Transmitter Test (Octet 28 - Bit 5)
+          LE Test End (Octet 28 - Bit 6)
+          Enhanced Setup Synchronous Connection (Octet 29 - Bit 3)
+          Enhanced Accept Synchronous Connection Request (Octet 29 - Bit 4)
+          Read Local Supported Codecs (Octet 29 - Bit 5)
+          Set MWS Channel Parameters (Octet 29 - Bit 6)
+          Set External Frame Configuration (Octet 29 - Bit 7)
+          Set MWS Signaling (Octet 30 - Bit 0)
+          Set MWS Transport Layer (Octet 30 - Bit 1)
+          Set MWS Scan Frequency Table (Octet 30 - Bit 2)
+          Get MWS Transport Layer Configuration (Octet 30 - Bit 3)
+          Set MWS Pattern Configuration (Octet 30 - Bit 4)
+          Set Triggered Clock Capture (Octet 30 - Bit 5)
+          Truncated Page (Octet 30 - Bit 6)
+          Truncated Page Cancel (Octet 30 - Bit 7)
+          Set Connectionless Peripheral Broadcast (Octet 31 - Bit 0)
+          Set Connectionless Peripheral Broadcast Receive (Octet 31 - Bit 1)
+          Start Synchronization Train (Octet 31 - Bit 2)
+          Receive Synchronization Train (Octet 31 - Bit 3)
+          Set Reserved LT_ADDR (Octet 31 - Bit 4)
+          Delete Reserved LT_ADDR (Octet 31 - Bit 5)
+          Set Connectionless Peripheral Broadcast Data (Octet 31 - Bit 6)
+          Read Synchronization Train Parameters (Octet 31 - Bit 7)
+          Write Synchronization Train Parameters (Octet 32 - Bit 0)
+          Remote OOB Extended Data Request Reply (Octet 32 - Bit 1)
+          Read Secure Connections Host Support (Octet 32 - Bit 2)
+          Write Secure Connections Host Support (Octet 32 - Bit 3)
+          Read Authenticated Payload Timeout (Octet 32 - Bit 4)
+          Write Authenticated Payload Timeout (Octet 32 - Bit 5)
+          Read Local OOB Extended Data (Octet 32 - Bit 6)
+          Write Secure Connections Test Mode (Octet 32 - Bit 7)
+          Read Extended Page Timeout (Octet 33 - Bit 0)
+          Write Extended Page Timeout (Octet 33 - Bit 1)
+          Read Extended Inquiry Length (Octet 33 - Bit 2)
+          Write Extended Inquiry Length (Octet 33 - Bit 3)
+          LE Remote Connection Parameter Request Reply (Octet 33 - Bit 4)
+          LE Remote Connection Parameter Request Negative Reply (Octet 33 - Bit 5)
+          LE Set Data Length (Octet 33 - Bit 6)
+          LE Read Suggested Default Data Length (Octet 33 - Bit 7)
+          LE Write Suggested Default Data Length (Octet 34 - Bit 0)
+          LE Read Local P-256 Public Key (Octet 34 - Bit 1)
+          LE Generate DHKey (Octet 34 - Bit 2)
+          LE Read Maximum Data Length (Octet 35 - Bit 3)
+          Read Local Simple Pairing Options (Octet 41 - Bit 3)
+< HCI Command: Write Simple Pairi.. (0x03|0x0056) plen 1  #13 [hci0] 154.670502
+        Mode: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4               #14 [hci0] 154.776931
+      Write Simple Pairing Mode (0x03|0x0056) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Write Inquiry Mode (0x03|0x0045) plen 1    #15 [hci0] 154.777047
+        Mode: Inquiry Result with RSSI or Extended Inquiry Result (0x02)
+> HCI Event: Command Complete (0x0e) plen 4               #16 [hci0] 154.778596
+      Write Inquiry Mode (0x03|0x0045) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Inquiry Respo.. (0x03|0x0058) plen 0  #17 [hci0] 154.778684
+> HCI Event: Command Complete (0x0e) plen 5               #18 [hci0] 154.779400
+      Read Inquiry Response TX Power Level (0x03|0x0058) ncmd 1
+        Status: Success (0x00)
+        TX power: 0 dbm (0x00)
+< HCI Command: Read Local Extende.. (0x04|0x0004) plen 1  #19 [hci0] 154.779495
+        Page: 1
+> HCI Event: Command Complete (0x0e) plen 14              #20 [hci0] 154.779827
+      Read Local Extended Features (0x04|0x0004) ncmd 1
+        Status: Success (0x00)
+        Page: 1/2
+        Features: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+          Secure Simple Pairing (Host Support)
+< HCI Command: Read Buffer Size (0x04|0x0005) plen 0      #21 [hci0] 154.779897
+> HCI Event: Command Complete (0x0e) plen 11              #22 [hci0] 154.780682
+      Read Buffer Size (0x04|0x0005) ncmd 1
+        Status: Success (0x00)
+        ACL MTU: 1021 ACL max packet: 8
+        SCO MTU: 64   SCO max packet: 1
+< HCI Command: Read Class of Device (0x03|0x0023) plen 0  #23 [hci0] 154.780776
+> HCI Event: Command Complete (0x0e) plen 7               #24 [hci0] 154.785228
+      Read Class of Device (0x03|0x0023) ncmd 1
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+< HCI Command: Read Local Name (0x03|0x0014) plen 0       #25 [hci0] 154.785455
+> HCI Event: Command Complete (0x0e) plen 252             #26 [hci0] 154.787797
+      Read Local Name (0x03|0x0014) ncmd 1
+        Status: Success (0x00)
+        Name: raspberrypi
+< HCI Command: Read Voice Setting (0x03|0x0025) plen 0    #27 [hci0] 154.787906
+> HCI Event: Command Complete (0x0e) plen 6               #28 [hci0] 154.789391
+      Read Voice Setting (0x03|0x0025) ncmd 1
+        Status: Success (0x00)
+        Setting: 0x0060
+          Input Coding: Linear
+          Input Data Format: 2's complement
+          Input Sample Size: 16-bit
+          # of bits padding at MSB: 0
+          Air Coding Format: CVSD
+< HCI Command: Read Number of Sup.. (0x03|0x0038) plen 0  #29 [hci0] 154.789722
+> HCI Event: Command Complete (0x0e) plen 5               #30 [hci0] 154.790292
+      Read Number of Supported IAC (0x03|0x0038) ncmd 1
+        Status: Success (0x00)
+        Number of IAC: 4
+< HCI Command: Read Current IAC LAP (0x03|0x0039) plen 0  #31 [hci0] 154.790581
+> HCI Event: Command Complete (0x0e) plen 8               #32 [hci0] 154.790959
+      Read Current IAC LAP (0x03|0x0039) ncmd 1
+        Status: Success (0x00)
+        Number of IAC: 1
+        Access code: 0x9e8b33 (General Inquiry)
+< HCI Command: Write Connection A.. (0x03|0x0016) plen 2  #33 [hci0] 154.791225
+        Timeout: 20000.000 msec (0x7d00)
+> HCI Event: Command Complete (0x0e) plen 4               #34 [hci0] 154.791587
+      Write Connection Accept Timeout (0x03|0x0016) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Local Supp.. (0x08|0x0003) plen 0  #35 [hci0] 154.791665
+> HCI Event: Command Complete (0x0e) plen 12              #36 [hci0] 154.792007
+      LE Read Local Supported Features (0x08|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0x3f 0x00 0x00 0x08 0x00 0x00 0x00 0x00
+          LE Encryption
+          Connection Parameter Request Procedure
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Ping
+          LE Data Packet Length Extension
+          Remote Public Key Validation
+< HCI Command: LE Read Buffer Size (0x08|0x0002) plen 0   #37 [hci0] 154.792170
+> HCI Event: Command Complete (0x0e) plen 7               #38 [hci0] 154.792497
+      LE Read Buffer Size (0x08|0x0002) ncmd 1
+        Status: Success (0x00)
+        Data packet length: 251
+        Num data packets: 7
+< HCI Command: LE Read Supported... (0x08|0x001c) plen 0  #39 [hci0] 154.792583
+> HCI Event: Command Complete (0x0e) plen 12              #40 [hci0] 154.792903
+      LE Read Supported States (0x08|0x001c) ncmd 1
+        Status: Success (0x00)
+        States: 0x000003ffffffffff
+          Non-connectable Advertising State
+          Scannable Advertising State
+          Connectable Advertising State
+          High Duty Cycle Directed Advertising State
+          Passive Scanning State
+          Active Scanning State
+          Initiating State
+            and Connection State (Central Role)
+          Connection State (Peripheral Role)
+          Non-connectable Advertising State
+            and Passive Scanning State
+          Scannable Advertising State
+            and Passive Scanning State
+          Connectable Advertising State
+            and Passive Scanning State
+          High Duty Cycle Directed Advertising State
+            and Passive Scanning State
+          Non-connectable Advertising State
+            and Active Scanning State
+          Scannable Advertising State
+            and Active Scanning State
+          Connectable Advertising State
+            and Active Scanning State
+          High Duty Cycle Directed Advertising State
+            and Active Scanning State
+          Non-connectable Advertising State
+            and Initiating State
+          Scannable Advertising State
+            and Initiating State
+          Non-connectable Advertising State
+            and Connection State (Central Role)
+          Scannable Advertising State
+            and Connection State (Central Role)
+          Non-connectable Advertising State
+            and Connection State (Peripheral Role)
+          Scannable Advertising State
+            and Connection State (Peripheral Role)
+          Passive Scanning State
+            and Initiating State
+          Active Scanning State
+            and Initiating State
+          Passive Scanning State
+            and Connection State (Central Role)
+          Active Scanning State
+            and Connection State (Central Role)
+          Passive Scanning State
+            and Connection State (Peripheral Role)
+          Active Scanning State
+            and Connection State (Peripheral Role)
+          Initiating State
+            and Connection State (Central Role)
+            and Central Role & Central Role
+          Low Duty Cycle Directed Advertising State
+          Low Duty Cycle Directed Advertising State
+            and Passive Scanning State
+          Low Duty Cycle Directed Advertising State
+            and Active Scanning State
+          Connectable Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Initiating State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8        #41 [hci0] 154.792978
+        Mask: 0x3dbff807fffbffff
+          Inquiry Complete
+          Inquiry Result
+          Connection Complete
+          Connection Request
+          Disconnection Complete
+          Authentication Complete
+          Remote Name Request Complete
+          Encryption Change
+          Change Connection Link Key Complete
+          Link Key Type Changed
+          Read Remote Supported Features Complete
+          Read Remote Version Information Complete
+          QoS Setup Complete
+          Command Complete
+          Command Status
+          Hardware Error
+          Flush Occurred
+          Role Change
+          Mode Change
+          Return Link Keys
+          PIN Code Request
+          Link Key Request
+          Link Key Notification
+          Loopback Command
+          Data Buffer Overflow
+          Max Slots Change
+          Read Clock Offset Complete
+          Connection Packet Type Changed
+          QoS Violation
+          Page Scan Mode Change
+          Page Scan Repetition Mode Change
+          Flow Specification Complete
+          Inquiry Result with RSSI
+          Read Remote Extended Features Complete
+          Synchronous Connection Complete
+          Synchronous Connection Changed
+          Sniff Subrating
+          Extended Inquiry Result
+          Encryption Key Refresh Complete
+          IO Capability Request
+          IO Capability Request Reply
+          User Confirmation Request
+          User Passkey Request
+          Remote OOB Data Request
+          Simple Pairing Complete
+          Link Supervision Timeout Changed
+          Enhanced Flush Complete
+          User Passkey Notification
+          Keypress Notification
+          Remote Host Supported Features Notification
+          LE Meta
+> HCI Event: Command Complete (0x0e) plen 4               #42 [hci0] 154.793307
+      Set Event Mask (0x03|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Stored Link Key (0x03|0x000d) plen 7  #43 [hci0] 154.793377
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Read all: 0x01
+> HCI Event: Command Complete (0x0e) plen 8               #44 [hci0] 154.793707
+      Read Stored Link Key (0x03|0x000d) ncmd 1
+        Status: Success (0x00)
+        Max num keys: 1
+        Num keys: 0
+< HCI Command: Write Default Link.. (0x02|0x000f) plen 2  #45 [hci0] 154.796951
+        Link policy: 0x0005
+          Enable Role Switch
+          Enable Sniff Mode
+> HCI Event: Command Complete (0x0e) plen 4               #46 [hci0] 154.797261
+      Write Default Link Policy Settings (0x02|0x000f) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Page Scan Act.. (0x03|0x001b) plen 0  #47 [hci0] 154.797342
+> HCI Event: Command Complete (0x0e) plen 8               #48 [hci0] 154.797846
+      Read Page Scan Activity (0x03|0x001b) ncmd 1
+        Status: Success (0x00)
+        Interval: 1280.000 msec (0x0800)
+        Window: 11.250 msec (0x0012)
+< HCI Command: Read Default Erron.. (0x03|0x005a) plen 0  #49 [hci0] 154.797950
+> HCI Event: Command Complete (0x0e) plen 5               #50 [hci0] 154.798316
+      Read Default Erroneous Data Reporting (0x03|0x005a) ncmd 1
+        Status: Success (0x00)
+        Mode: Disabled (0x00)
+< HCI Command: Read Page Scan Type (0x03|0x0046) plen 0   #51 [hci0] 154.798391
+> HCI Event: Command Complete (0x0e) plen 5               #52 [hci0] 154.798697
+      Read Page Scan Type (0x03|0x0046) ncmd 1
+        Status: Success (0x00)
+        Type: Standard Scan (0x00)
+< HCI Command: Read Local Extende.. (0x04|0x0004) plen 1  #53 [hci0] 154.798767
+        Page: 2
+> HCI Event: Command Complete (0x0e) plen 14              #54 [hci0] 154.799133
+      Read Local Extended Features (0x04|0x0004) ncmd 1
+        Status: Success (0x00)
+        Page: 2/2
+        Features: 0x7f 0x0b 0x00 0x00 0x00 0x00 0x00 0x00
+          Connectionless Peripheral Broadcast - Central
+          Connectionless Peripheral Broadcast - Peripheral
+          Synchronization Train
+          Synchronization Scan
+          Inquiry Response Notification Event
+          Generalized interlaced scan
+          Coarse Clock Adjustment
+          Secure Connections (Controller Support)
+          Ping
+          Train nudging
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8     #55 [hci0] 154.799253
+        Mask: 0x00000000000001ff
+          LE Connection Complete
+          LE Advertising Report
+          LE Connection Update Complete
+          LE Read Remote Used Features Complete
+          LE Long Term Key Request
+          LE Remote Connection Parameter Request
+          LE Data Length Change
+          LE Read Local P-256 Public Key Complete
+          LE Generate DHKey Complete
+> HCI Event: Command Complete (0x0e) plen 4               #56 [hci0] 154.799588
+      LE Set Event Mask (0x08|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Advertisin.. (0x08|0x0007) plen 0  #57 [hci0] 154.799686
+> HCI Event: Command Complete (0x0e) plen 5               #58 [hci0] 154.799993
+      LE Read Advertising Channel TX Power (0x08|0x0007) ncmd 1
+        Status: Success (0x00)
+        TX power: 12 dbm (0x0c)
+< HCI Command: LE Read Accept Lis.. (0x08|0x000f) plen 0  #59 [hci0] 154.800091
+> HCI Event: Command Complete (0x0e) plen 5               #60 [hci0] 154.800391
+      LE Read Accept List Size (0x08|0x000f) ncmd 1
+        Status: Success (0x00)
+        Size: 128
+< HCI Command: LE Clear Accept List (0x08|0x0010) plen 0  #61 [hci0] 154.800470
+> HCI Event: Command Complete (0x0e) plen 4               #62 [hci0] 154.800882
+      LE Clear Accept List (0x08|0x0010) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Maximum Da.. (0x08|0x002f) plen 0  #63 [hci0] 154.801000
+> HCI Event: Command Complete (0x0e) plen 12              #64 [hci0] 154.801494
+      LE Read Maximum Data Length (0x08|0x002f) ncmd 1
+        Status: Success (0x00)
+        Max TX octets: 251
+        Max TX time: 2120
+        Max RX octets: 251
+        Max RX time: 2120
+< HCI Command: LE Read Suggested... (0x08|0x0023) plen 0  #65 [hci0] 154.801629
+> HCI Event: Command Complete (0x0e) plen 8               #66 [hci0] 154.802009
+      LE Read Suggested Default Data Length (0x08|0x0023) ncmd 1
+        Status: Success (0x00)
+        TX octets: 27
+        TX time: 328
+< HCI Command: Write LE Host Supp.. (0x03|0x006d) plen 2  #67 [hci0] 154.802154
+        Supported: 0x01
+        Simultaneous: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #68 [hci0] 154.802511
+      Write LE Host Supported (0x03|0x006d) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Delete Stored Link.. (0x03|0x0012) plen 7  #69 [hci0] 154.802646
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Delete all: 0x01
+> HCI Event: Command Complete (0x0e) plen 6               #70 [hci0] 154.803030
+      Delete Stored Link Key (0x03|0x0012) ncmd 1
+        Status: Success (0x00)
+        Num keys: 0
+< HCI Command: Set Event Mask Pag.. (0x03|0x0063) plen 8  #71 [hci0] 154.803258
+        Mask: 0x0000000000bfc000
+          Triggered Clock Capture
+          Synchronization Train Complete
+          Synchronization Train Received
+          Connectionless Peripheral Broadcast Receive
+          Connectionless Peripheral Broadcast Timeout
+          Truncated Page Complete
+          Peripheral Page Response Timeout
+          Connectionless Peripheral Broadcast Channel Map Change
+          Authenticated Payload Timeout Expired
+> HCI Event: Command Complete (0x0e) plen 4               #72 [hci0] 154.803615
+      Set Event Mask Page 2 (0x03|0x0063) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Support.. (0x04|0x000b) plen 0  #73 [hci0] 154.803731
+> HCI Event: Command Complete (0x0e) plen 12              #74 [hci0] 154.804136
+      Read Local Supported Codecs (0x04|0x000b) ncmd 1
+        Status: Success (0x00)
+        Number of supported codecs: 6
+          Codec: u-law log (0x00)
+          Codec: A-law log (0x01)
+          Codec: CVSD (0x02)
+          Codec: Transparent (0x03)
+          Codec: Linear PCM (0x04)
+          Codec: mSBC (0x05)
+        Number of vendor codecs: 0
+< HCI Command: Read Local Simple... (0x04|0x000c) plen 0  #75 [hci0] 154.804261
+> HCI Event: Command Complete (0x0e) plen 6               #76 [hci0] 154.804628
+      Read Local Simple Pairing Options (0x04|0x000c) ncmd 1
+        Status: Success (0x00)
+        Pairing options: 0x01
+        Max encryption key size: 16 octets
+< HCI Command: Get MWS Transport... (0x05|0x000c) plen 0  #77 [hci0] 154.804737
+> HCI Event: Command Complete (0x0e) plen 15              #78 [hci0] 154.805090
+      Get MWS Transport Layer Configuration (0x05|0x000c) ncmd 1
+        Status: Success (0x00)
+        Number of transports: 1
+          Transport layer: WCI-2 (0x02)
+          Number of baud rates: 1
+        Baud rate list: 1 entry
+          Bluetooth to MWS: 3000000
+          MWS to Bluetooth: 3000000
+< HCI Command: Read Synchronizati.. (0x03|0x0077) plen 0  #79 [hci0] 154.805263
+> HCI Event: Command Complete (0x0e) plen 11              #80 [hci0] 154.805638
+      Read Synchronization Train Parameters (0x03|0x0077) ncmd 1
+        Status: Success (0x00)
+        Interval: 80.000 msec (0x0080)
+        Timeout: 40958.750 msec (0x0000fffe)
+        Service data: 0x00
+< HCI Command: Write Secure Conne.. (0x03|0x007a) plen 1  #81 [hci0] 154.805760
+        Support: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4               #82 [hci0] 154.806143
+      Write Secure Connections Host Support (0x03|0x007a) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Write Suggested.. (0x08|0x0024) plen 4  #83 [hci0] 154.806242
+        TX octets: 251
+        TX time: 2120
+> HCI Event: Command Complete (0x0e) plen 4               #84 [hci0] 154.806613
+      LE Write Suggested Default Data Length (0x08|0x0024) ncmd 1
+        Status: Success (0x00)
+= Index Info: DC:A6:32:65:E5:71 (Cypress Semiconductor)       [hci0] 154.806702
+< HCI Command: LE Set Random Addr.. (0x08|0x0005) plen 6  #85 [hci0] 154.806821
+        Address: 23:5C:5C:28:21:19 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #86 [hci0] 154.807192
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertisin.. (0x08|0x0006) plen 15  #87 [hci0] 154.807286
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Own address type: Random (0x01)
+        Direct address type: Public (0x00)
+        Direct address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Channel map: 37, 38, 39 (0x07)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+> HCI Event: Command Complete (0x0e) plen 4               #88 [hci0] 154.807666
+      LE Set Advertising Parameters (0x08|0x0006) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertise E.. (0x08|0x000a) plen 1  #89 [hci0] 154.807769
+        Advertising: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4               #90 [hci0] 154.808142
+      LE Set Advertise Enable (0x08|0x000a) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Write Local Name (0x03|0x0013) plen 248    #91 [hci0] 154.809676
+        Name: raspberrypi
+> HCI Event: Command Complete (0x0e) plen 4               #92 [hci0] 154.811043
+      Write Local Name (0x03|0x0013) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Write Extended I.. (0x03|0x0052) plen 241  #93 [hci0] 154.811196
+        FEC: Not required (0x00)
+        Name (complete): raspberrypi
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 3 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+> HCI Event: Command Complete (0x0e) plen 4               #94 [hci0] 154.812368
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 7       {0x0001} [hci0] 154.812503
+      Set Powered (0x0005) plen 4
+        Status: Success (0x00)
+        Current settings: 0x00000ad1
+          Powered
+          Bondable
+          Secure Simple Pairing
+          BR/EDR
+          Low Energy
+          Secure Connections
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.816442
+        UUID: A/V Remote Control
+        Service class: 0x00
+< HCI Command: Write Extended I.. (0x03|0x0052) plen 241  #95 [hci0] 154.816613
+        FEC: Not required (0x00)
+        Name (complete): raspberrypi
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 4 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+> HCI Event: Command Complete (0x0e) plen 4               #96 [hci0] 154.817894
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.818042
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.818555
+        UUID: A/V Remote Control Target
+        Service class: 0x00
+< HCI Command: Write Extended I.. (0x03|0x0052) plen 241  #97 [hci0] 154.818725
+        FEC: Not required (0x00)
+        Name (complete): raspberrypi
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 5 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+> HCI Event: Command Complete (0x0e) plen 4               #98 [hci0] 154.819947
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.820099
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x000000
+          Major class: Miscellaneous
+          Minor class: 0x00
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.821184
+        UUID: SIM Access
+        Service class: 0x40
+< HCI Command: Write Class of Dev.. (0x03|0x0024) plen 3  #99 [hci0] 154.821308
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+> HCI Event: Command Complete (0x0e) plen 4              #100 [hci0] 154.821656
+      Write Class of Device (0x03|0x0024) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Class Of Device Cha.. (0x0007) plen 3  {0x0001} [hci0] 154.821711
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #101 [hci0] 154.821788
+        FEC: Not required (0x00)
+        Name (complete): raspberrypi
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 6 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+> HCI Event: Command Complete (0x0e) plen 4              #102 [hci0] 154.822981
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.823084
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Command.. (0x0027) plen 7  {0x0001} [hci0] 154.825739
+        BR/EDR Address: 00:00:00:00:00:00 (OUI 00-00-00)
+@ MGMT Event: Command Complete (0x0001) plen 10      {0x0001} [hci0] 154.825787
+      Unblock Device (0x0027) plen 7
+        Status: Success (0x00)
+        BR/EDR Address: 00:00:00:00:00:00 (OUI 00-00-00)
+bluetoothd[11016]: @ MGMT Command.. (0x004c) plen 0  {0x0001} [hci0] 154.825961
+@ MGMT Event: Command Status (0x0002) plen 3         {0x0001} [hci0] 154.825969
+      Set Default System Configuration (0x004c)
+        Status: Invalid Parameters (0x0d)
+bluetoothd[11016]: @ MGMT Command.. (0x0033) plen 8  {0x0001} [hci0] 154.826127
+        BR/EDR Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Action: Allow incoming connection (0x01)
+@ MGMT Event: Device Flags Changed (0x002a) plen 15  {0x0001} [hci0] 154.826156
+        BR/EDR Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Supported Flags: 0x00000001
+          Remote Wakeup
+        Current Flags: 0x00000000
+@ MGMT Event: Command Complete (0x0001) plen 10      {0x0001} [hci0] 154.826168
+      Add Device (0x0033) plen 7
+        Status: Success (0x00)
+        BR/EDR Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1    #103 [hci0] 154.826214
+        Scan enable: Page Scan (0x02)
+bluetoothd[11016]: @ MGMT Comman.. (0x0012) plen 28  {0x0001} [hci0] 154.826418
+        Debug keys: Disabled (0x00)
+        Keys: 1
+        BR/EDR Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Key type: Authenticated Combination key from P-256 (0x08)
+        Link key[16]: 83a85a7dde97f5c4b7b39b1f89a6b57b
+        PIN length: 0
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.826437
+      Load Link Keys (0x0012) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Command.. (0x0013) plen 2  {0x0001} [hci0] 154.826598
+        Keys: 0
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.826609
+      Load Long Term Keys (0x0013) plen 0
+        Status: Success (0x00)
+> HCI Event: Command Complete (0x0e) plen 4              #104 [hci0] 154.826587
+      Write Scan Enable (0x03|0x001a) ncmd 1
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Comman.. (0x0030) plen 25  {0x0001} [hci0] 154.826789
+        Keys: 1
+        LE Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Key[16]: 1038b6bc39b101878e394c08741fe942
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.826803
+      Load Identity Resolving Keys (0x0030) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Command.. (0x0035) plen 2  {0x0001} [hci0] 154.826965
+        Parameters: 0
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.826974
+      Load Connection Parameters (0x0035) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.827128
+        UUID: PnP Information
+        Service class: 0x00
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.828908
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Command.. (0x0028) plen 8  {0x0001} [hci0] 154.829227
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.829244
+      Set Device ID (0x0028) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Command.. (0x000e) plen 2  {0x0001} [hci0] 154.829447
+        Major class: 0x00
+        Minor class: 0x00
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.829497
+      Set Device Class (0x000e) plen 3
+        Status: Success (0x00)
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Command: Set Local Name    {0x0001} [hci0] 154.829634
+        Name: BlueZ 5.82
+        Short name: 
+< HCI Command: Write Local Name (0x03|0x0013) plen 248   #105 [hci0] 154.829722
+        Name: BlueZ 5.82
+> HCI Event: Command Complete (0x0e) plen 4              #106 [hci0] 154.832343
+      Write Local Name (0x03|0x0013) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #107 [hci0] 154.833003
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 6 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+> HCI Event: Command Complete (0x0e) plen 4              #108 [hci0] 154.835356
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 263     {0x0001} [hci0] 154.835522
+      Set Local Name (0x000f) plen 260
+        Status: Success (0x00)
+        Name: BlueZ 5.82
+        Short name: 
+bluetoothd[11016]: @ MGMT Comman.. (0x0046) plen 36  {0x0001} [hci0] 154.835939
+        Keys: 2
+        type: Long Term Key (0x01)
+        Link key[16]: bf01fb9d4ef3bc36d874f5394138684c
+        type: Identity Resolving Key (0x02)
+        Link key[16]: a599bae4e17ca618228e0756b4e85f01
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.835969
+      Set Blocked Keys (0x0046) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Command.. (0x003f) plen 1  {0x0001} [hci0] 154.836187
+        Instance: 0
+< HCI Command: LE Set Advertise... (0x08|0x000a) plen 1  #109 [hci0] 154.836354
+        Advertising: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 4              #110 [hci0] 154.838775
+      LE Set Advertise Enable (0x08|0x000a) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 4       {0x0001} [hci0] 154.838876
+      Remove Advertising (0x003f) plen 1
+        Status: Success (0x00)
+        Instance: 0
+bluetoothd[11016]: @ MGMT Command.. (0x0018) plen 1  {0x0001} [hci0] 154.841057
+        Capability: DisplayYesNo (0x01)
+@ MGMT Event: Command Complete (0x0001) plen 3       {0x0001} [hci0] 154.841100
+      Set IO Capability (0x0018) plen 0
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.904184
+        UUID: Vendor specific
+        Service class: 0x00
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #111 [hci0] 154.904632
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 6 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #112 [hci0] 154.905940
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.906052
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.906346
+        UUID: Handsfree Audio Gateway
+        Service class: 0x40
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #113 [hci0] 154.906440
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 7 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+          Handsfree Audio Gateway (0x111f)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #114 [hci0] 154.907707
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.907824
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x400000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.908303
+        UUID: Handsfree
+        Service class: 0x20
+< HCI Command: Write Class of De.. (0x03|0x0024) plen 3  #115 [hci0] 154.908626
+        Class: 0x600000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+> HCI Event: Command Complete (0x0e) plen 4              #116 [hci0] 154.909038
+      Write Class of Device (0x03|0x0024) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Class Of Device Cha.. (0x0007) plen 3  {0x0001} [hci0] 154.909096
+        Class: 0x600000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #117 [hci0] 154.909185
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 8 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+          Handsfree Audio Gateway (0x111f)
+          Handsfree (0x111e)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #118 [hci0] 154.910420
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.910555
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x600000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.929296
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.930244
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.931144
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.931860
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.932548
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.933546
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.935076
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.936373
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.936919
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.937683
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.938772
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.939378
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.940447
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.941113
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.941898
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.942851
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.943501
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.944362
+bluetoothd[11016]: = Endpoint registered: sender=:1.27 path=/Med..   154.945393
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.945349
+        UUID: Audio Source
+        Service class: 0x08
+< HCI Command: Write Class of De.. (0x03|0x0024) plen 3  #119 [hci0] 154.945417
+        Class: 0x680000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+> HCI Event: Command Complete (0x0e) plen 4              #120 [hci0] 154.945771
+      Write Class of Device (0x03|0x0024) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Class Of Device Cha.. (0x0007) plen 3  {0x0001} [hci0] 154.945825
+        Class: 0x680000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #121 [hci0] 154.945884
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 9 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+          Handsfree Audio Gateway (0x111f)
+          Handsfree (0x111e)
+          Audio Source (0x110a)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #122 [hci0] 154.947083
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.947175
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x680000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Comman.. (0x0010) plen 17  {0x0001} [hci0] 154.947336
+        UUID: Audio Sink
+        Service class: 0x04
+< HCI Command: Write Class of De.. (0x03|0x0024) plen 3  #123 [hci0] 154.947394
+        Class: 0x6c0000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Rendering (Printing, Speaker)
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+> HCI Event: Command Complete (0x0e) plen 4              #124 [hci0] 154.947748
+      Write Class of Device (0x03|0x0024) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Class Of Device Cha.. (0x0007) plen 3  {0x0001} [hci0] 154.947792
+        Class: 0x6c0000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Rendering (Printing, Speaker)
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #125 [hci0] 154.947853
+        FEC: Not required (0x00)
+        Name (complete): BlueZ 5.82
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 10 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+          Handsfree Audio Gateway (0x111f)
+          Handsfree (0x111e)
+          Audio Source (0x110a)
+          Audio Sink (0x110b)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #126 [hci0] 154.949069
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 6       {0x0001} [hci0] 154.949164
+      Add UUID (0x0010) plen 3
+        Status: Success (0x00)
+        Class: 0x6c0000
+          Major class: Miscellaneous
+          Minor class: 0x00
+          Rendering (Printing, Speaker)
+          Capturing (Scanner, Microphone)
+          Audio (Speaker, Microphone, Headset)
+          Telephony (Cordless telephony, Modem, Headset)
+bluetoothd[11016]: @ MGMT Command: Set Local Name    {0x0001} [hci0] 155.064671
+        Name: raspberrypi
+        Short name: 
+< HCI Command: Write Local Name (0x03|0x0013) plen 248   #127 [hci0] 155.064749
+        Name: raspberrypi
+> HCI Event: Command Complete (0x0e) plen 4              #128 [hci0] 155.065943
+      Write Local Name (0x03|0x0013) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Write Extended... (0x03|0x0052) plen 241  #129 [hci0] 155.066061
+        FEC: Not required (0x00)
+        Name (complete): raspberrypi
+        TX power: 0 dBm
+        Device ID: USB Implementer's Forum assigned (0x0002)
+          Vendor: Linux Foundation (0x1d6b)
+          Product: 0x0246
+          Version: 5.5.2 (0x0552)
+        16-bit Service UUIDs (complete): 10 entries
+          Generic Access Profile (0x1800)
+          Generic Attribute Profile (0x1801)
+          Device Information (0x180a)
+          A/V Remote Control (0x110e)
+          A/V Remote Control Target (0x110c)
+          SIM Access (0x112d)
+          Handsfree Audio Gateway (0x111f)
+          Handsfree (0x111e)
+          Audio Source (0x110a)
+          Audio Sink (0x110b)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific
+> HCI Event: Command Complete (0x0e) plen 4              #130 [hci0] 155.067241
+      Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+        Status: Success (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 263     {0x0001} [hci0] 155.067310
+      Set Local Name (0x000f) plen 260
+        Status: Success (0x00)
+        Name: raspberrypi
+        Short name: 
+< HCI Command: Create Connection (0x01|0x0005) plen 13   #131 [hci0] 156.848165
+        Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Packet type: 0xcc18
+          DM1 may be used
+          DH1 may be used
+          DM3 may be used
+          DH3 may be used
+          DM5 may be used
+          DH5 may be used
+        Page scan repetition mode: R2 (0x02)
+        Page scan mode: Mandatory (0x00)
+        Clock offset: 0x0000
+        Role switch: Allow peripheral (0x01)
+> HCI Event: Command Status (0x0f) plen 4                #132 [hci0] 156.848542
+      Create Connection (0x01|0x0005) ncmd 1
+        Status: Success (0x00)
+bluetoothd[11016]: @ MGMT Comman.. (0x0054) plen 18  {0x0001} [hci0] 158.603575
+        Instance: 1
+        Flags: 0x00000000
+        Duration: 0
+        Timeout: 0
+        Min advertising interval: 0.000 msec (0x0000)
+        Max advertising interval: 0.000 msec (0x0000)
+        TX power: 0 dbm (0x00)
+@ MGMT Event: Command Complete (0x0001) plen 7       {0x0001} [hci0] 158.603667
+      Add Extended Advertising Parameters (0x0054) plen 4
+        Status: Success (0x00)
+        Instance: 1
+        TX power: 127 dbm (0x7f)
+        Available adv data len: 31
+        Available scan rsp data len: 31
+bluetoothd[11016]: @ MGMT Comman.. (0x0055) plen 38  {0x0001} [hci0] 158.603825
+        Instance: 1
+        Advertising data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 61a907ad-d117-2fa1-c44b-f573f4390ae2
+          Version: 2560.5120
+          TX power: -56 dB
+        Scan response length: 0
+@ MGMT Event: Command Status (0x0002) plen 3         {0x0001} [hci0] 158.603832
+      Add Extended Advertising Data (0x0055)
+        Status: Invalid Parameters (0x0d)
+bluetoothd[11016]: = src/advertising.c:add_client_complete() Fai..   158.604248
+> HCI Event: Connect Complete (0x03) plen 11             #133 [hci0] 161.971795
+        Status: Page Timeout (0x04)
+        Handle: 12
+        Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Link type: ACL (0x01)
+        Encryption: Disabled (0x00)
+@ MGMT Event: Connect Failed (0x000d) plen 8         {0x0001} [hci0] 161.971841
+        BR/EDR Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+        Status: Connect Failed (0x04)
+bluetoothd[11016]: = src/profile.c:record_cb() Unable to get Han..   161.972410
+< HCI Command: LE Add Device To... (0x08|0x0011) plen 7  #134 [hci0] 162.008934
+        Address type: Public (0x00)
+        Address: A4:75:B9:59:71:77 (Samsung Electronics Co.,Ltd)
+> HCI Event: Command Complete (0x0e) plen 4              #135 [hci0] 162.009367
+      LE Add Device To Accept List (0x08|0x0011) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Scan Param.. (0x08|0x000b) plen 7  #136 [hci0] 162.009420
+        Type: Passive (0x00)
+        Interval: 60.000 m

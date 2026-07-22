@@ -1,4 +1,4 @@
 [default-routes]
-alsa_card.platform-fef00700.hdmi:output:hdmi-output-0={"channelVolumes":[0.063997, 0.063997], "channelMap":["FL", "FR"], "mute":false, "latencyOffsetNsec":0, "iec958Codecs":[]}
+alsa_card.platform-fef00700.hdmi:output:hdmi-output-0={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[0.063997, 0.063997], "iec958Codecs":[], "latencyOffsetNsec":0}
 alsa_card.platform-fef00700.hdmi:profile:off=["hdmi-output-0"]
 alsa_card.platform-fef00700.hdmi:profile:output:hdmi-stereo=["hdmi-output-0"]

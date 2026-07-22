@@ -1,0 +1,14 @@
+indicateur;valeur
+nombre_trames_ibeacon;743
+nombre_evenements;664
+nombre_ibeacons_uniques;26
+rssi_moyen_dbm;-66.37550471063257
+rssi_min_dbm;-80.0
+rssi_max_dbm;-57.0
+rssi_ecart_type_db;3.5215610040759886
+intervalle_moyen_ms;186.6824828718897
+duree_evenement_moyenne_ms;1.1668312980468014
+taux_perte_estime_pct;62.700803212851405
+canal_37;86
+canal_38;316
+canal_39;341

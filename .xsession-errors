@@ -1,4 +1,4 @@
-Xsession: X session started for projeteea at jeu. 16 juil. 2026 18:58:57 CEST
+Xsession: X session started for projeteea at mer. 22 juil. 2026 12:05:50 CEST
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 xrdb: Can't open display ''
 xhost:  unable to open display ""
@@ -22,767 +22,954 @@ dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 dbus-update-activation-environment: setting LC_ALL=fr_FR.UTF-8
 dbus-update-activation-environment: setting PWD=/home/projeteea
-00:00:00.095 [ERROR] [../src/config/rcxml.c:1187] <snapping><range> is deprecated. Use <snapping><range inner="" outer=""> instead.
-00:00:00.099 [ERROR] [../src/config/rcxml.c:1258] <windowSwitcher show="" /> is deprecated. Use <windowSwitcher><osd show="" />
-00:00:00.099 [ERROR] [../src/config/rcxml.c:1282] <windowSwitcher allWorkspaces="" /> is deprecated. Use <action name="NextWindow" workspace=""> instead.
+00:00:00.089 [ERROR] [../src/config/rcxml.c:1187] <snapping><range> is deprecated. Use <snapping><range inner="" outer=""> instead.
+00:00:00.093 [ERROR] [../src/config/rcxml.c:1258] <windowSwitcher show="" /> is deprecated. Use <windowSwitcher><osd show="" />
+00:00:00.094 [ERROR] [../src/config/rcxml.c:1282] <windowSwitcher allWorkspaces="" /> is deprecated. Use <action name="NextWindow" workspace=""> instead.
 applying profile '<anonymous at line 1, col 9>'
 applying profile output 'HDMI-A-1' on connected head 'HDMI-A-1'
 configuration for profile '<anonymous at line 1, col 9>' applied
-Échec : Aucune entité de ce type
 pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
 Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+Échec : Aucune entité de ce type
 pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
 Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
 Monitoring Wayland compositor socket: /run/user/1000/wayland-0
 Connected to Wayland compositor
 Waiting for Wayland compositor to close...
 
-(polkit-mate-authentication-agent-1:1383): GLib-CRITICAL **: 18:59:03.940: g_variant_new_string: assertion 'string != NULL' failed
+(polkit-mate-authentication-agent-1:1374): GLib-CRITICAL **: 12:05:57.618: g_variant_new_string: assertion 'string != NULL' failed
 
-(polkit-mate-authentication-agent-1:1383): polkit-mate-1-WARNING **: 18:59:03.942: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+(polkit-mate-authentication-agent-1:1374): polkit-mate-1-WARNING **: 12:05:57.621: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
 
-** (pcmanfm:1407): WARNING **: 18:59:04.018: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
-** Message: 18:59:05.311: batt: battery 0 not found
-** Message: 18:59:05.702: up: No network connection - polling...
-** Message: 18:59:23.423: No keyring secrets found for eduroam 1/802-1x; asking user.
+** (pcmanfm:1395): WARNING **: 12:05:57.713: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+** Message: 12:05:59.011: batt: battery 0 not found
+** Message: 12:05:59.397: up: No network connection - polling...
+** Message: 12:06:17.592: No keyring secrets found for eduroam 1/802-1x; asking user.
 
-(wf-panel-pi:1405): Pango-WARNING **: 18:59:24.012: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:18.184: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 18:59:24.031: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:18.203: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 18:59:24.052: Invalid UTF-8 string passed to pango_layout_set_text()
-** Message: 19:00:06.228: up: Checking for updates
-** Message: 19:00:12.549: up: Error updating cache - W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. OpenPGP signature verification failed: http://deb.debian.org/debian trixie-updates InRelease: Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-07-16T19:38:26Z Verifying signature:            Not live until 2026-07-16T19:38:42Z
-E: http://deb.debian.org/debian trixie-updates InRelease is not (yet) available (Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-07-16T19:38:26Z Verifying signature:            Not live until 2026-07-16T19:38:42Z)
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:18.223: Invalid UTF-8 string passed to pango_layout_set_text()
+** Message: 12:06:57.469: No keyring secrets found for eduroam 1/802-1x; asking user.
 
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:57.838: Invalid UTF-8 string passed to pango_layout_set_text()
 
-GetShaderSource() ->
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:57.849: Invalid UTF-8 string passed to pango_layout_set_text()
 
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.629: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.630: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.638: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.647: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.648: Invalid UTF-8 string passed to pango_layout_set_text()
-00:04:09.420 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 55ms, your system is too slow
-
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:16.653: Invalid UTF-8 string passed to pango_layout_set_text()
-00:04:09.626 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 52ms, your system is too slow
-
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:42.507: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:42.508: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:42.531: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:07:42.533: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:32.688: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:32.689: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:32.762: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:32.763: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:40.842: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:40.842: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:40.870: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:40.870: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:51.444: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:51.444: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:51.451: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:51.452: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:57.849: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:57.850: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:57.857: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:08:57.858: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:03.084: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:03.086: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:03.100: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:03.101: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:16.352: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:16.353: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:16.366: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:16.367: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:23.819: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:23.819: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:23.835: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:23.835: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:26.920: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:26.921: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:26.934: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:26.935: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:30.118: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:30.121: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:30.131: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:30.132: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:43.567: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:43.568: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:43.582: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:43.583: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:47.868: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:47.870: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:47.885: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:47.886: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:53.402: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:53.403: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:53.425: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:09:53.429: Invalid UTF-8 string passed to pango_layout_set_text()
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:17:49.902: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:17:49.904: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:17:49.928: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:17:49.929: Invalid UTF-8 string passed to pango_layout_set_text()
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:36:16.092: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:36:16.094: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:36:16.102: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:36:16.103: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.301: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.302: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.321: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.322: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.363: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:17.364: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:39.916: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:39.917: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:39.923: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:37:39.924: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:00.601: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:00.603: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:00.628: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:00.629: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:02.826: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:02.826: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:02.830: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:02.831: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:03.184: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:03.184: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:05.433: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:05.434: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:10.451: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:10.451: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:17.036: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:17.036: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:17.045: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:17.046: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:24.851: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:24.851: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:26.924: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:26.925: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:48.401: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:48.402: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:49.875: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:49.876: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:49.884: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:49.885: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:57.530: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:57.532: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:57.550: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:38:57.550: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:01.141: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:01.141: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:43.418: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:43.419: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:53.546: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:53.547: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:53.586: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:39:53.591: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:26.241: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:26.242: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:26.254: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:26.255: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:27.478: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:27.479: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:36.226: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:36.227: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:39.766: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:39.766: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:46.579: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:46.580: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:46.787: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:46.788: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:48.623: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:48.623: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:50.834: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:50.835: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:50.854: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:50.854: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:53.224: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:53.226: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:56.642: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:56.643: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:56.897: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:56.897: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:58.375: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:40:58.375: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:01.331: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:01.332: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:27.670: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:27.670: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:27.675: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:27.675: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 12:06:57.867: Invalid UTF-8 string passed to pango_layout_set_text()
+** Message: 12:06:59.383: up: No network connection - polling...
+** Message: 12:07:59.388: up: No network connection - polling...
+** Message: 12:08:59.383: up: No network connection - polling...
+** Message: 12:09:59.389: up: No network connection - polling...
+** Message: 12:10:59.388: up: No network connection - polling...
+** Message: 14:10:07.965: up: Checking for updates
+** Message: 14:10:12.421: up: Cache updated - comparing versions
 The XKEYBOARD keymap compiler (xkbcomp) reports:
 > Warning:          Unsupported maximum keycode 708, clipping.
 >                   X11 cannot support keycodes above 255.
 > Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
 > Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
 Errors from xkbcomp are not fatal to the X server
-00:38:21.196 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 40ms, your system is too slow
-
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:28.489: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:28.489: Invalid UTF-8 string passed to pango_layout_set_text()
 xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:28.550: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:41:28.550: Invalid UTF-8 string passed to pango_layout_set_text()
 xsettingsd: Set XFixes client disconnect mode (v6.0)
-xsettingsd: Created window 0x600001 on screen 0 with timestamp 2319818
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 395601
 xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
 xsettingsd: Took ownership of selection _XSETTINGS_S0
+** Message: 14:10:22.118: up: Check complete - 106 updates available
+00:10:47.889 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 29ms, your system is too slow
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:43:59.359: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:43:59.360: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.241: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.242: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.276: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.277: Invalid UTF-8 string passed to pango_layout_set_text()
-00:40:56.066 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 363, value 4198222
-00:40:56.066 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 365, value 4198222
-00:40:56.066 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 368, value 4198222
-00:40:56.066 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 369, value 4198222
-00:40:56.068 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 375, value 4194366
-00:40:56.068 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 378, value 4194366
-00:40:56.074 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 380, value 4194366
-00:40:56.074 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 384, value 4194366
-00:40:56.074 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 385, value 4194366
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.329: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:03.330: Invalid UTF-8 string passed to pango_layout_set_text()
-00:41:01.458 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
-
+00:10:49.808 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 223, value 4194361
+00:10:49.808 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 225, value 4194361
+00:10:49.808 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 228, value 4194361
+00:10:49.808 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 229, value 4194361
 X connection to :0 broken (explicit kill or server shutdown).
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:14.414: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:14.415: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:20.384: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:20.385: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:21.552: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:21.552: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:21.563: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:21.563: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:25.513: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:25.518: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:25.539: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:25.539: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:28.480: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:28.481: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:42.950: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:42.951: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:48.029: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:48.030: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:49.412: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:49.413: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:51.258: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:51.259: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:54.744: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:54.745: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:57.823: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:44:57.823: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:09.962: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:09.963: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:11.787: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:11.788: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:23.098: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:23.100: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:26.986: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:26.987: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:27.006: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:27.007: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:28.626: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:28.626: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:28.647: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:28.648: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:31.688: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:31.689: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:33.724: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:33.724: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:33.740: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:33.741: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:35.074: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:35.075: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:40.900: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:40.901: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:42.555: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:42.556: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:46.059: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:46.060: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:47.434: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:47.434: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:56.465: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:45:56.466: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:02.815: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:02.816: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:04.300: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:04.301: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:06.287: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:06.287: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:18.483: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:18.484: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:18.507: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:18.508: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:20.540: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:20.541: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:20.548: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:20.549: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.279: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.280: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.291: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.292: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.610: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.613: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.637: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:34.637: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:35.987: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:35.988: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:44.728: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:44.729: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:46.643: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:46.644: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:48.108: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:48.108: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:50.054: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:50.055: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:56.051: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:56.052: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:56.079: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:56.080: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:57.576: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:46:57.577: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:01.972: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:01.974: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:05.155: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:05.155: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:06.498: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:06.499: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:08.201: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:08.202: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:10.521: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:10.522: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:10.537: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:10.537: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:13.675: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:13.676: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:14.639: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:14.640: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:14.652: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:14.653: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:37.983: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:37.983: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:37.992: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:37.993: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:55.394: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:47:55.394: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:08.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:08.977: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:51.124: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:51.133: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:51.172: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:48:51.181: Invalid UTF-8 string passed to pango_layout_set_text()
-GetShaderInfoLog() ->
-0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
-
-GetShaderSource() ->
-
-#extension GL_EXT_shader_texture_lod: require
-void main() {}
-
-[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:40.640: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:40.642: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:40.656: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:40.656: Invalid UTF-8 string passed to pango_layout_set_text()
-00:50:35.137 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
-
-00:50:35.139 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
-
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.120: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.121: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.125: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.125: Invalid UTF-8 string passed to pango_layout_set_text()
 The XKEYBOARD keymap compiler (xkbcomp) reports:
 > Warning:          Unsupported maximum keycode 708, clipping.
 >                   X11 cannot support keycodes above 255.
 > Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
 > Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
 Errors from xkbcomp are not fatal to the X server
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.799: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:53:46.801: Invalid UTF-8 string passed to pango_layout_set_text()
 xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
 xsettingsd: Set XFixes client disconnect mode (v6.0)
-xsettingsd: Created window 0x600001 on screen 0 with timestamp 3058252
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 684645
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+00:11:57.848 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 331, value 4195751
+00:11:57.848 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 333, value 4195751
+00:11:57.848 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 336, value 4195751
+00:11:57.848 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 337, value 4195751
+00:30:54.716 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 442, value 4194361
+00:30:54.717 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 444, value 4194361
+00:30:54.717 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 447, value 4194361
+00:30:54.717 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 448, value 4194361
+X connection to :0 broken (explicit kill or server shutdown).
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
+xsettingsd: Set XFixes client disconnect mode (v6.0)
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 1886161
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+00:32:23.970 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 331, value 4196434
+00:32:23.970 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 333, value 4196434
+00:32:23.970 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 336, value 4196434
+00:32:23.970 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 337, value 4196434
+00:41:37.113 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+00:41:39.259 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 71ms, your system is too slow
+
+00:43:14.462 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 385, value 4194361
+00:43:14.462 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 388, value 4194361
+00:43:14.462 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 389, value 4194361
+X connection to :0 broken (explicit kill or server shutdown).
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:03.538: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:03.542: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:03.587: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:03.589: Invalid UTF-8 string passed to pango_layout_set_text()
+GetShaderInfoLog() ->
+0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
+
+GetShaderSource() ->
+
+#extension GL_EXT_shader_texture_lod: require
+void main() {}
+
+[GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:43.756: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:43.763: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:43.782: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:48:43.783: Invalid UTF-8 string passed to pango_layout_set_text()
+00:45:58.457 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 26ms, your system is too slow
+
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:49:59.733: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:49:59.734: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:49:59.740: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:49:59.740: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:01.183: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:01.184: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:14.661: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:14.662: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:14.680: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:14.686: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:20.335: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:20.336: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:20.360: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:20.360: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:23.182: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:23.183: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:30.243: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:30.244: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:31.801: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:31.803: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:32.094: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:32.094: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:33.289: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:33.290: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:38.133: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:38.134: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:41.593: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:41.594: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:41.600: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:41.601: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:48.025: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:48.025: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:48.042: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:50:48.043: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:09.875: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:09.876: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:09.933: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:09.938: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:21.957: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:21.959: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:21.977: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:21.979: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:34.262: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:34.263: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:34.277: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:34.279: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:39.717: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:39.719: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:39.736: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:39.737: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:59.663: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:59.665: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:59.693: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:51:59.697: Invalid UTF-8 string passed to pango_layout_set_text()
+00:48:11.570 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+00:48:11.571 [ERROR] [libinput] event4  - PixArt USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:12.965: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:12.966: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:12.983: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:12.983: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:21.264: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:21.264: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:26.982: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:26.993: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:27.040: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:27.047: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:31.004: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:31.005: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:31.011: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:52:31.011: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:09.103: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:09.104: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:09.112: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:09.113: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:19.316: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:19.317: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:49.243: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:49.244: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:49.261: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:49.262: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:54.231: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:54.231: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:54.235: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:53:54.235: Invalid UTF-8 string passed to pango_layout_set_text()
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
+xsettingsd: Set XFixes client disconnect mode (v6.0)
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 3011137
 xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
 xsettingsd: Took ownership of selection _XSETTINGS_S0
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:54:27.976: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.677: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:54:27.977: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.679: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:54:27.999: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.683: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:54:28.000: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.687: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.696: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.698: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.700: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.700: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.703: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.703: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.782: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.783: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.784: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.785: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.787: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:54:03.788: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.793: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.794: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.796: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.797: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.800: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.801: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.802: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.803: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.805: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:31.805: Invalid UTF-8 string passed to pango_layout_set_text()
+00:53:36.483 [ERROR] [xwayland/xwm.c:1410] Failed to get window property
+00:53:36.487 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 407, value 4336835
+00:53:36.487 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 409, value 4336835
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.264: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.268: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.273: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.273: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.279: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.283: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.287: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.289: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.297: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.298: Invalid UTF-8 string passed to pango_layout_set_text()
+00:53:36.540 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 414, value 4336835
+00:53:36.540 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 416, value 4336835
+00:53:36.540 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 419, value 4336835
+00:53:36.540 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 420, value 4336835
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.342: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.345: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.347: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.348: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.359: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:37.360: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.130: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.132: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.133: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.134: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.139: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.141: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.145: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.145: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.148: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:45.149: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.691: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.692: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.694: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.694: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.697: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:49.697: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.554: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.555: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.557: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.558: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.560: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:52.560: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.435: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.437: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.439: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.439: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.441: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:53.442: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.598: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.603: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.605: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.605: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.607: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:54.608: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.711: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.711: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.713: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.714: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.716: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.716: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.718: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.719: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.720: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.721: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.723: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:55.723: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(eom:3741): EOM-WARNING **: 14:57:55.815: Error loading Peas typelib: Typelib file for namespace 'Peas', version '1.0' not found
+
+
+(eom:3741): EOM-WARNING **: 14:57:55.815: Error loading PeasGtk typelib: Typelib file for namespace 'PeasGtk', version '1.0' not found
+
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.510: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.511: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.513: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.514: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.517: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.517: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.557: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.558: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.560: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.560: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.562: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:57:56.562: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:33.993: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:33.994: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:33.996: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:33.998: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:34.002: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:34.003: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.686: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.687: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.692: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.693: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.697: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:42.698: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.963: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.965: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.967: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.967: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.971: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:46.972: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.011: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.019: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.026: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.029: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.040: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:58:55.040: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.643: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.645: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.650: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.651: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.655: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:06.656: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.935: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.936: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.938: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.940: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.945: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:07.945: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.056: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.057: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.059: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.060: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.065: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:11.066: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.600: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.602: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.608: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.609: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.612: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:44.613: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.954: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.955: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.959: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.961: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.965: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 14:59:59.966: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.607: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.608: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.613: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.614: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.617: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:00:05.618: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.320: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.321: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.326: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.327: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.331: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.331: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.335: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.338: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.340: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.340: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.342: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:33.343: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.596: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.600: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.602: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.603: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.606: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.607: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.652: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.653: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.654: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.655: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.658: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:34.658: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.731: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.732: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.768: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.780: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.784: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.784: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.814: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:37.815: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.545: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.546: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.548: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.549: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.551: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.551: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.555: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.557: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.559: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.560: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.564: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:42.564: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.229: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.230: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.237: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.238: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.240: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.241: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.245: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:04:43.246: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.511: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.512: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.514: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.515: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.518: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:32.518: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.759: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.760: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.763: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.765: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.770: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:33.770: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.068: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.069: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.071: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.073: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.078: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:37.079: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.043: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.048: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.049: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.050: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.052: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:38.052: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.744: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.746: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.748: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.748: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.751: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:39.751: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.699: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.706: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.718: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.724: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.734: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.735: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.752: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:44.752: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.115: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.115: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.121: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.123: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.126: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.126: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.134: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:05:46.134: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.048: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.050: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.052: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.052: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.055: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:23.055: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.074: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.076: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.078: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.079: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.082: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:36.083: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.258: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.260: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.262: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.262: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.265: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:37.265: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.624: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.626: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.628: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.628: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.634: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:39.635: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.236: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.238: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.265: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.269: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.282: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.283: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.309: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:41.314: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.360: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.362: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.369: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.371: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.373: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.373: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.382: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:06:42.383: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.435: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.436: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.443: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.450: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.455: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.456: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.468: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.468: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.567: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.570: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.575: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.576: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.580: Invalid UTF-8 string passed to pango_layout_set_text()
+
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:06.581: Invalid UTF-8 string passed to pango_layout_set_text()
 GetShaderInfoLog() ->
 0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
 
@@ -793,82 +980,49 @@ void main() {}
 
 [GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:14.374: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.225: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:14.374: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.226: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:14.395: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.271: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:14.395: Invalid UTF-8 string passed to pango_layout_set_text()
-00:52:13.496 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 225, value 4194366
-00:52:13.496 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 227, value 4194366
-00:52:13.496 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 230, value 4194366
-00:52:13.496 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 231, value 4194366
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.272: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:20.729: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.275: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:20.730: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.276: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:20.767: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.280: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:20.767: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:15.280: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:25.961: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.549: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:25.962: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.550: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:25.984: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.558: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:25.985: Invalid UTF-8 string passed to pango_layout_set_text()
-X connection to :0 broken (explicit kill or server shutdown).
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.566: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:33.788: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.572: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:33.795: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.573: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:33.808: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.586: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:33.809: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.588: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:42.053: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.688: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:42.054: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.689: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:42.068: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.691: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:42.069: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.691: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:49.547: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.695: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:49.548: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:49.571: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:49.572: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:59.784: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:59.785: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:59.827: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:55:59.828: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:06.386: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:06.387: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:06.396: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:06.396: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:12.857: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:12.858: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:12.866: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 00:56:12.869: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:07:26.696: Invalid UTF-8 string passed to pango_layout_set_text()
 GetShaderInfoLog() ->
 0:2(12): error: extension `GL_EXT_shader_texture_lod' unsupported in fragment shader
 
@@ -879,462 +1033,298 @@ void main() {}
 
 [GFX1-]: Couldn't sanitize GL_RENDERER "V3D 4.2.14.0"
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:05.495: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.601: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:05.497: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.603: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:05.521: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.607: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:05.522: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.609: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:12.774: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.612: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:12.775: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.613: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:12.800: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.621: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:12.801: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.624: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:17.480: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.627: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:17.481: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.629: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:17.499: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.643: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:17.500: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:31.644: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:24.545: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.598: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:24.546: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.599: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:24.567: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.602: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:24.570: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.603: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:30.214: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.620: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:30.215: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.622: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:30.230: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.629: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:30.231: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.629: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:37.483: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.634: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:37.484: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:55.635: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:37.505: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.107: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:37.507: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.111: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:50.626: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.144: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:50.629: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.147: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:50.638: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.168: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:50.638: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.179: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:51.314: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.223: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:51.315: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:32:58.224: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:51.324: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.520: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:58:51.324: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.520: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.066: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.524: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.067: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.525: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.070: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.527: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.075: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.527: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.075: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.537: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:39.077: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.541: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.208: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.547: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.218: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.548: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.224: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.563: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.256: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:43.565: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.261: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.286: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:44.266: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.286: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.796: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.288: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.801: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.290: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.810: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.292: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.840: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.292: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.845: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.295: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:45.857: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.296: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.084: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.298: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.092: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.299: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.096: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.301: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.207: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:46.302: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.209: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.898: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:46.219: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.900: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.618: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.905: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.619: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.907: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.629: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.920: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.656: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.922: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.660: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.924: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 00:59:49.670: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.924: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.151: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.927: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.154: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:34:48.928: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.163: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.290: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.198: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.292: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.199: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.294: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:29.202: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.294: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.482: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.297: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.483: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:00.298: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.486: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.546: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.523: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.548: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.524: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.551: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:35.531: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.557: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.236: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.560: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.238: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:02.561: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.247: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.498: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.259: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.500: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.260: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.502: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:47.273: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.503: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.526: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.509: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.526: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:04.509: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.528: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.614: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.551: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.618: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.551: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.621: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:00:54.559: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.622: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.934: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.626: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.935: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:06.626: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.944: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.441: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.962: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.442: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.963: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.446: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:03.968: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.447: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.150: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.451: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.151: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:07.451: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.154: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.197: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.173: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.198: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.174: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.200: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:01:54.179: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.201: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:03.974: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.211: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:03.979: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:08.212: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:03.988: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.538: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:04.005: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.541: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:04.007: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.544: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:04.021: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.545: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.700: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.551: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.705: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:11.552: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.711: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.596: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.735: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.598: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.736: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.599: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:09.743: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.600: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.596: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.602: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.602: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:12.602: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.609: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.080: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.644: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.082: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.645: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.083: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:02:16.651: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.084: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GObject-CRITICAL **: 01:02:23.576: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.086: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.576: g_variant_get_child_value: assertion 'index_ < g_variant_n_children (value)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:19.087: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.576: g_variant_get_string: assertion 'value != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.112: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.576: g_variant_is_object_path: assertion 'string != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.114: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GIO-CRITICAL **: 01:02:23.577: g_dbus_object_manager_get_interface: assertion 'g_variant_is_object_path (object_path)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.116: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GIO-CRITICAL **: 01:02:23.577: g_dbus_proxy_get_cached_property: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.117: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.577: g_variant_unref: assertion 'value != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.120: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.577: g_variant_unref: assertion 'value != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:48.121: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GObject-CRITICAL **: 01:02:23.577: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.756: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GIO-CRITICAL **: 01:02:23.638: g_dbus_proxy_get_cached_property: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.757: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.638: g_variant_get_type: assertion 'value != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.760: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.638: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.761: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.638: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.763: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-CRITICAL **: 01:02:23.639: g_variant_unref: assertion 'value != NULL' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.763: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): GLib-GObject-CRITICAL **: 01:02:23.639: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.767: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.710: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.768: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.711: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.769: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.714: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.770: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.730: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.772: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.731: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.772: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:56.734: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.940: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.772: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.942: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.773: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.943: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.777: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.943: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.807: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.947: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.807: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.947: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:03:58.809: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.988: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:15.614: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.989: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:15.614: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.991: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:15.616: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.991: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.473: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.994: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.474: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.476: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.490: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.490: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:18.495: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.608: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.610: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.615: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.632: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.634: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:06:30.642: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.631: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.632: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.638: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.653: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.654: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:35.663: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.275: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.278: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.289: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.299: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.300: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:51.305: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.395: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.396: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.398: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.413: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.414: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:52.419: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.850: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.852: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.862: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.911: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.918: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:08:53.927: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.859: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.861: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.868: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.910: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.911: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:09:16.923: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.143: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.144: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.147: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.158: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.159: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:07.160: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.132: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.134: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.137: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.159: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.161: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.168: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.217: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.218: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:15.224: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.624: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.626: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.628: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.637: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.638: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 01:12:17.639: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.747: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.748: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.750: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.768: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.769: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:15.773: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.903: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.906: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.910: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.921: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.921: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:16.923: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.072: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.073: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.075: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.115: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.116: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:17.120: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:50.888: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:50.890: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1405): Pango-WARNING **: 03:19:50.906: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1390): Pango-WARNING **: 15:35:55.994: Invalid UTF-8 string passed to pango_layout_set_text()

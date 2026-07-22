@@ -2151,9 +2151,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-'''
 
-dst.write_text(code, encoding="utf-8")
-ast.parse(code)
-print(f"Fichier créé et syntaxe Python validée : {dst}")
-print(f"Taille : {dst.stat().st_size} octets")

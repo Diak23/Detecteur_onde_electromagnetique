@@ -1,158 +1,3 @@
-uname -m
-sudo apt update
-sudo apt upgrade -y
-sudo apt installe apache2 _y
-sudo apt installe apache2 -y
-sudo apt install apache2 -y
-hostname -I
-http://192.168.1.67
-sudo nano /var/www/html/index.html
-sudo apt install php libapache2-mod-php -y
-sudo systemctl restart apache2
-sudo apt install mariadb-server php-mysql -y
-sudo mysql_secure_installation
-sudo update
-sudo apt update
-sudo apt install mariadb-server -y
-sudo mysql_secure_installation
-lsblk
-sudo mkdir /mnt/carte
-sudo mount /dev/sda2 /mnt/carte
-lsblk
-la commande lsblk ne trouve pas la carte
-dmesg | tail -20
-sudo raspi-config
-python version
-python3 ))version
-python3 --version
-sudo dpkg -i rpiazertytweak.deb
-ls
-cd Desktop/
-sudo dpkg -i rpiazertytweak.deb
-sudo shutdown --reboot now
-sudo dpkg -i rpiazertytweak.deb
-cd desk
-ls
-cd Desktop/
-sudo dpkg -i rpiazertytweak.deb
-sudo shutdown --reboot now
-sudo dpkg -i rpiazertytweak.deb
-cd Des
-cd Desktop/
-sudo dpkg -i rpiazertytweak.deb
-sudo shutdown --reboot now
-/usr/bin/python "/home/projeteea/Documents/Python/print("hello").py"
-/usr/bin/python /home/projeteea/Documents/Python/Test.py
-a
-/usr/bin/python /home/projeteea/Documents/Python/Test.py
-a
-python3
-sudo apt update
-sudo apt install code -y
-python3
-sudo raspi-config
-sudo reboot
-sudo apt install -y i2c-tools
-i2cdetect -y 1
-sudo apt install -y python3-pip
-pip3 install adafruit-circuitpython-bme280
-sudo apt install -y python3-pip
-pip3 install adafruit-circuitpython-bme280
-sudo apt install python3-venv python3-full -y
-mkdir ~/bme280_project
-cd ~/bme280_project
-python3 -m venv venv
-source venv/bin/activate
-pip install adafruit-circuitpython-bme280
-nano bme280_test.py
-[200~python bme280_test.py
-~python3 bme280_test.py
-~python bme280_test.py
-python bme280_test.py
-pip install RPi.GPIO adafruit-blinka
-python bme280_test.py
-ls
-nano bme280_test.py
-python bme280_test.py
-nano bme280_test2.py
-python bme280_test2.py
-nano bme280_test2.py
-python bme280_test2.py
-nano bme280_test2.py
-python bme280_test2.py
-sudo rapi-config
-sudo raspi-config
-sudo opt install i2c-tools
-sudo pip3 install adafruit-circuitpython-bmp280
-raspi config
-raspi-config
-sudo raspi-config
-sudo i2cdetect -y1
-y
-sudo i2cdetect -y1
-sudo i2cdetect [-y]
-sudo i2cdetect [-1]
-sudo i2cdetect -F
-sudo pip3 install adafruit-blinka
-ls
-cd bme280_project/
-ls
-cat bme280_test
-cat bme280_test.py
-source venv/bin/activate
-python bme280_test2.py
-cat bme280_test2.py
-nano bme280_test2.py
-cat bme280_test2.py
-deactivate
-source venv/bin/activate
-sudo i2cdetect -y 1
-ipconfig
-sudo wlan
-ls
-wifi_scan.py
-nano wifi_scan.py
-ping
-dmesg
-home
-ls
-home,
-cd
-psw
-passwd
-bin
-dev
-sudo halt
-iwlist
-iw phy
-iw list |grep monitor
-iw list | grep monitor
-iw list
-grep monitor
-sudo apt update
-sudo apt install wireshark tshark aircrack-ng -y
-iwconfig
-iwconfig wlan0
-sudo ip link set wlan0 down
-sudo iw dev wlan0 set type monitor
-sudo ip link set wlan0 up
-wireshark --version
-tshark -v
-wireshark
-ip link
-iwconfig
-iw list | grep monitor
-iw list
-grep monitor
-wireshark
-[200~uname -a
-wireshark --version
-tshark -v
-iw list | grep monitor~
-uname -a
-wireshark --version
-tshark -v
-iw list | grep monitor
 iw list | grep -i monitor
 iw list
 Supported interface modes:
@@ -1789,3 +1634,367 @@ cd ~/acquisition_udp
 ls -l ble_beacon_studio.py
 python3 -u ble_beacon_studio.py
 bluetoothctl
+git status
+git add .
+git add
+git add .
+git commit -m "Ajout nouveau dossier BlE IBEACON"
+git status
+git push
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+sudo systemctl unmask --runtime bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl mask --runtime bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo killall bluetoothd 2>/dev/null
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 00 00 00 00 00 00 00 07 00
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 E2 0A 39 F4 73 F5 4B C4 A1 2F 17 D1 AD 07 A9 61 00 00 00 00 C8 00
+sudo hcitool -i hci0 cmd 0x08 0x000A 01
+sudo hcitool -i hci0 cmd 0x08 0x000A 00
+ls
+cd  acquisition_udp
+ls
+python3 interface_ibeacon_nrf51822.py 
+python3 interface_ibeacon_nrf51822_v2.py 
+python3 interface_ibeacon_nrf51822_v3.py
+ls
+python3 interface_ibeacon_nrf51822_v3_calibration.py
+git status
+git add .
+git commit -m "Ajout d'un nouveau programme pour la cabibration"
+git push
+bluetoothctl
+git status
+git pull
+ls
+cd acquisition_udp
+ls
+source venv/bin/activate
+ls
+python interface_ibeacon_nrf51822_v5_emission_reception.py
+nano interface_ibeacon_nrf51822_v5_emission_reception.py
+python interface_ibeacon_nrf51822_v5_emission_reception.py
+sudo apt update
+sudo apt install -y tshark bluez python3-tk python3-matplotlib
+sudo systemctl enable --now bluetooth
+tshark -D
+python3 interface_ibeacon_nrf51822_v5_emission_reception.py
+busctl get-porpety org.bluez\
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+sudo btmgmt info
+bluetoothctl
+bluetoothctl
+bluetoothctl --version
+uname -a
+cat /etc/os-release
+sudo journalctl -u bluetooth -f
+sudo systemctl stop bluetooth
+sudo btmgmt power off
+sudo btmgmt power on
+sudo btmgmt le on
+sudo btmgmt advertising on
+sudo btmgmt info
+[200~sudo systemctl stop bluetooth
+sudo btmgmt power off
+sudo systemctl stop bluetooth
+sudo btmgmt power off
+sudo btmgmt power on
+sudo btmgmt le on
+sudo btmgmt advertising on
+sudo btmgmt info
+sudo systemctl stop bluetooth
+sudo btmgmt power off
+sudo btmgmt power on
+sudo btmgmt le on
+sudo btmgmt advertising on
+sudo btmgmt info
+ls
+cd acquisition_udp
+ls
+source venv/bin/activate
+python interface_ibeacon_nrf51822_v3_calibration.py
+python interface_radio_v2_ble_wifi_interval_corrige.py
+CC
+sudo btmgmt info
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 SupportedInstances
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+hciconfig hci0
+sudo btmgmt find
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+systemctl is-active bluetooth
+busctl get-property org.bluez /org/bluez/hci0   org.bluez.LEAdvertisingManager1 ActiveInstances
+cd ~/acquisition_udp
+unzip plateforme_ble_v6.zip
+cd plateforme_ble_v6
+chmod +x install.sh diagnostic.sh
+./install.sh
+cd
+cd ~/acquisition_udp
+unzip plateforme_ble_v6.zip
+cd plateforme_ble_v6
+chmod +x install.sh diagnostic.sh
+./install.sh
+quit
+cd
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+cd ~/acquisition_udp
+unzip plateforme_ble_v6.zip
+cd plateforme_ble_v6
+chmod +x install.sh diagnostic.sh
+./install.sh
+cd ~/acquisition_udp
+unzip plateforme_ble_v6.zip
+cd plateforme_ble_v6
+chmod +x install.sh diagnostic.sh
+./install.sh
+python3 -m venv --system-site-packages venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 -c "import dbus; from gi.repository import GLib; print('D-Bus OK')"
+sudo systemctl start bluetooth
+source venv/bin/activate
+python3 main.py
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+cd ~/acquisition_udp
+unzip plateforme_ble_v6.zip
+cd plateforme_ble_v6
+chmod +x install.sh diagnostic.sh
+./install.sh
+python3 -m venv --system-site-packages venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 -c "import dbus; from gi.repository import GLib; print('D-Bus OK')"
+python3 main.py
+nano main.py
+nano emission_dbus.py
+nano main.py
+ls -l
+find . -maxdepth 1 -type f
+grep -n "get_path" main.py
+sed -i 's/self\.advertisement\.get_path()/dbus.ObjectPath(self.advertisement.PATH)/g' main.py
+grep -n "get_path" main.py
+sed -n '178,208p' main.py
+python3 -m py_compile main.py
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+python3 main.py
+busctl tree org.bluez
+sudo systemctl restart bluetooth
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+cp main.py main.py.bak
+nano +170 main.py
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+sleep 3
+busctl get-property org.bluez /org/bluez/hci0 org.bluez.LEAdvertisingManager1 ActiveInstances
+python3 -m py_compile main.py
+nano +175 main.py
+sed -n '165,240p' main.py
+cp main.py main.py.avant_indentation
+python3 - <<'PY'
+from pathlib import Path
+
+path = Path("main.py")
+lines = path.read_text(encoding="utf-8").splitlines()
+
+start = None
+end = None
+
+for i, line in enumerate(lines):
+    if line.startswith("    def start(self, config):"):
+        start = i
+    elif start is not None and line.startswith("    def stop(self):"):
+        end = i
+        break
+
+if start is None:
+    raise SystemExit("Fonction start() introuvable.")
+
+if end is None:
+    raise SystemExit("Fonction stop() introuvable après start().")
+
+for i in range(start + 1, end):
+    if lines[i].strip():
+        lines[i] = "    " + lines[i]
+
+path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+print(f"Indentation corrigée entre les lignes {start + 2} et {end}.")
+PY
+
+sed -n '170,250p' main.py
+python3 -m py_compile main.py
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+sleep 3
+python3 main.py
+nano main.py
+python3 -m py_compile main.py
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+sleep 3
+python3 main.py
+hci0 Set Advertising complete, settings: powered bondable ssp br/edr le secure-conn
+bluetoothctl --version
+uname -r
+cat /etc/os-release
+sudo systemctl rstart bluetooth 
+sudo systemctl restart bluetooth
+sleep3
+sudo systemctl restart bluetooth
+sleep 3
+bluetoothctl
+sudo btmon
+busctl get-property org.bluez /org/bluez/hci0   org.bluez.LEAdvertisingManager1 ActiveInstances
+busctl get-property org.bluez /org/bluez/hci0   org.bluez.LEAdvertisingManager1 ActiveInstances
+python3 test_emission.py
+cd ~/acquisition_udp
+unzip plateforme_ble_v7.zip
+cd plateforme_ble_v7
+chmod +x install.sh diagnostic.sh emission_dbus.py test_emission.py
+./install.sh
+python3 -m venv --system-site-packages venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 -c "import dbus; from gi.repository import GLib; print('D-Bus OK')"
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+sleep 3
+source venv/bin/activate
+python3 test_emission.py
+sudo btmon
+sudo journalctl -u bluetooth -f
+python3 main.py
+cd ~/acquisition_udp/plateforme_ble_v7
+source venv/bin/activate
+sudo btmgmt advertising off
+sudo systemctl restart bluetooth
+sleep 3
+python3 test_emission.py
+cd /tmp
+wget -O example-advertisement https://raw.githubusercontent.com/bluez/bluez/master/test/example-advertisement
+chmod +x example-advertisement
+python3 example-advertisement --help
+python3 example-advertisement
+hciconfig hci0 -a
+rfkill list
+sudo systemctl stop bluetooth
+sudo pkill bluetoothd 2>/dev/null || true
+sudo systemctl stop bluetooth
+sudo pkill bluetoothd 2>/dev/null || true
+bluetoothctl show
+scan off
+quit
+bluetoothctl
+bluetoothctl devices connected
+sudo journalctl -u bluetooth -f
+sudo journalctl -u bluetooth --since "3 minutes ago" --no-pager
+sudo systemctl stop bluetooth
+sudo pkill bluetoothd 2>/dev/null || true
+sudo btmon | tee ~/btmon_ibeacon_v7.log
+grep -i -A20 -B10 -E "advertis|0x003e|0x003d|add advertising|set advertising|status" ~/btmon_ibeacon_v7.log
+sudo btmgmt info
+bluetooth show
+bluetoothctl show
+scan off
+sudo systemctl stop bluetooth
+sudo pkill bluetoothd 2>/dev/null || true
+sudo btmon | tee ~/btmon_advertising_error.log
+cd /tmp
+source ~/acquisition_udp/plateforme_ble_v7/venv/bin/activate
+python3 example-advertisement
+grep -i -A20 -B10 -E "add advertising|advertising parameters|advertising enable|status" ~/btmon_advertising_error.log
+br/edr le
+command -v bluetoothd
+sudo systemctl stop bluetooth
+sudo pkill bluetoothd 2>/dev/null || true
+command -v bluetoothd
+sudo bluetoothd -n -d
+sudo /usr/libexec/bluetooth/bluetoothd -n -d
+tshark -D
+cd ~/acquisition_udp
+unzip plateforme_ibeacon_mobile_nrf.zip
+cd plateforme_ibeacon_mobile_nrf
+chmod +x install.sh
+./install.sh
+./diagnostic.sh
+source venv/bin/activate
+python3 main.py
+source venv/bin/activate
+python3 main.py
+source venv/bin/activate
+python3 main.py
+cd
+cd ~/acquisition_udp
+unzip plateforme_ibeacon_mobile_v2.zip
+cd plateforme_ibeacon_mobile_v2
+chmod +x install.sh diagnostic.sh
+./install.sh
+source venv/bin/activate
+python3 main.py
+source venv/bin/activate
+python3 main.py
+source venv/bin/activate
+python3 main.py
+source venv/bin/activate
+python3 main.py
+cd
+ls
+cd acquisition_udp
+ls
+python3 interface_ibeacon_nrf51822_v3_calibration.py
+source venv/bin/activate
+python interface_ibeacon_nrf51822_v3_calibration.py
+tshark -D
+ls -l ~/.local/lib/wireshark/extcap/
+python3 ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py --extcap-interfaces
+ls -l /dev/ttyUSB*
+groups
+chmod +x ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py
+tshark -D
+source venv/bin/activate
+ls
+python interface_ibeacon_nrf51822_v3_calibration.py 
+lsusb
+ls -l /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
+lsusb
+ls -l /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
+dmesg | tail -n 30
+python3 ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py --extcap-interfaces
+/usr/bin/python3 -c "import serial, packaging, psutil; print('Dépendances OK')"
+python3 ~/.local/lib/wireshark/extcap/nrf_sniffer_ble.py --extcap-interfaces
+ls
+python3 interface_ibeacon_nrf51822_v3_calibration.py
+python3 plateforme_ibeacon_mobile_v2
+~/acquisition_udp/plateforme_ibeacon_mobile_v2 $ source venv/bin/activate
+cd plateforme_ibeacon_mobile_v2
+ls
+python3 main.py
+cd
+cd ~/acquisition_udp
+unzip plateforme_ibeacon_mobile_v21.zip
+cd plateforme_ibeacon_mobile_v21
+source ~/acquisition_udp/plateforme_ibeacon_mobile_v2/venv/bin/activate
+pip install -r requirements.txt
+python3 main.py
+cd
+cd ~/acquisition_udp
+unzip plateforme_ibeacon_mobile_v3.zip
+cd plateforme_ibeacon_mobile_v3
+chmod +x install.sh diagnostic.sh
+./install.sh
+source venv/bin/activate
+python3 main.py
+python main.py
+ls
+cd acquisition_udp
+ls
+cd plateforme_ibeacon_mobile_v3
+source venv/bin/activate
+python main.py

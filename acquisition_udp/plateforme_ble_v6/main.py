@@ -1,0 +1,720 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import csv
+import json
+import queue
+import re
+import shutil
+import subprocess
+import threading
+from dataclasses import dataclass, asdict
+from datetime import datetime
+from pathlib import Path
+from statistics import mean, pstdev
+from typing import Optional
+
+import tkinter as tk
+from tkinter import messagebox, ttk
+
+import dbus
+import dbus.exceptions
+import dbus.mainloop.glib
+import dbus.service
+from gi.repository import GLib
+
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
+
+APP_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = APP_DIR / "acquisitions_ble"
+CALIBRATION_FILE = APP_DIR / "calibration_rssi.json"
+DEFAULT_UUID = "e20a39f4-73f5-4bc4-a12f-17d1ad07a961"
+DEFAULT_SNIFFER = "/dev/ttyUSB0-4.4"
+
+BLUEZ_SERVICE = "org.bluez"
+DBUS_OM_IFACE = "org.freedesktop.DBus.ObjectManager"
+LE_ADV_MANAGER_IFACE = "org.bluez.LEAdvertisingManager1"
+LE_ADV_IFACE = "org.bluez.LEAdvertisement1"
+
+UUID_RE = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+
+
+def validate_uuid(value: str) -> str:
+    value = value.strip().lower()
+    if not UUID_RE.match(value):
+        raise ValueError("UUID invalide. Format attendu : 8-4-4-4-12.")
+    return value
+
+
+def validate_uint16(value, label: str) -> int:
+    number = int(value)
+    if not 0 <= number <= 65535:
+        raise ValueError(f"{label} doit être compris entre 0 et 65535.")
+    return number
+
+
+def validate_tx_power(value) -> int:
+    number = int(value)
+    if not -128 <= number <= 127:
+        raise ValueError("Tx Power doit être compris entre -128 et 127 dBm.")
+    return number
+
+
+def build_ibeacon_payload(uuid: str, major: int, minor: int, tx_power: int) -> bytes:
+    raw_uuid = bytes.fromhex(uuid.replace("-", ""))
+    return b"\x02\x15" + raw_uuid + major.to_bytes(2, "big") + minor.to_bytes(2, "big") + bytes([tx_power & 0xFF])
+
+
+def normalize_hex(text: str) -> str:
+    return re.sub(r"[^0-9a-fA-F]", "", text or "").lower()
+
+
+def signed8(value: int) -> int:
+    return value - 256 if value >= 128 else value
+
+
+def format_uuid(raw: bytes) -> str:
+    h = raw.hex()
+    return f"{h[0:8]}-{h[8:12]}-{h[12:16]}-{h[16:20]}-{h[20:32]}"
+
+
+def decode_ibeacon(text: str):
+    h = normalize_hex(text)
+    candidates = []
+    if h.startswith("4c00") or h.startswith("004c"):
+        candidates.append(h[4:])
+    candidates.append(h)
+    for payload_hex in candidates:
+        if not payload_hex.startswith("0215") or len(payload_hex) < 50:
+            continue
+        try:
+            payload = bytes.fromhex(payload_hex[:50])
+            return {
+                "uuid": format_uuid(payload[2:18]),
+                "major": int.from_bytes(payload[18:20], "big"),
+                "minor": int.from_bytes(payload[20:22], "big"),
+                "tx_power": signed8(payload[22]),
+            }
+        except Exception:
+            pass
+    return None
+
+
+@dataclass
+class AdvertConfig:
+    uuid: str
+    major: int
+    minor: int
+    tx_power: int
+    adapter: str = "hci0"
+
+
+class IBeaconAdvertisement(dbus.service.Object):
+    PATH = "/org/bluez/plateforme_ble/advertisement0"
+
+    def __init__(self, bus, config: AdvertConfig):
+        super().__init__(bus, self.PATH)
+        self.payload = build_ibeacon_payload(config.uuid, config.major, config.minor, config.tx_power)
+
+    def properties(self):
+        return {
+            "Type": dbus.String("broadcast"),
+            "ManufacturerData": dbus.Dictionary(
+                {dbus.UInt16(0x004C): dbus.Array([dbus.Byte(x) for x in self.payload], signature="y")},
+                signature="qv",
+            ),
+        }
+
+    @dbus.service.method("org.freedesktop.DBus.Properties", in_signature="ss", out_signature="v")
+    def Get(self, interface, prop):
+        props = self.properties()
+        if interface != LE_ADV_IFACE or prop not in props:
+            raise dbus.exceptions.DBusException("org.freedesktop.DBus.Error.InvalidArgs", "Propriété inconnue")
+        return props[prop]
+
+    @dbus.service.method("org.freedesktop.DBus.Properties", in_signature="s", out_signature="a{sv}")
+    def GetAll(self, interface):
+        if interface != LE_ADV_IFACE:
+            raise dbus.exceptions.DBusException("org.freedesktop.DBus.Error.InvalidArgs", "Interface inconnue")
+        return self.properties()
+
+    @dbus.service.method("org.freedesktop.DBus.Properties", in_signature="ssv", out_signature="")
+    def Set(self, interface, prop, value):
+        raise dbus.exceptions.DBusException("org.freedesktop.DBus.Error.PropertyReadOnly", "Lecture seule")
+
+    @dbus.service.method(LE_ADV_IFACE, in_signature="", out_signature="")
+    def Release(self):
+        pass
+
+
+class BlueZAdvertiser:
+    def __init__(self, logger):
+        self.logger = logger
+        self.bus = None
+        self.manager = None
+        self.advertisement = None
+        self.loop = None
+        self.thread = None
+        self.running = False
+
+    def _manager_path(self, adapter: str) -> str:
+        manager = dbus.Interface(self.bus.get_object(BLUEZ_SERVICE, "/"), DBUS_OM_IFACE)
+        objects = manager.GetManagedObjects()
+        preferred = f"/org/bluez/{adapter}"
+        if preferred in objects and LE_ADV_MANAGER_IFACE in objects[preferred]:
+            return preferred
+        for path, interfaces in objects.items():
+            if LE_ADV_MANAGER_IFACE in interfaces:
+                return str(path)
+        raise RuntimeError("Aucun LEAdvertisingManager1 trouvé.")
+
+    def start(self, config):
+        if self.running:
+            raise RuntimeError("Une émission est déjà active.")
+
+        dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+
+        self.bus = dbus.SystemBus()
+        path = self._manager_path(config.adapter)
+
+        self.manager = dbus.Interface(
+            self.bus.get_object(BLUEZ_SERVICE, path),
+            LE_ADV_MANAGER_IFACE
+        )
+
+        self.advertisement = IBeaconAdvertisement(self.bus, config)
+        self.loop = GLib.MainLoop()
+
+        registration_done = threading.Event()
+        registration_error = []
+
+        def register_ok():
+            self.running = True
+            self.logger(f"Advertisement enregistré sur {path}.")
+            registration_done.set()
+
+        def register_error(error):
+            registration_error.append(error)
+            self.running = False
+            self.logger(f"Erreur D-Bus : {error}")
+            registration_done.set()
+
+        self.manager.RegisterAdvertisement(
+            dbus.ObjectPath(self.advertisement.PATH),
+            dbus.Dictionary({}, signature="sv"),
+            reply_handler=register_ok,
+            error_handler=register_error,
+        )
+
+        self.thread = threading.Thread(
+            target=self.loop.run,
+            name="bluez-advertising-loop",
+            daemon=True,
+        )
+        self.thread.start()
+
+        if not registration_done.wait(timeout=15):
+            self.loop.quit()
+            raise RuntimeError(
+                "BlueZ n'a pas répondu à RegisterAdvertisement."
+            )
+
+        if registration_error:
+            error = registration_error[0]
+
+            try:
+                self.advertisement.remove_from_connection()
+            except Exception:
+                pass
+
+            self.advertisement = None
+            self.manager = None
+            self.loop.quit()
+
+            name = (
+                error.get_dbus_name()
+                if hasattr(error, "get_dbus_name")
+                else type(error).__name__
+            )
+            message = (
+                error.get_dbus_message()
+                if hasattr(error, "get_dbus_message")
+                else str(error)
+            )
+
+            raise RuntimeError(f"{name}: {message}")
+    def stop(self):
+        if self.manager and self.advertisement:
+            try:
+                self.manager.UnregisterAdvertisement(dbus.ObjectPath(self.advertisement.PATH))
+            except dbus.exceptions.DBusException as exc:
+                if "DoesNotExist" not in str(exc):
+                    self.logger(f"Avertissement arrêt : {exc}")
+        if self.loop:
+            self.loop.quit()
+        if self.thread and self.thread.is_alive():
+            self.thread.join(timeout=2)
+        if self.advertisement:
+            try:
+                self.advertisement.remove_from_connection()
+            except Exception:
+                pass
+        self.bus = self.manager = self.advertisement = self.loop = self.thread = None
+        self.running = False
+        self.logger("Advertisement arrêté.")
+
+
+@dataclass
+class BLEFrame:
+    timestamp: float
+    address: str
+    length: Optional[int]
+    pdu_type: str
+    rssi_raw: Optional[float]
+    rssi_calibrated: Optional[float]
+    channel: Optional[int]
+    manufacturer_hex: str
+    uuid: str = ""
+    major: Optional[int] = None
+    minor: Optional[int] = None
+    tx_power: Optional[int] = None
+
+
+@dataclass
+class AdvertisingEvent:
+    index: int
+    start_time: float
+    end_time: float
+    duration_ms: float
+    interval_ms: Optional[float]
+    packet_count: int
+    channels: str
+    rssi_mean: Optional[float]
+    address: str
+    uuid: str
+    major: Optional[int]
+    minor: Optional[int]
+
+
+class NRFCapture:
+    FIELDS = [
+        "frame.time_epoch",
+        "btle.advertising_address",
+        "btle.length",
+        "btle.advertising_header.pdu_type",
+        "nordic_ble.rssi",
+        "nordic_ble.channel",
+        "btcommon.eir_ad.entry.data",
+    ]
+
+    def __init__(self, interface, callback, logger, offset=0.0):
+        self.interface = interface
+        self.callback = callback
+        self.logger = logger
+        self.offset = offset
+        self.process = None
+        self.thread = None
+        self.stop_event = threading.Event()
+
+    def command(self):
+        cmd = ["tshark", "-l", "-n", "-i", self.interface, "-Y", "btle", "-T", "fields", "-E", "separator=;", "-E", "occurrence=f", "-E", "quote=n"]
+        for field in self.FIELDS:
+            cmd += ["-e", field]
+        return cmd
+
+    def start(self):
+        if shutil.which("tshark") is None:
+            raise RuntimeError("tshark est introuvable.")
+        self.stop_event.clear()
+        self.process = subprocess.Popen(self.command(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
+        self.thread = threading.Thread(target=self._read, daemon=True)
+        self.thread.start()
+        threading.Thread(target=self._stderr, daemon=True).start()
+        self.logger("Capture nRF démarrée.")
+
+    def _read(self):
+        assert self.process and self.process.stdout
+        for line in self.process.stdout:
+            if self.stop_event.is_set():
+                break
+            parts = line.rstrip("\n").split(";")
+            parts += [""] * (len(self.FIELDS) - len(parts))
+            try:
+                timestamp = float(parts[0].replace(",", "."))
+            except ValueError:
+                continue
+            try:
+                rssi = float(parts[4].replace(",", "."))
+            except ValueError:
+                rssi = None
+            try:
+                length = int(parts[2])
+            except ValueError:
+                length = None
+            try:
+                channel = int(parts[5])
+            except ValueError:
+                channel = None
+            decoded = decode_ibeacon(parts[6])
+            frame = BLEFrame(
+                timestamp, parts[1].strip(), length, parts[3].strip(), rssi,
+                rssi + self.offset if rssi is not None else None,
+                channel, parts[6].strip(),
+                decoded["uuid"] if decoded else "",
+                decoded["major"] if decoded else None,
+                decoded["minor"] if decoded else None,
+                decoded["tx_power"] if decoded else None,
+            )
+            self.callback(frame)
+
+    def _stderr(self):
+        assert self.process and self.process.stderr
+        for line in self.process.stderr:
+            if self.stop_event.is_set():
+                break
+            if line.strip():
+                self.logger("tshark: " + line.strip())
+
+    def stop(self):
+        self.stop_event.set()
+        if self.process:
+            self.process.terminate()
+            try:
+                self.process.wait(timeout=3)
+            except subprocess.TimeoutExpired:
+                self.process.kill()
+        self.process = None
+        if self.thread and self.thread.is_alive():
+            self.thread.join(timeout=2)
+        self.thread = None
+        self.logger("Capture arrêtée.")
+
+
+def group_events(frames: list[BLEFrame], window_ms: float) -> list[AdvertisingEvent]:
+    if not frames:
+        return []
+    groups = []
+    for frame in sorted(frames, key=lambda f: f.timestamp):
+        key = (frame.address, frame.uuid, frame.major, frame.minor)
+        if not groups:
+            groups.append([frame])
+            continue
+        previous = groups[-1][-1]
+        previous_key = (previous.address, previous.uuid, previous.major, previous.minor)
+        gap_ms = (frame.timestamp - previous.timestamp) * 1000
+        if key == previous_key and gap_ms <= window_ms:
+            groups[-1].append(frame)
+        else:
+            groups.append([frame])
+
+    events = []
+    previous_start = {}
+    for index, group in enumerate(groups, 1):
+        first = group[0]
+        key = (first.address, first.uuid, first.major, first.minor)
+        start, end = first.timestamp, group[-1].timestamp
+        interval = None if key not in previous_start else (start - previous_start[key]) * 1000
+        previous_start[key] = start
+        rssi = [f.rssi_calibrated for f in group if f.rssi_calibrated is not None]
+        channels = sorted({f.channel for f in group if f.channel is not None})
+        events.append(AdvertisingEvent(index, start, end, (end-start)*1000, interval, len(group), ",".join(map(str, channels)), mean(rssi) if rssi else None, first.address, first.uuid, first.major, first.minor))
+    return events
+
+
+def statistics(frames, events):
+    rssi = [f.rssi_calibrated for f in frames if f.rssi_calibrated is not None]
+    intervals = [e.interval_ms for e in events if e.interval_ms is not None]
+    durations = [e.duration_ms for e in events]
+    complete = sum(1 for e in events if {"37", "38", "39"}.issubset(set(e.channels.split(","))))
+    return {
+        "nombre_trames": len(frames),
+        "nombre_evenements": len(events),
+        "evenements_3_canaux": complete,
+        "taux_evenements_3_canaux_pct": 100*complete/len(events) if events else 0,
+        "rssi_moyen_dbm": mean(rssi) if rssi else None,
+        "rssi_ecart_type_db": pstdev(rssi) if len(rssi) > 1 else (0 if rssi else None),
+        "rssi_min_dbm": min(rssi) if rssi else None,
+        "rssi_max_dbm": max(rssi) if rssi else None,
+        "intervalle_moyen_ms": mean(intervals) if intervals else None,
+        "intervalle_ecart_type_ms": pstdev(intervals) if len(intervals) > 1 else (0 if intervals else None),
+        "duree_evenement_moyenne_ms": mean(durations) if durations else None,
+        "canal_37": sum(1 for f in frames if f.channel == 37),
+        "canal_38": sum(1 for f in frames if f.channel == 38),
+        "canal_39": sum(1 for f in frames if f.channel == 39),
+    }
+
+
+def load_calibration():
+    if not CALIBRATION_FILE.exists():
+        return {"offset_db": 0.0, "reference_dbm": -56.0}
+    try:
+        return json.loads(CALIBRATION_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {"offset_db": 0.0, "reference_dbm": -56.0}
+
+
+def write_csv(path: Path, rows: list[dict]):
+    if not rows:
+        path.write_text("", encoding="utf-8")
+        return
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()), delimiter=";")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def save_graphs(frames, events, folder: Path):
+    folder.mkdir(parents=True, exist_ok=True)
+    paths = []
+    valid = [f for f in frames if f.rssi_calibrated is not None]
+    if valid:
+        t0 = valid[0].timestamp
+        fig, ax = plt.subplots()
+        ax.plot([f.timestamp-t0 for f in valid], [f.rssi_calibrated for f in valid])
+        ax.set(title="RSSI calibré", xlabel="Temps (s)", ylabel="RSSI (dBm)")
+        ax.grid(True)
+        fig.tight_layout(); path = folder/"01_rssi_temps.png"; fig.savefig(path, dpi=160); plt.close(fig); paths.append(path)
+        fig, ax = plt.subplots(); ax.hist([f.rssi_calibrated for f in valid], bins="auto")
+        ax.set(title="Histogramme RSSI", xlabel="RSSI (dBm)", ylabel="Occurrences"); ax.grid(True)
+        fig.tight_layout(); path = folder/"02_histogramme_rssi.png"; fig.savefig(path, dpi=160); plt.close(fig); paths.append(path)
+    intervals = [e.interval_ms for e in events if e.interval_ms is not None]
+    if intervals:
+        fig, ax = plt.subplots(); ax.plot(range(1,len(intervals)+1), intervals, marker="o")
+        ax.set(title="Intervalles entre advertisements", xlabel="Événement", ylabel="Intervalle (ms)"); ax.grid(True)
+        fig.tight_layout(); path = folder/"03_intervalles.png"; fig.savefig(path, dpi=160); plt.close(fig); paths.append(path)
+    if events:
+        fig, ax = plt.subplots(); ax.plot(range(1,len(events)+1), [e.duration_ms for e in events], marker="o")
+        ax.set(title="Durée observée des événements", xlabel="Événement", ylabel="Durée (ms)"); ax.grid(True)
+        fig.tight_layout(); path = folder/"04_durees.png"; fig.savefig(path, dpi=160); plt.close(fig); paths.append(path)
+    counts = [sum(1 for f in frames if f.channel == c) for c in (37,38,39)]
+    if sum(counts):
+        fig, ax = plt.subplots(); ax.bar(["37","38","39"], counts)
+        ax.set(title="Répartition des canaux", xlabel="Canal", ylabel="Trames"); ax.grid(True, axis="y")
+        fig.tight_layout(); path = folder/"05_canaux.png"; fig.savefig(path, dpi=160); plt.close(fig); paths.append(path)
+    return paths
+
+
+def generate_pdf(path: Path, stats: dict, config: dict, graphs: list[Path]):
+    try:
+        from reportlab.lib.pagesizes import A4
+        from reportlab.lib.styles import getSampleStyleSheet
+        from reportlab.lib.units import cm
+        from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak
+        from reportlab.lib import colors
+    except ImportError:
+        return False
+    styles = getSampleStyleSheet(); story = [Paragraph("Rapport automatique — Plateforme BLE V6", styles["Title"]), Spacer(1,0.5*cm)]
+    story.append(Paragraph("Configuration", styles["Heading2"]))
+    rows = [["Paramètre","Valeur"]] + [[str(k),str(v)] for k,v in config.items()]
+    table = Table(rows, colWidths=[6*cm,10*cm]); table.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.lightgrey),("GRID",(0,0),(-1,-1),0.5,colors.grey)])); story += [table, Spacer(1,0.5*cm)]
+    story.append(Paragraph("Statistiques", styles["Heading2"]))
+    rows = [["Indicateur","Valeur"]] + [[str(k),str(v)] for k,v in stats.items()]
+    table = Table(rows, colWidths=[9*cm,7*cm]); table.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.lightgrey),("GRID",(0,0),(-1,-1),0.5,colors.grey)])); story.append(table)
+    for graph in graphs:
+        story += [PageBreak(), Paragraph(graph.stem.replace("_"," "), styles["Heading2"]), Image(str(graph), width=17*cm, height=11*cm)]
+    SimpleDocTemplate(str(path), pagesize=A4).build(story)
+    return True
+
+
+class BLEApp(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("Plateforme BLE V6 — iBeacon / nRF Sniffer")
+        self.geometry("1280x820")
+        self.minsize(1050, 700)
+        self.frames = []
+        self.events = []
+        self.log_queue = queue.Queue()
+        self.frame_queue = queue.Queue()
+        self.calibration = load_calibration()
+        self.advertiser = BlueZAdvertiser(self.log)
+        self.capture = None
+        self.last_folder = None
+        self._vars(); self._ui()
+        self.after(100, self._poll)
+        self.protocol("WM_DELETE_WINDOW", self.close)
+
+    def _vars(self):
+        self.uuid_var = tk.StringVar(value=DEFAULT_UUID)
+        self.major_var = tk.StringVar(value="10")
+        self.minor_var = tk.StringVar(value="20")
+        self.tx_var = tk.StringVar(value="-56")
+        self.adapter_var = tk.StringVar(value="hci0")
+        self.sniffer_var = tk.StringVar(value=DEFAULT_SNIFFER)
+        self.window_var = tk.StringVar(value="12")
+        self.reference_var = tk.StringVar(value=str(self.calibration.get("reference_dbm", -56)))
+        self.emission_state = tk.StringVar(value="Arrêtée")
+        self.capture_state = tk.StringVar(value="Arrêtée")
+        self.frame_count = tk.StringVar(value="0")
+        self.event_count = tk.StringVar(value="0")
+        self.last_rssi = tk.StringVar(value="—")
+
+    def _ui(self):
+        nb = ttk.Notebook(self); nb.pack(fill="both", expand=True, padx=8, pady=8)
+        self.tabs = [ttk.Frame(nb) for _ in range(5)]
+        for tab, title in zip(self.tabs, ["Émission iBeacon","Capture nRF","Analyse","Graphiques","Calibration / Export"]): nb.add(tab,text=title)
+        self._emission_tab(); self._capture_tab(); self._analysis_tab(); self._graph_tab(); self._export_tab()
+
+    def entry(self, parent, row, label, var):
+        ttk.Label(parent,text=label).grid(row=row,column=0,sticky="w",padx=8,pady=7)
+        ttk.Entry(parent,textvariable=var,width=48).grid(row=row,column=1,sticky="ew",padx=8,pady=7)
+
+    def _emission_tab(self):
+        tab=self.tabs[0]; box=ttk.LabelFrame(tab,text="Configuration iBeacon"); box.pack(fill="x",padx=15,pady=15); box.columnconfigure(1,weight=1)
+        for i,(lab,var) in enumerate([("UUID :",self.uuid_var),("Major :",self.major_var),("Minor :",self.minor_var),("Tx Power à 1 m (dBm) :",self.tx_var),("Adaptateur BlueZ :",self.adapter_var)]): self.entry(box,i,lab,var)
+        ttk.Label(box,text="Émission par D-Bus LEAdvertisingManager1. Aucun nom local n'est ajouté au paquet iBeacon Legacy.",wraplength=900).grid(row=5,column=0,columnspan=2,sticky="w",padx=8,pady=8)
+        bar=ttk.Frame(box); bar.grid(row=6,column=0,columnspan=2,pady=10)
+        ttk.Button(bar,text="Démarrer",command=self.start_emission).pack(side="left",padx=5); ttk.Button(bar,text="Arrêter",command=self.stop_emission).pack(side="left",padx=5); ttk.Button(bar,text="Vérifier ActiveInstances",command=self.check_instances).pack(side="left",padx=5)
+        ttk.Label(box,text="État :").grid(row=7,column=0,sticky="e"); ttk.Label(box,textvariable=self.emission_state).grid(row=7,column=1,sticky="w")
+        self.log_text=tk.Text(tab,height=20,wrap="word"); self.log_text.pack(fill="both",expand=True,padx=15,pady=(0,15))
+
+    def _capture_tab(self):
+        tab=self.tabs[1]; box=ttk.LabelFrame(tab,text="Capture nRF Sniffer"); box.pack(fill="x",padx=15,pady=15); box.columnconfigure(1,weight=1)
+        self.entry(box,0,"Interface tshark/extcap :",self.sniffer_var); self.entry(box,1,"Fenêtre de regroupement (ms) :",self.window_var)
+        bar=ttk.Frame(box); bar.grid(row=2,column=0,columnspan=2,pady=10)
+        ttk.Button(bar,text="Démarrer la capture",command=self.start_capture).pack(side="left",padx=5); ttk.Button(bar,text="Arrêter et analyser",command=self.stop_capture).pack(side="left",padx=5); ttk.Button(bar,text="Effacer",command=self.clear).pack(side="left",padx=5)
+        ind=ttk.Frame(box); ind.grid(row=3,column=0,columnspan=2,sticky="ew")
+        for label,var in [("État",self.capture_state),("Trames",self.frame_count),("Événements",self.event_count),("Dernier RSSI",self.last_rssi)]:
+            b=ttk.LabelFrame(ind,text=label); b.pack(side="left",fill="x",expand=True,padx=4,pady=6); ttk.Label(b,textvariable=var,font=("TkDefaultFont",12,"bold")).pack(padx=8,pady=8)
+        cols=("time","address","rssi","channel","uuid","major","minor"); self.frame_table=ttk.Treeview(tab,columns=cols,show="headings")
+        labels={"time":"Temps epoch","address":"Adresse","rssi":"RSSI","channel":"Canal","uuid":"UUID","major":"Major","minor":"Minor"}
+        for c in cols: self.frame_table.heading(c,text=labels[c]); self.frame_table.column(c,anchor="center",width=140 if c not in ("uuid",) else 290)
+        self.frame_table.pack(fill="both",expand=True,padx=15,pady=(0,15))
+
+    def _analysis_tab(self):
+        tab=self.tabs[2]; ttk.Button(tab,text="Recalculer",command=self.recalculate).pack(anchor="w",padx=15,pady=8)
+        self.stats_text=tk.Text(tab,height=13,wrap="none"); self.stats_text.pack(fill="x",padx=15,pady=5)
+        cols=("index","start","duration","interval","packets","channels","rssi"); self.event_table=ttk.Treeview(tab,columns=cols,show="headings")
+        labels={"index":"N°","start":"Début","duration":"Durée (ms)","interval":"Intervalle (ms)","packets":"Paquets","channels":"Canaux","rssi":"RSSI moyen"}
+        for c in cols: self.event_table.heading(c,text=labels[c]); self.event_table.column(c,anchor="center",width=130)
+        self.event_table.pack(fill="both",expand=True,padx=15,pady=(0,15))
+
+    def _graph_tab(self):
+        tab=self.tabs[3]; ttk.Button(tab,text="Actualiser",command=self.refresh_graph).pack(anchor="w",padx=15,pady=8)
+        self.figure=Figure(figsize=(10,6),dpi=100); self.axis=self.figure.add_subplot(111); self.canvas=FigureCanvasTkAgg(self.figure,master=tab); self.canvas.get_tk_widget().pack(fill="both",expand=True,padx=15,pady=10)
+
+    def _export_tab(self):
+        tab=self.tabs[4]; box=ttk.LabelFrame(tab,text="Calibration RSSI à 1 mètre"); box.pack(fill="x",padx=15,pady=15); box.columnconfigure(1,weight=1)
+        self.entry(box,0,"RSSI de référence (dBm) :",self.reference_var)
+        ttk.Label(box,text="Place le beacon à 1 m, capture plusieurs trames puis calcule l'offset.",wraplength=900).grid(row=1,column=0,columnspan=2,sticky="w",padx=8,pady=8)
+        ttk.Button(box,text="Calculer la calibration",command=self.calibrate).grid(row=2,column=0,columnspan=2,pady=10)
+        out=ttk.LabelFrame(tab,text="Export"); out.pack(fill="x",padx=15,pady=15)
+        ttk.Button(out,text="Exporter CSV, JSON, PNG et PDF",command=self.export_all).pack(side="left",padx=10,pady=12); ttk.Button(out,text="Ouvrir le dossier",command=self.open_output).pack(side="left",padx=10,pady=12)
+        self.export_text=tk.Text(tab,height=20,wrap="word"); self.export_text.pack(fill="both",expand=True,padx=15,pady=(0,15))
+
+    def log(self,msg): self.log_queue.put(str(msg))
+
+    def _poll(self):
+        while True:
+            try: msg=self.log_queue.get_nowait()
+            except queue.Empty: break
+            for widget in (self.log_text,self.export_text): widget.insert("end",msg+"\n"); widget.see("end")
+        for _ in range(200):
+            try: frame=self.frame_queue.get_nowait()
+            except queue.Empty: break
+            self.frames.append(frame); self.frame_count.set(str(len(self.frames)))
+            if frame.rssi_calibrated is not None: self.last_rssi.set(f"{frame.rssi_calibrated:.1f} dBm")
+            self.frame_table.insert("","end",values=(f"{frame.timestamp:.6f}",frame.address,"" if frame.rssi_calibrated is None else f"{frame.rssi_calibrated:.1f}",frame.channel or "",frame.uuid,frame.major if frame.major is not None else "",frame.minor if frame.minor is not None else ""))
+            children=self.frame_table.get_children()
+            if len(children)>1000: self.frame_table.delete(children[0])
+        self.after(100,self._poll)
+
+    def config(self):
+        return AdvertConfig(validate_uuid(self.uuid_var.get()),validate_uint16(self.major_var.get(),"Major"),validate_uint16(self.minor_var.get(),"Minor"),validate_tx_power(self.tx_var.get()),self.adapter_var.get().strip() or "hci0")
+
+    def start_emission(self):
+        try:
+            cfg=self.config(); self.advertiser.start(cfg); self.emission_state.set("Active"); self.log(f"iBeacon actif : {cfg.uuid}, Major={cfg.major}, Minor={cfg.minor}, TxPower={cfg.tx_power} dBm"); self.check_instances()
+        except Exception as exc: self.emission_state.set("Échec"); self.log("ERREUR ÉMISSION : "+str(exc)); messagebox.showerror("Émission impossible",str(exc))
+
+    def stop_emission(self):
+        try: self.advertiser.stop(); self.emission_state.set("Arrêtée"); self.check_instances()
+        except Exception as exc: messagebox.showerror("Erreur",str(exc))
+
+    def check_instances(self):
+        try:
+            adapter=self.adapter_var.get().strip() or "hci0"
+            out=subprocess.check_output(["busctl","get-property","org.bluez",f"/org/bluez/{adapter}",LE_ADV_MANAGER_IFACE,"ActiveInstances"],text=True,stderr=subprocess.STDOUT,timeout=5).strip()
+            self.log("ActiveInstances : "+out)
+            if out.endswith(" 0") and self.advertiser.running: self.emission_state.set("Non enregistrée")
+        except Exception as exc: self.log("Vérification impossible : "+str(exc))
+
+    def start_capture(self):
+        if self.capture: return
+        try:
+            self.capture=NRFCapture(self.sniffer_var.get().strip(),self.frame_queue.put,self.log,float(self.calibration.get("offset_db",0)))
+            self.capture.start(); self.capture_state.set("Active")
+        except Exception as exc: self.capture=None; self.capture_state.set("Échec"); messagebox.showerror("Capture impossible",str(exc))
+
+    def stop_capture(self):
+        if self.capture:
+            try: self.capture.stop()
+            finally: self.capture=None
+        self.capture_state.set("Arrêtée"); self.recalculate()
+        if self.frames: self.export_all(silent=True)
+
+    def recalculate(self):
+        try: window=float(self.window_var.get().replace(",",".")); assert window>0
+        except Exception: messagebox.showerror("Analyse","Fenêtre invalide."); return
+        self.events=group_events(self.frames,window); self.event_count.set(str(len(self.events))); stats=statistics(self.frames,self.events)
+        self.stats_text.delete("1.0","end")
+        for k,v in stats.items(): self.stats_text.insert("end",f"{k} : {v:.3f}\n" if isinstance(v,float) else f"{k} : {v}\n")
+        for item in self.event_table.get_children(): self.event_table.delete(item)
+        for e in self.events: self.event_table.insert("","end",values=(e.index,f"{e.start_time:.6f}",f"{e.duration_ms:.3f}","" if e.interval_ms is None else f"{e.interval_ms:.3f}",e.packet_count,e.channels,"" if e.rssi_mean is None else f"{e.rssi_mean:.2f}"))
+        self.refresh_graph()
+
+    def refresh_graph(self):
+        self.axis.clear(); valid=[f for f in self.frames if f.rssi_calibrated is not None]
+        if valid:
+            t0=valid[0].timestamp; self.axis.plot([f.timestamp-t0 for f in valid],[f.rssi_calibrated for f in valid]); self.axis.set(title="RSSI calibré",xlabel="Temps (s)",ylabel="RSSI (dBm)"); self.axis.grid(True)
+        else: self.axis.text(0.5,0.5,"Aucune mesure",ha="center",va="center"); self.axis.set_axis_off()
+        self.figure.tight_layout(); self.canvas.draw_idle()
+
+    def calibrate(self):
+        samples=[f.rssi_raw for f in self.frames if f.rssi_raw is not None]
+        try:
+            if not samples: raise ValueError("Aucun échantillon RSSI.")
+            reference=float(self.reference_var.get().replace(",",".")); measured=mean(samples); self.calibration={"reference_dbm":reference,"measured_mean_dbm":measured,"offset_db":reference-measured,"sample_count":len(samples)}
+            CALIBRATION_FILE.write_text(json.dumps(self.calibration,indent=2),encoding="utf-8")
+            for frame in self.frames:
+                if frame.rssi_raw is not None: frame.rssi_calibrated=frame.rssi_raw+self.calibration["offset_db"]
+            self.recalculate(); self.log(f"Calibration : moyenne brute={measured:.2f} dBm, offset={self.calibration['offset_db']:+.2f} dB"); messagebox.showinfo("Calibration","Calibration enregistrée.")
+        except Exception as exc: messagebox.showerror("Calibration impossible",str(exc))
+
+    def export_all(self,silent=False):
+        if not self.frames:
+            if not silent: messagebox.showwarning("Export","Aucune trame.")
+            return
+        self.recalculate(); folder=OUTPUT_DIR/f"acquisition_{datetime.now().strftime('%Y%m%d_%H%M%S')}"; graph_dir=folder/"graphes"; folder.mkdir(parents=True,exist_ok=True)
+        stats=statistics(self.frames,self.events); cfg={"uuid":self.uuid_var.get(),"major":self.major_var.get(),"minor":self.minor_var.get(),"tx_power_dbm":self.tx_var.get(),"adapter":self.adapter_var.get(),"sniffer_interface":self.sniffer_var.get(),"group_window_ms":self.window_var.get(),"rssi_offset_db":self.calibration.get("offset_db",0)}
+        write_csv(folder/"trames_ble.csv",[asdict(f) for f in self.frames]); write_csv(folder/"evenements_advertising.csv",[asdict(e) for e in self.events]); write_csv(folder/"statistiques.csv",[{"indicateur":k,"valeur":v} for k,v in stats.items()])
+        (folder/"configuration.json").write_text(json.dumps(cfg,indent=2,ensure_ascii=False),encoding="utf-8"); (folder/"calibration_rssi.json").write_text(json.dumps(self.calibration,indent=2),encoding="utf-8")
+        graphs=save_graphs(self.frames,self.events,graph_dir); pdf_ok=generate_pdf(folder/"rapport_ble.pdf",stats,cfg,graphs)
+        self.last_folder=folder; self.log(f"Export terminé : {folder}" + ("" if pdf_ok else " (PDF absent : installe reportlab)"))
+        if not silent: messagebox.showinfo("Export terminé",str(folder))
+
+    def open_output(self):
+        folder=self.last_folder or OUTPUT_DIR; folder.mkdir(parents=True,exist_ok=True)
+        try: subprocess.Popen(["xdg-open",str(folder)])
+        except Exception as exc: messagebox.showerror("Erreur",str(exc))
+
+    def clear(self):
+        if not messagebox.askyesno("Effacer","Supprimer les mesures de l'interface ?"): return
+        self.frames.clear(); self.events.clear(); self.frame_count.set("0"); self.event_count.set("0"); self.last_rssi.set("—")
+        for table in (self.frame_table,self.event_table):
+            for item in table.get_children(): table.delete(item)
+        self.stats_text.delete("1.0","end"); self.refresh_graph()
+
+    def close(self):
+        try:
+            if self.capture: self.capture.stop()
+            if self.advertiser.running: self.advertiser.stop()
+        finally: self.destroy()
+
+
+if __name__ == "__main__":
+    BLEApp().mainloop()
