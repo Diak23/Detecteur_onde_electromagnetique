@@ -1,0 +1,52 @@
+device_id;fabricant;type_detecte;confiance_detection;nom_local;adresse_mac;uuid_ibeacon;nombre_trames;rssi_recent_dbm;longueur_recente_octets;type_pdu_recent;canal_recent;derniere_detection_epoch
+Appareil_001;Apple;iBeacon;élevée;;4e:ee:20:af:66:bd;e20a39f4-73f5-4bc4-a12f-17d1ad07a961;364;-70.0;33;ADV_IND;39;1784762382.072513
+Appareil_002;Apple;iBeacon;élevée;;6e:b9:6e:2b:30:5e;00112233-4455-6677-8899-aabbccddeeff;783;-70.0;36;ADV_IND;39;1784762382.340346
+Appareil_003;Apple;Appareil Apple BLE;faible;;73:e1:5b:d3:09:fa;;382;-70.0;34;ADV_IND;39;1784762381.976499
+Appareil_004;Apple;Appareil Apple BLE;faible;;f5:39:7e:e8:f2:89;;22;-70.0;37;ADV_NONCONN_IND;37;1784762382.19529
+Appareil_005;Apple;Appareil Apple BLE;faible;;4f:2d:cc:dd:4c:1d;;224;-81.0;20;ADV_IND;39;1784762382.157785
+Appareil_006;Apple;Appareil Apple BLE;faible;;55:b1:c8:32:ed:5e;;96;-81.0;24;ADV_IND;37;1784762381.752391
+Appareil_007;Apple;Appareil Apple BLE;faible;;d3:a4:a0:7b:65:fc;;7;-88.0;33;ADV_IND;37;1784762373.565101
+Appareil_008;Apple;Appareil Apple BLE;faible;;4f:2d:cf:1d:4c:1d;;1;-73.0;20;ADV_IND;38;1784762298.662541
+Appareil_009;Apple;Appareil Apple BLE;faible;;e9:b7:17:7f:a4:cf;;13;-81.0;14;ADV_NONCONN_IND;37;1784762376.801016
+Appareil_010;Apple;Appareil Apple BLE;faible;;4d:b1:d8:32:ed:5e;;1;-82.0;24;ADV_IND;37;1784762300.502021
+Appareil_011;Apple;Appareil Apple BLE;faible;;76:35:75:41:2a:1a;;43;-87.0;25;ADV_IND;37;1784762381.660922
+Appareil_012;Apple;Appareil Apple BLE;faible;;c0:2d:c5:9f:e2:af;;39;-72.0;33;ADV_IND;39;1784762381.72036
+Appareil_013;Apple;Appareil Apple BLE;faible;;4f:2d:cc:dd:4a:1d;;1;-72.0;20;ADV_IND;38;1784762303.090572
+Appareil_014;Apple;Appareil Apple BLE;faible;;7f:3d:a2:88:79:9d;;6;-84.0;23;ADV_NONCONN_IND;38;1784762379.163414
+Appareil_015;Apple;Appareil Apple BLE;faible;;74:35:75:41:6a:1a;;1;-95.0;25;ADV_IND;39;1784762306.455109
+Appareil_016;Apple;Appareil Apple BLE;faible;;4f:2d:cc:dd:4c:3d;;1;-82.0;20;ADV_IND;39;1784762307.134083
+Appareil_017;Apple;Appareil Apple BLE;faible;;ab:a5:d0:7a:65:fc;;1;-88.0;33;ADV_IND;37;1784762307.16619
+Appareil_018;Apple;Appareil Apple BLE;faible;;4f:2d:cc:dd:44:1d;;1;-82.0;20;ADV_IND;39;1784762308.703309
+Appareil_019;Apple;Appareil Apple BLE;faible;;d3:a4:a0:7a:e5:fc;;1;-93.0;33;ADV_IND;38;1784762310.440332
+Appareil_020;Apple;Appareil Apple BLE;faible;;4f:25:cc:d9:44:1d;;1;-85.0;20;ADV_IND;39;1784762314.493745
+Appareil_021;Apple;Appareil Apple BLE;faible;;4d:b1:c8:32:ed:5e;;1;-82.0;24;ADV_IND;37;1784762315.399524
+Appareil_022;Apple;Appareil Apple BLE;faible;;76:35:75:41:0a:1a;;1;-87.0;25;ADV_IND;38;1784762318.673996
+Appareil_023;Apple;Appareil Apple BLE;faible;;55:b1:ca:32:e5:7e;;1;-81.0;24;ADV_IND;37;1784762320.077224
+Appareil_024;Apple;Appareil Apple BLE;faible;;ee:60:1b:98:38:c6;;1;-80.0;14;ADV_NONCONN_IND;37;1784762321.515308
+Appareil_025;Apple;Appareil Apple BLE;faible;;55:b1:c8:32:e5:5e;;1;-81.0;30;ADV_IND;37;1784762322.317307
+Appareil_026;Apple;Appareil Apple BLE;faible;;55:31:c8:32:ed:5e;;2;-90.0;24;ADV_IND;39;1784762331.265757
+Appareil_027;Apple;Appareil Apple BLE;faible;;3f:3d:a2:8b:79:fd;;1;-91.0;22;ADV_NONCONN_IND;37;1784762323.930552
+Appareil_028;Apple;Appareil Apple BLE;faible;;2f:2d:cc:dd:4c:1d;;1;-82.0;20;ADV_IND;39;1784762327.147648
+Appareil_029;Apple;Appareil Apple BLE;faible;;ee:60:7b:98:38:c6;;3;-86.0;14;ADV_NONCONN_IND;37;1784762343.835185
+Appareil_030;Apple;Appareil Apple BLE;faible;;76:35:75:41:2a:6a;;1;-84.0;25;ADV_IND;38;1784762333.445595
+Appareil_031;Apple;Appareil Apple BLE;faible;;55:b1:c8:3e:ed:5e;;1;-88.0;24;ADV_IND;39;1784762334.999416
+Appareil_032;Apple;Appareil Apple BLE;faible;;4f:2d:cd:dd:4c:1d;;1;-82.0;20;ADV_IND;39;1784762335.721213
+Appareil_033;Apple;Appareil Apple BLE;faible;;55:b1:c8:12:ed:5e;;1;-81.0;24;ADV_IND;37;1784762338.916949
+Appareil_034;Apple;Appareil Apple BLE;faible;;4f:2f:cc:dd:4c:19;;1;-71.0;20;ADV_IND;38;1784762341.802858
+Appareil_035;Apple;Appareil Apple BLE;faible;;55:b1:48:32:ed:5e;;2;-88.0;24;ADV_IND;39;1784762351.788401
+Appareil_036;Apple;iBeacon;élevée;;62:b9:6e:2b:30:5e;00113233-4455-6677-8899-aabbccddeeff;1;-88.0;36;ADV_IND;39;1784762348.172978
+Appareil_037;Apple;iBeacon;élevée;;4e:ee:20:ab:66:bd;e20a39f4-6ff5-49c4-a12f-17d1ad07a941;1;-90.0;33;ADV_IND;39;1784762349.219866
+Appareil_038;Apple;Appareil Apple BLE;faible;;61:cf:b7:c6:81:05;;1;-69.0;28;ADV_IND;38;1784762355.36589
+Appareil_039;Apple;Appareil Apple BLE;faible;;77:2d:a0:88:7d:8d;;1;-85.0;23;ADV_NONCONN_IND;38;1784762355.748981
+Appareil_040;Apple;iBeacon;élevée;;5c:3f:11:34:82:9e;00112b33-4455-6677-0099-aabbccddeeff;1;-68.0;36;ADV_IND;37;1784762365.130966
+Appareil_041;Apple;Appareil Apple BLE;faible;;c0:0d:c5:9f:e2:af;;1;-71.0;33;ADV_IND;38;1784762367.73282
+Appareil_042;Apple;Appareil Apple BLE;faible;;70:35:75:41:2a:1a;;1;-92.0;25;ADV_IND;39;1784762368.892867
+Appareil_043;Apple;Appareil Apple BLE;faible;;6e:a9:6e:23:30:5e;;1;-67.0;36;ADV_IND;38;1784762370.262568
+Appareil_044;Apple;Appareil Apple BLE;faible;;4f:2d:cc:db:4c:1d;;1;-73.0;20;ADV_IND;38;1784762374.558865
+Appareil_045;Apple;Appareil Apple BLE;faible;;73:e1:5b:d3:09:fb;;1;-68.0;34;ADV_IND;38;1784762379.308592
+Appareil_046;Apple;Appareil Apple BLE;faible;;73:e1:5a:d3:09:fa;;2;-66.0;34;ADV_IND;38;1784762380.412503
+Appareil_047;Apple;iBeacon;élevée;;4e:ee:20:af:66:b9;e20a39f4-73e5-5bc4-a12f-17d1ad07a961;1;-68.0;33;ADV_IND;38;1784762379.685322
+Appareil_048;Apple;Appareil Apple BLE;faible;;76:75:75:41:2a:1a;;1;-87.0;25;ADV_IND;37;1784762380.276053
+Appareil_049;Apple;iBeacon;élevée;;6e:b9:6e:20:30:5e;10112233-4455-7677-8899-aabbccddeeff;1;-68.0;36;ADV_IND;38;1784762380.901024
+Appareil_050;Apple;Appareil Apple BLE;faible;;53:39:db:6e:70:9b;;1;-91.0;56;ADV_IND;37;1784762381.050289
+Appareil_051;Apple;Appareil Apple BLE;faible;;4f:2d:cc:db:4e:19;;1;-72.0;20;ADV_IND;38;1784762382.126086

@@ -1,0 +1,11 @@
+parametre;valeur
+mode_acquisition;Durée limitée
+duree_demandee_s;60
+nombre_trames_demande;
+heure_debut;2026-07-22T17:36:20.609702
+heure_fin;2026-07-22T17:36:28.991763
+duree_reelle_s;8.381998855000347
+nombre_trames_final;2
+nombre_appareils_logiques;1
+motif_arret;arrêt manuel
+regle_regroupement;meme UUID OU meme adresse MAC

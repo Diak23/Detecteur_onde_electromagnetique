@@ -1,0 +1,9 @@
+device_id;temps_vert_s;temps_orange_s;temps_rouge_s;niveau_final;grandeur_surveillee;seuil_vert_orange;seuil_orange_rouge
+Appareil_001;34.74899265999966;25.773812842000325;0.0;VERT;RSSI;-70;-55
+Appareil_002;55.90046727399999;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_003;50.09248205800009;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_004;26.029049173999965;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_005;25.002580239000054;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_006;23.451263659000006;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_007;15.79041716300003;0.0;0.0;VERT;RSSI;-70;-55
+Appareil_008;14.45792879999999;0.0;0.0;VERT;RSSI;-70;-55

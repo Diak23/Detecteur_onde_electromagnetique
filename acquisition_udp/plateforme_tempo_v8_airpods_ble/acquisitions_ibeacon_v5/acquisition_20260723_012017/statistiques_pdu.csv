@@ -1,0 +1,4 @@
+type_pdu;nombre_trames
+ADV_IND;1976
+ADV_NONCONN_IND;47
+SCAN_RSP;1

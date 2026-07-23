@@ -1,0 +1,2 @@
+device_id;uuid_principal;adresse_mac;nombre_trames;temps_exposition_rf_s;taux_occupation_percent;puissance_moyenne_nw;energie_totale_nj;indice_tempo;niveau_tempo
+Appareil_001;00112233-4455-6677-8899-aabbccddeeff;55:63:24:3e:d8:6b;807;0.296976;0.24614836199694426;12.876922321607273;3.824136883381641;64.8488;ROUGE

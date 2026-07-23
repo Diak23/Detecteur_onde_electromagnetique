@@ -1,12 +1,3 @@
-iw list | grep -i monitor
-iw list
-Supported interface modes:
-sudo ip link set wlan0 down
-sudo iw dev wlan0 set type monitor
-sudo ip link set wlan0 up
-iw phy phy0 info | less
-tshark
-wireshark
 getent group wireshark
 sudo usermod -aG wireshark projeteea
 ls -l /usr/bin/dumpcap
@@ -1998,3 +1989,12 @@ ls
 cd plateforme_ibeacon_mobile_v3
 source venv/bin/activate
 python main.py
+git status
+git add .
+git add
+git add.
+git --help
+git add.
+git add .
+git commit -m "Ajout de nouvelle acquisition platerforme , et calcul de la puissance et de l'energie"
+git push

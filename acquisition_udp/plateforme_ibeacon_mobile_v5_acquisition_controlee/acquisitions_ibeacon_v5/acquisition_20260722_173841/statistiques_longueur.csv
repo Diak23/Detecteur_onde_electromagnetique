@@ -1,0 +1,4 @@
+device_id;nombre_valeurs;longueur_moyenne_octets;longueur_mediane_octets;longueur_min_octets;longueur_max_octets;ecart_type_octets
+Appareil_001;327;33.055045871559635;33;33;51;0.9938790872624471
+Appareil_002;369;36;36;36;36;0.0
+Appareil_003;1;36;36;36;36;0.0

@@ -1,0 +1,21 @@
+parametre;valeur
+mode_acquisition;Durée limitée
+duree_demandee_s;120
+nombre_trames_demande;
+heure_debut;2026-07-23T00:43:38.925807
+heure_fin;2026-07-23T00:45:40.712995
+duree_reelle_s;121.78710587400019
+nombre_trames_final;2248
+nombre_appareils_logiques;2
+motif_arret;durée atteinte
+regle_regroupement;meme UUID OU meme adresse MAC
+grandeur_alerte;RSSI
+seuil_vert_orange;-70.0
+seuil_orange_rouge;-55.0
+chronometre_demarre_a_la_premiere_trame;True
+tempo_reference_power_nw;1.0
+tempo_reference_exposure_s;1.0
+tempo_weight_power;0.5
+tempo_weight_time;0.5
+tempo_seuil_vert_orange;30
+tempo_seuil_orange_rouge;60

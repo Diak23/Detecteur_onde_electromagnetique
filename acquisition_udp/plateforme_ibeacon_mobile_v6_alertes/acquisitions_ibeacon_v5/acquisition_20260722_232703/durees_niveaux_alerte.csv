@@ -1,0 +1,2 @@
+device_id;temps_vert_s;temps_orange_s;temps_rouge_s;niveau_final;grandeur_surveillee;seuil_vert_orange;seuil_orange_rouge
+Appareil_001;10.73083800300003;49.772434480000015;0.0032861009999578528;ORANGE;RSSI;-70;-55

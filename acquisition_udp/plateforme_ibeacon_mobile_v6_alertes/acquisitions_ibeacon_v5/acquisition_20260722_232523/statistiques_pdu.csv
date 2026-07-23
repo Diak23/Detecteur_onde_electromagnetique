@@ -1,0 +1,4 @@
+type_pdu;nombre_trames
+ADV_IND;327
+ADV_NONCONN_IND;1
+SCAN_RSP;1

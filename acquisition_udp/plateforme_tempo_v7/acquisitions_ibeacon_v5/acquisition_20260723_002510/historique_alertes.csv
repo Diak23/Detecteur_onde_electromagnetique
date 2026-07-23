@@ -1,0 +1,3 @@
+timestamp_iso;device_id;ancien_niveau;nouveau_niveau;grandeur;valeur;unite
+2026-07-23T00:24:10.038128;Appareil_001;INITIAL;ORANGE;RSSI;-64.0;dBm
+2026-07-23T00:24:22.858404;Appareil_001;ORANGE;ROUGE;RSSI;-53.0;dBm
