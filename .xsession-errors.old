@@ -1,4 +1,4 @@
-Xsession: X session started for projeteea at ven. 24 juil. 2026 19:48:03 CEST
+Xsession: X session started for projeteea at dim. 26 juil. 2026 03:37:57 CEST
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 xrdb: Can't open display ''
 xhost:  unable to open display ""
@@ -22,164 +22,35 @@ dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 dbus-update-activation-environment: setting LC_ALL=fr_FR.UTF-8
 dbus-update-activation-environment: setting PWD=/home/projeteea
-00:00:00.093 [ERROR] [../src/config/rcxml.c:1187] <snapping><range> is deprecated. Use <snapping><range inner="" outer=""> instead.
-00:00:00.098 [ERROR] [../src/config/rcxml.c:1258] <windowSwitcher show="" /> is deprecated. Use <windowSwitcher><osd show="" />
-00:00:00.098 [ERROR] [../src/config/rcxml.c:1282] <windowSwitcher allWorkspaces="" /> is deprecated. Use <action name="NextWindow" workspace=""> instead.
+00:00:00.084 [ERROR] [../src/config/rcxml.c:1187] <snapping><range> is deprecated. Use <snapping><range inner="" outer=""> instead.
+00:00:00.088 [ERROR] [../src/config/rcxml.c:1258] <windowSwitcher show="" /> is deprecated. Use <windowSwitcher><osd show="" />
+00:00:00.088 [ERROR] [../src/config/rcxml.c:1282] <windowSwitcher allWorkspaces="" /> is deprecated. Use <action name="NextWindow" workspace=""> instead.
 applying profile '<anonymous at line 1, col 9>'
 applying profile output 'HDMI-A-1' on connected head 'HDMI-A-1'
 configuration for profile '<anonymous at line 1, col 9>' applied
 pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
 Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
-Échec : Aucune entité de ce type
 pgrep: un motif qui cherche un nom de processus plus long que 15 caractères ne retournera aucun résultat
 Essayez l'option « pgrep -f » pour obtenir une correspondance sur la ligne de commande complète.
+Échec : Aucune entité de ce type
 Monitoring Wayland compositor socket: /run/user/1000/wayland-0
 Connected to Wayland compositor
 Waiting for Wayland compositor to close...
 
-(polkit-mate-authentication-agent-1:1341): GLib-CRITICAL **: 19:48:10.404: g_variant_new_string: assertion 'string != NULL' failed
+(polkit-mate-authentication-agent-1:1322): GLib-CRITICAL **: 03:38:03.664: g_variant_new_string: assertion 'string != NULL' failed
 
-(polkit-mate-authentication-agent-1:1341): polkit-mate-1-WARNING **: 19:48:10.405: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+(polkit-mate-authentication-agent-1:1322): polkit-mate-1-WARNING **: 03:38:03.666: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
 
-** (pcmanfm:1362): WARNING **: 19:48:10.516: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
-** Message: 19:48:11.937: batt: battery 0 not found
-** Message: 19:48:12.336: up: No network connection - polling...
-** Message: 19:48:29.577: No keyring secrets found for eduroam 1/802-1x; asking user.
+** (pcmanfm:1323): WARNING **: 03:38:03.690: The directory '/home/projeteea/Templates' doesn't exist, ignoring it
+** Message: 03:38:05.397: batt: battery 0 not found
+** Message: 03:38:05.830: up: No network connection - polling...
+** Message: 03:38:23.603: No keyring secrets found for eduroam 1/802-1x; asking user.
 
-(wf-panel-pi:1361): Pango-WARNING **: 19:48:30.205: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1327): Pango-WARNING **: 03:38:24.226: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1361): Pango-WARNING **: 19:48:30.227: Invalid UTF-8 string passed to pango_layout_set_text()
+(wf-panel-pi:1327): Pango-WARNING **: 03:38:24.245: Invalid UTF-8 string passed to pango_layout_set_text()
 
-(wf-panel-pi:1361): Pango-WARNING **: 19:48:30.249: Invalid UTF-8 string passed to pango_layout_set_text()
-** Message: 19:49:12.365: up: No network connection - polling...
-** Message: 19:50:12.365: up: No network connection - polling...
-** Message: 19:51:12.365: up: No network connection - polling...
-** Message: 19:52:12.365: up: No network connection - polling...
-** Message: 19:53:12.365: up: No network connection - polling...
-** Message: 19:54:12.366: up: No network connection - polling...
-** Message: 19:55:12.365: up: No network connection - polling...
-** Message: 19:56:12.365: up: No network connection - polling...
-** Message: 19:57:12.366: up: No network connection - polling...
-** Message: 19:58:12.366: up: No network connection - polling...
-** Message: 19:59:12.366: up: No network connection - polling...
-** Message: 20:00:12.366: up: No network connection - polling...
-** Message: 20:01:12.366: up: No network connection - polling...
-** Message: 20:02:12.366: up: No network connection - polling...
-** Message: 20:03:12.366: up: No network connection - polling...
-** Message: 20:04:12.366: up: No network connection - polling...
-** Message: 20:05:12.367: up: No network connection - polling...
-** Message: 20:06:12.366: up: No network connection - polling...
-** Message: 20:07:12.366: up: No network connection - polling...
-** Message: 20:08:12.366: up: No network connection - polling...
-** Message: 20:09:12.366: up: No network connection - polling...
-** Message: 20:10:12.366: up: No network connection - polling...
-** Message: 20:11:12.366: up: No network connection - polling...
-** Message: 20:12:12.367: up: No network connection - polling...
-** Message: 20:13:12.367: up: No network connection - polling...
-** Message: 02:52:13.475: up: Checking for updates
-** Message: 02:52:16.130: up: Cache updated - comparing versions
-** Message: 02:52:24.785: up: Check complete - 106 updates available
-The XKEYBOARD keymap compiler (xkbcomp) reports:
-> Warning:          Unsupported maximum keycode 708, clipping.
->                   X11 cannot support keycodes above 255.
-> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
-> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
-Errors from xkbcomp are not fatal to the X server
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.738: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.740: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.751: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.752: Invalid UTF-8 string passed to pango_layout_set_text()
-xsettingsd: Loaded 19 settings from /home/projeteea/.config/xsettingsd/xsettingsd.conf
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.805: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:54:07.805: Invalid UTF-8 string passed to pango_layout_set_text()
-xsettingsd: Set XFixes client disconnect mode (v6.0)
-xsettingsd: Created window 0x600001 on screen 0 with timestamp 1698338
-xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
-xsettingsd: Took ownership of selection _XSETTINGS_S0
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:58.227: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:58.228: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:58.239: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:58.240: Invalid UTF-8 string passed to pango_layout_set_text()
-00:30:53.870 [ERROR] [xwayland/xwm.c:1410] Failed to get window property
-00:30:53.871 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 330, value 4203057
-00:30:53.872 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 332, value 4203057
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.911: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.912: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.919: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.920: Invalid UTF-8 string passed to pango_layout_set_text()
-00:30:53.892 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 337, value 4203057
-00:30:53.892 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 339, value 4203057
-00:30:53.892 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 342, value 4203057
-00:30:53.892 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 343, value 4203057
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.949: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:56:59.950: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:06.381: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:06.382: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:06.387: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:06.388: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.492: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.493: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.498: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.499: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.526: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:57:08.526: Invalid UTF-8 string passed to pango_layout_set_text()
-00:31:02.509 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 419, value 4203321
-00:31:02.509 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 421, value 4203321
-00:31:02.509 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 424, value 4203321
-00:31:02.509 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 425, value 4203321
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:03.634: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:03.635: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:03.641: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:03.642: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.492: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.492: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.502: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.503: Invalid UTF-8 string passed to pango_layout_set_text()
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.531: Invalid UTF-8 string passed to pango_layout_set_text()
-00:31:59.498 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 538, value 4227110
-00:31:59.498 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 540, value 4227110
-00:31:59.498 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 543, value 4227110
-00:31:59.498 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 544, value 4227110
-
-(wf-panel-pi:1361): Pango-WARNING **: 02:58:05.532: Invalid UTF-8 string passed to pango_layout_set_text()
-01:11:30.913 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 643, value 4194467
-01:11:30.914 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 646, value 4194467
-01:11:30.921 [ERROR] [xwayland/xwm.c:1920] xcb error: op ConfigureWindow (no minor), code Window (no extension), sequence 648, value 4194467
-01:11:30.922 [ERROR] [xwayland/xwm.c:1920] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 651, value 4194467
-01:11:30.922 [ERROR] [xwayland/xwm.c:1920] xcb error: op DeleteProperty (no minor), code Window (no extension), sequence 652, value 4194467
-(EE) failed to read Wayland events: Broken pipe
+(wf-panel-pi:1327): Pango-WARNING **: 03:38:24.265: Invalid UTF-8 string passed to pango_layout_set_text()
+** Message: 17:42:18.608: up: Checking for updates
+** Message: 17:42:23.022: up: Cache updated - comparing versions
+** Message: 17:42:31.685: up: Check complete - 147 updates available
