@@ -3403,4 +3403,66 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/plateforme_tempo_v10_multimode/exports/acquisition_20260724_154255/graphes/tension_detecteur.png" added="2026-07-24T13:45:17.828027Z" modified="2026-07-24T13:45:26.072939Z" visited="2026-07-24T13:45:17.828029Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-24T13:45:26.072924Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/plateforme_tempo_v10_multimode/exports/acquisition_20260724_154255/graphes/rssi.png" added="2026-07-24T13:45:19.930909Z" modified="2026-07-24T13:45:29.398254Z" visited="2026-07-24T13:45:19.930911Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-24T13:45:29.398244Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/plateforme_tempo_v10_multimode/exports/acquisition_20260724_154255/graphes/puissance_recue.png" added="2026-07-24T13:45:22.281582Z" modified="2026-07-24T13:45:22.281599Z" visited="2026-07-24T13:45:22.281584Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-24T13:45:22.281592Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/acquisition_udp/plateforme_tempo_v10_multimode/exports/acquisition_20260724_154255/graphes/energie_cumulee.png" added="2026-07-24T13:45:24.423893Z" modified="2026-07-24T13:45:24.423909Z" visited="2026-07-24T13:45:24.423895Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Eye of MATE Image Viewer" exec="&apos;eom %u&apos;" modified="2026-07-24T13:45:24.423902Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/projeteea/T%C3%A9l%C3%A9chargements/plateforme_tempo_v10_1_lora.zip" added="2026-07-24T17:32:19.466514Z" modified="2026-07-24T17:32:19.466534Z" visited="2026-07-24T17:32:19.466517Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2026-07-24T17:32:19.466524Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
