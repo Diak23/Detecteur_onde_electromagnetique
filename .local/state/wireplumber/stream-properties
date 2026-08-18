@@ -1,5 +1,5 @@
 [stream-properties]
-Audio/Sink:node.name:auto_null={"mute":false, "channelVolumes":[1.000000, 1.000000], "volume":1.000000, "channelMap":["FL", "FR"]}
+Audio/Sink:node.name:auto_null={"mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"]}
 Input/Audio:media.role:Communication={"channelVolumes":[1.000000], "channelMap":["MONO"]}
 Output/Audio:application.name:ALSA\splug-in\s\ofirefox\c={"channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"], "mute":false, "volume":1.000000}
 Output/Audio:application.name:Firefox={"mute":false, "channelVolumes":[1.000000, 1.000000], "volume":1.000000, "channelMap":["FL", "FR"]}

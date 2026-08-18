@@ -1,0 +1,11 @@
+parametre;valeur
+mode;Durée limitée
+simulation;True
+motif_arret;condition d'arrêt atteinte
+nombre_mesures;602
+duree_s;30.04074779900003
+energie_totale_j;1.96445611401328e-08
+2,45 GHz_puissance_moyenne_dbm;-63.588033782385935
+2,45 GHz_energie_j;1.5405899219059806e-08
+868 MHz_puissance_moyenne_dbm;-70.95481240796855
+868 MHz_energie_j;4.238661921072995e-09

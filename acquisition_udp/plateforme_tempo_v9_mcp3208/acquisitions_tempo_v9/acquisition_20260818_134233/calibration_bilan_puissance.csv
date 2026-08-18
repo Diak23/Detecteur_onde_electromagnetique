@@ -1,0 +1,3 @@
+name;frequency_mhz;adc_channel;detector_reference_voltage_v;detector_reference_power_dbm;detector_slope_v_per_db;lna_gain_db;filter_loss_db;cable_loss_db;switch_loss_db;net_gain_db
+868 MHz;868.0;0;2.1;-40.0;-0.025;35.0;1.0;1.0;0.0;33.0
+2,45 GHz;2450.0;1;2.1;-40.0;-0.025;18.5;0.8;1.0;0.0;16.7
