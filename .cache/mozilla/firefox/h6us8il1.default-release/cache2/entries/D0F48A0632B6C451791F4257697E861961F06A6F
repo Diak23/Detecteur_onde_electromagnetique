@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
     <link rel="stylesheet" href="chrome://newtab/content/css/activity-stream.css" />
   </head>
-  <!-- Cached: Tue, 25 Aug 2026 15:52:01 GMT -->
+  <!-- Cached: Tue, 25 Aug 2026 20:36:45 GMT -->
   <body class="activity-stream">
     <div id="header-asrouter-container" role="presentation"></div>
     <div id="root">
@@ -2626,42 +2626,9 @@ window.__STARTUP_STATE__ = {
 	},
 	"Weather": {
 		"initialized": true,
-		"lastUpdated": 1787673116846,
+		"lastUpdated": 1787685717256,
 		"query": "",
-		"suggestions": [
-			{
-				"title": "Weather for Paris",
-				"url": "https://www.accuweather.com/en/fr/paris/623/current-weather/623?lang=en-us&partner=web_mozilla_adc",
-				"provider": "accuweather",
-				"is_sponsored": false,
-				"score": 0.3,
-				"city_name": "Paris",
-				"region_code": "France",
-				"current_conditions": {
-					"url": "https://www.accuweather.com/en/fr/paris/623/current-weather/623?lang=en-us&partner=web_mozilla_adc",
-					"summary": "Mostly cloudy",
-					"icon_id": 6,
-					"temperature": {
-						"c": 29,
-						"f": 85
-					}
-				},
-				"forecast": {
-					"url": "https://www.accuweather.com/en/fr/paris/623/daily-weather-forecast/623?lang=en-us&partner=web_mozilla_adc",
-					"summary": "Expect showery weather late Tuesday afternoon through Tuesday evening",
-					"high": {
-						"c": 29,
-						"f": 84
-					},
-					"low": {
-						"c": 17,
-						"f": 63
-					}
-				},
-				"request_id": "61c400212c7f4bc5ad50ef9da7960708",
-				"source": "merino"
-			}
-		],
+		"suggestions": [],
 		"hourlyForecasts": [],
 		"locationData": {
 			"city": "Paris",
@@ -2797,4 +2764,4 @@ window.__STARTUP_STATE__ = {
 	}
 };
 
-Ïù¦è           jº!IÛzÈÿÿÿÿ       :about:home alt-data 1;28178,script version 20260629141727  :N
+üJ>à“           jüİIÛ©	ÿÿÿÿ       :about:home alt-data 1;28178,script version 20260629141727  6Š

@@ -1,0 +1,269 @@
+diff name:ublock-annoyances lines:3 checksum:1be86abc8c
+d4 1
+a4 1
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-annoyances
+diff name:ublock-badware lines:6 checksum:0794308c02
+d3 2
+a4 2
+! Last modified: Tue, 25 Aug 2026 13:57:36 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-badware
+a4521 1
+||vencord.cc^$all
+diff name:ublock-experimental lines:3 checksum:6b54bd212c
+d4 1
+a4 1
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-experimental
+diff name:ublock-filters lines:93 checksum:7261c1d9e4
+d3 2
+a4 2
+! Last modified: Tue, 25 Aug 2026 15:41:12 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-filters
+d1274 7
+d7750 1
+a7750 1
+1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,reloadedsteam.com,rootz.so,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(rmnt, script, /this\[[^\]]*Func[^\]]*\]|th"\+"is\[(?:"\+"'[^']+'")+|(?:window|globalThis|this)\[(?:["'][^"']{1,10}["']\s*\+\s*){1,}["'][^"']{0,10}["']\]|self\.__next.*?\,typeof document/)
+a10494 74
+! SECTION: Placeholder by EasyPrivacy
+! rcm.shinobi.jp and cnobi.jp
+##.ninja-recommend-block
+blogterest.net##.blockSide > div.blockWrapper:has(> div > div.ninja-recommend-block)
+doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp,vipstyle.tokyo##.plugin-memo:has(> div.side > div.ninja-recommend-block)
+adseek.site###primary:style(display: block !important;)
+minnyuu.jp##div[class$="BlockBase"]:has(> div > div > div.plugin-freearea > div.ninja-recommend-block)
+norisoku.com###random
+samuraisoccer.doorblog.jp##.plugin-l-t:last-child
+dvdrev.com##.side_menu:has(> div > div.plugin-freearea > div.ninja-recommend-block)
+xn--r8jwklh769h2mc880dk1o431a.com##.underbox
+tousatu-ch.net##.widget_custom_html:has(> div.textwidget > div[style^="width: 100%;"] > div.ninja-recommend-block)
+geinoukame.com##.ninja-recommend-block + br
+geinoukame.com##.ninja-recommend-block + hr
+! Cxense/Piano
+jiji.com##.RecommendPianoWrapper
+jiji.com##.RecommendUnderlayer
+rbbtoday.com##.cx-top-news
+president.jp##.recommend
+kobe-np.co.jp##section.sec:has(> #piano_recs_inline_title)
+vivi.tv##.section__inner:has(> #recommended-posts-result)
+augsburger-allgemeine.de,nikkansports.com##div[id^="cx_"]
+hochi.news###ohtani-pickup
+businessinsider.jp##div[class^="article_specialFeature_"]
+businessinsider.jp##div[class^="displayhandler"]:has(> div[class^="premiumRecommend"])
+sankei.com##div[id^="piano_special_Top_"]
+diamond.jp###contents > div.sub-column > div.title:has(+ #cx-recommed)
+diamond.jp###cx-recommed
+baseballpost.jp###highschool-pickup
+s.response.jp##.aside-box-relation-arti
+nikkei.com###pianoRecommendBottom
+entapark.jp##div[id$="-pickup"][style^="height"]
+itmedia.co.jp##.is-recommend:empty
+itmedia.co.jp##.format--subheading:has(+ .is-recommend:empty)
+lifehacker.jp###mainContent > div[class^="articles_pArticles_Title_"]:has(+ div[class^="displayhandler_"] > div > div[id^="cxMore"])
+! ziyu.net
+jin115.com,livedoor.biz#?#.plugin-memo:has(> div.side > script[src*="ziyu.net/"])
+okutta.net##.article__footer > div[style="height:500px; overflow-y:scroll;"]
+! Taboola
+cartune.me##.contents-inner > div:has(> div#taboola-alternating-thumbnails-a)
+gendai.media##.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
+infoseek.co.jp##.co-Widget[style="min-height: 6000px;"]:style(min-height: auto !important;)
+anime-drama.jp###block-11
+crank-in.net##.wrap_general:has(> #taboola-below-article-thumbnails-mg)
+crank-in.net##article > section.block-area:has(> div#taboola-below-article-thumbnails-mg)
+jbpress.ismedia.jp##div.--wid:has(> div#taboola-below-article-thumbnails-bottom)
+mdpr.jp##.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
+full-count.jp##.s-entry > section > div.c-heading:has(> div#taboola-below-article-thumbnails-desktop)
+newsweekjapan.jp##.taboola-below-article-thumbnails-desktop-2-wrap
+pashplus.jp##.content_right > div > span[style^="display: block; font-size: 30px"]:has(+ div#taboola-below-article-thumbnails)
+bunshun.jp##.recommend-articles:has(> div[class^="taboola"])
+! Rtoaster
+nifty.com##div[class^="Setsuzoku_ourServicesDList"] > dl > dt:first-child
+nifty.com##dd[class^="Setsuzoku_servicePromo"]
+! Taxel
+wanchan.jp##.recommend_header
+wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
+! other
+blog.jp#?#.plugin-memo:has(> div.side > div > div[id^="blz_rss"])
+nukigazo.com###text-2
+comichara.com,movient.net###text-6
+okazuch.site###custom_html-30
+tousatu-club.com###text-9
+erostopics.net###custom_html-81
+erostopics.net###custom_html-137
+erostopics.net###related-box
+idle-girl.com###custom_html-74
+excite.co.jp###exCollaboration
+lmaga.jp##.recommend
+! Outbrain
+nekochan.jp###main > aside:has(> div.OUTBRAIN)
+! k5a.io
+tv2.no##.article-recommended
+! !SECTION: Placeholder by EasyPrivacy
+d10699 3
+d17596 72
+d24918 5
+a24922 3
+/adsconfig.json|$xhr
+||tvnow247.top/*.js?v=$script
+tvnow247.top##+js(set, aclib, trueFunc)
+a25621 2
+pixhost.*##+js(rmnt, script, AdProvider)
+pixhost.*##.content-companion
+diff name:ublock-privacy lines:6 checksum:582f247f22
+d3 2
+a4 2
+! Last modified: Tue, 25 Aug 2026 11:30:43 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-privacy
+a2063 1
+||narto-drama.com/presence/heartbeat
+diff name:ublock-quick-fixes lines:15 checksum:eb5a14a9de
+d3 2
+a4 2
+! Last modified: Tue, 25 Aug 2026 15:25:43 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-quick-fixes
+a394 10
+igorslab.de##.herald-main-content > .row > .herald-module:not([data-col]):has(> .herald-txt-module div[id*="-"][class] > div[id*="-"][class*="target"] a[href][rel="noopener"] img)
+igorslab.de##div.widget[class*="-widget"][id*="-widget-"]
+igorslab.de##a[aria-label*="Banner"]
+igorslab.de##.herald-sidebar-right > .widget:not([id*="widget"])
+igorslab.de###content ~ .herald-slide
+igorslab.de##.herald-sticky
+igorslab.de###extras > #single-sticky + div[class]:not([id]):has(a[href][target="_blank"] img)
+igorslab.de##.entry-content > #skio-article-bar ~ div[id][class]:not([class*="igorslab"]):has(a[href][target="_blank"] img)
+/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de
+/identity/token/verify?browser_id=$badfilter
+diff name:ublock-unbreak lines:3 checksum:b327a6df95
+d4 1
+a4 1
+! Diff-Path: ../patches/2026.8.25.954.patch#ublock-unbreak
+diff name:easylist lines:90 checksum:cc2d9d0a94
+d4 2
+a5 2
+! Last modified: Tue, 25 Aug 2026 13:34:33 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#easylist
+a16832 1
+||abacisthernant.shop^
+a18789 1
+||arainserliche.qpon^
+a20117 1
+||benselshrap.com^
+a21009 1
+||bowserions.qpon^
+a21868 1
+||caprocknene.qpon^
+a23832 1
+||crullsozines.qpon^
+a27226 1
+||endenorit.com^
+a27360 1
+||envigorchapati.qpon^
+a27429 1
+||ephebuspellock.cyou^
+a27813 1
+||exactorpaintry.shop^
+a29984 1
+||gcxvdfnafvwoz.website^
+a30762 1
+||gqvzfqgeikndv.com^
+a30800 1
+||grangekitan.qpon^
+a31109 1
+||gupinkmqcyvwk.site^
+a32098 1
+||hmvxrfnvjkvip.site^
+a32976 1
+||ihkkckkiptbbv.site^
+a34019 1
+||ivzeknpsvnqjm.site^
+a34200 1
+||japerysledder.qpon^
+a34266 1
+||jbzmwqwljyazw.top^
+a35213 1
+||katinkacerumen.qpon^
+a36091 1
+||kyackfarsang.cfd^
+a36206 1
+||lakakffa.in^
+a38373 1
+||mftqsdgy.com^
+a38508 1
+||millychichcremone.qpon^
+a38707 1
+||mlmktaagfpond.space^
+a39150 1
+||mr39fvm4c6m8jq6.cfd^
+a41204 1
+||ogtndopapgldg.website^
+a42904 1
+||pfhmoyvzsulxa.space^
+a44834 1
+||qevuvbmyusysj.site^
+a45481 1
+||rabblerpylar.shop^
+a47278 1
+||rx91o8kqr7x4cujny.rest^
+a47872 1
+||seamytawgi.cfd^
+a48314 1
+||sheavssgfkthz.space^
+a48744 1
+||skirredobia.cyou^
+a49272 1
+||soulishsuidianleague.cyou^
+a49307 1
+||soyotecht.qpon^
+a50658 1
+||takepodsolkutenai.qpon^
+a53214 1
+||unrestymoxa.shop^
+a54404 1
+||vjuhfgajzlazi.website^
+a54661 1
+||vrzzxpzfasfeq.site^
+a55354 1
+||wendbangystroker.cyou^
+a57535 1
+||ymhhlxdogdwut.site^
+a72744 1
+sysadminsage.com##.product-banner
+diff name:easyprivacy lines:8 checksum:12508c71c7
+d4 2
+a5 2
+! Last modified: Tue, 25 Aug 2026 13:34:33 +0000
+! Diff-Path: ../patches/2026.8.25.954.patch#easyprivacy
+a11955 1
+||meas.join-stories.com^
+a12639 1
+||src.fwusercontent.com^
+^.vxW      jç…¡jç…¡I€Öújç…¡   B    ~FETCH,:https://ublockorigin.pages.dev/patches/2026.8.25.644.patch strongly-framed 1 security-info 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 request-method GET response-head HTTP/3 200 
+date: Tue, 25 Aug 2026 16:58:41 GMT
+content-type: application/octet-stream
+content-length: 8392
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "8532bc17b2543386848d23348bd3f803"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ADPlGL1r9IDXKuupxBHBESX%2F4C7G8hFoHLcCRIMuP9eBUTr2MJDx67KY%2Fdv1rKYvXYcKbB7kjwiy8oxwLm6vFhaqFfouARxtISRxDanOFk83pawB93DC74i0HBk2ETpO9i1SXq3hok7F"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+priority: u=4,i=?0
+server: cloudflare
+cf-ray: a30c24985c6eeba6-CDG
+alt-svc: h3=":443"; ma=86400
+server-timing: cfExtPri
+X-Firefox-Http3: h3
+ original-response-headers date: Tue, 25 Aug 2026 16:58:41 GMT
+content-type: application/octet-stream
+content-length: 8392
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "8532bc17b2543386848d23348bd3f803"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ADPlGL1r9IDXKuupxBHBESX%2F4C7G8hFoHLcCRIMuP9eBUTr2MJDx67KY%2Fdv1rKYvXYcKbB7kjwiy8oxwLm6vFhaqFfouARxtISRxDanOFk83pawB93DC74i0HBk2ETpO9i1SXq3hok7F"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+priority: u=4,i=?0
+server: cloudflare
+cf-ray: a30c24985c6eeba6-CDG
+alt-svc: h3=":443"; ma=86400
+server-timing: cfExtPri
+ ctid 1 net-response-time-onstart 196 net-response-time-onstop 205    »
