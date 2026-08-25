@@ -1,0 +1,11 @@
+parametre;valeur
+debut;2026-08-25T16:52:18.146378
+motif_arret;condition d'arrêt atteinte
+nombre_mesures;4085
+energie_totale_j;6.42910576514772e-05
+simulation_activee;True
+mcp3208_active;False
+ble_actif;True
+wifi_actif;True
+lora_simulation_active;True
+lora_reel_actif;False

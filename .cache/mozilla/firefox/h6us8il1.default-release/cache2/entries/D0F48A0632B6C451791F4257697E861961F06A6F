@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
     <link rel="stylesheet" href="chrome://newtab/content/css/activity-stream.css" />
   </head>
-  <!-- Cached: Tue, 25 Aug 2026 14:22:01 GMT -->
+  <!-- Cached: Tue, 25 Aug 2026 15:52:01 GMT -->
   <body class="activity-stream">
     <div id="header-asrouter-container" role="presentation"></div>
     <div id="root">
@@ -2626,7 +2626,7 @@ window.__STARTUP_STATE__ = {
 	},
 	"Weather": {
 		"initialized": true,
-		"lastUpdated": 1787667716711,
+		"lastUpdated": 1787673116846,
 		"query": "",
 		"suggestions": [
 			{
@@ -2642,23 +2642,23 @@ window.__STARTUP_STATE__ = {
 					"summary": "Mostly cloudy",
 					"icon_id": 6,
 					"temperature": {
-						"c": 28,
-						"f": 82
+						"c": 29,
+						"f": 85
 					}
 				},
 				"forecast": {
 					"url": "https://www.accuweather.com/en/fr/paris/623/daily-weather-forecast/623?lang=en-us&partner=web_mozilla_adc",
-					"summary": "Expect showery weather Tuesday afternoon through Tuesday evening",
+					"summary": "Expect showery weather late Tuesday afternoon through Tuesday evening",
 					"high": {
-						"c": 28,
-						"f": 82
+						"c": 29,
+						"f": 84
 					},
 					"low": {
 						"c": 17,
 						"f": 63
 					}
 				},
-				"request_id": "355b88c4a7544aeeb587dbc8126fe4d4",
+				"request_id": "61c400212c7f4bc5ad50ef9da7960708",
 				"source": "merino"
 			}
 		],
@@ -2797,4 +2797,4 @@ window.__STARTUP_STATE__ = {
 	}
 };
 
-&RÎÚü           j¥	IÛl)ÿÿÿÿ       :about:home alt-data 1;28178,script version 20260629141727  :I
+Ïù¦è           jº!IÛzÈÿÿÿÿ       :about:home alt-data 1;28178,script version 20260629141727  :N
