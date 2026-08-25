@@ -39,6 +39,11 @@ ALERT_COLORS = {
     "ROUGE": "#c62828",
 }
 
+# Une acquisition BLE peut contenir de nombreuses adresses publicitaires.
+# Toutes les courbes restent tracées, mais la légende est volontairement
+# limitée pour ne pas masquer les données.
+MAX_BLE_LEGEND_SERIES = 6
+
 
 @dataclass
 class Record:
@@ -1289,6 +1294,11 @@ class TempoV10(tk.Tk):
         self.axes = all_axes[:panel_count]
         self.axis = self.axes[0]
 
+        # La légende BLE est placée au niveau de la figure, sous les subplots.
+        # Elle ne peut ainsi recouvrir aucune courbe.
+        ble_legend_handles = []
+        ble_legend_labels = []
+
         for axis in all_axes[panel_count:]:
             axis.set_visible(False)
 
@@ -1301,11 +1311,22 @@ class TempoV10(tk.Tk):
             axis.set_title(f"{source} — {band} [{status}]", fontsize=10, weight="bold")
             axis.set_facecolor("#fff4df" if simulated else "#eef7ff")
 
-            for index, (label, points) in enumerate(sorted(series.items())):
+            series_items = sorted(
+                series.items(),
+                key=lambda item: (-len(item[1]), item[0].lower()),
+            )
+            if source == "BLE Sniffer":
+                labelled_items = series_items[:MAX_BLE_LEGEND_SERIES]
+                other_items = series_items[MAX_BLE_LEGEND_SERIES:]
+            else:
+                labelled_items = series_items
+                other_items = []
+
+            for label, points in labelled_items:
                 points.sort(key=lambda point: point[0])
                 x_values = [point[0] for point in points]
                 y_values = [point[1] for point in points]
-                axis.plot(
+                line, = axis.plot(
                     x_values,
                     y_values,
                     linewidth=1.35,
@@ -1313,6 +1334,37 @@ class TempoV10(tk.Tk):
                     marker="o" if len(points) <= 40 else None,
                     markersize=2.5,
                     label=label,
+                )
+
+                if source == "BLE Sniffer":
+                    ble_legend_handles.append(line)
+                    ble_legend_labels.append(label)
+
+            # Les appareils BLE moins représentés restent visibles, avec une
+            # couleur grise discrète et une seule entrée dans la légende.
+            other_handle = None
+            for label, points in other_items:
+                points.sort(key=lambda point: point[0])
+                x_values = [point[0] for point in points]
+                y_values = [point[1] for point in points]
+                line, = axis.plot(
+                    x_values,
+                    y_values,
+                    color="#7f8c8d",
+                    linewidth=0.9,
+                    alpha=0.38,
+                    linestyle="--" if simulated else "-",
+                    marker="o" if len(points) <= 40 else None,
+                    markersize=2.0,
+                    label="_nolegend_",
+                )
+                if other_handle is None:
+                    other_handle = line
+
+            if source == "BLE Sniffer" and other_handle is not None:
+                ble_legend_handles.append(other_handle)
+                ble_legend_labels.append(
+                    f"Autres appareils BLE ({len(other_items)})"
                 )
 
             if graph in {"Puissance reçue", "RSSI"}:
@@ -1326,7 +1378,7 @@ class TempoV10(tk.Tk):
             axis.set_ylabel(ylabel)
             axis.grid(True, alpha=0.35)
 
-            if len(series) > 1:
+            if source != "BLE Sniffer" and len(series) > 1:
                 axis.legend(loc="best", fontsize=7, ncol=1)
 
         if graph == "Puissance reçue":
@@ -1341,8 +1393,25 @@ class TempoV10(tk.Tk):
             fontsize=12,
             weight="bold",
         )
-        self.figure.set_size_inches(12, max(6.5, rows * 3.0))
-        self.figure.tight_layout(rect=(0, 0, 1, 0.93))
+
+        bottom_margin = 0.02
+        if ble_legend_handles:
+            legend_columns = min(4, len(ble_legend_handles))
+            self.figure.legend(
+                ble_legend_handles,
+                ble_legend_labels,
+                loc="lower center",
+                bbox_to_anchor=(0.5, 0.008),
+                fontsize=7,
+                ncol=legend_columns,
+                title="Appareils BLE les plus observés",
+                title_fontsize=8,
+                frameon=True,
+            )
+            bottom_margin = 0.12
+
+        self.figure.set_size_inches(12, max(6.5, rows * 3.2))
+        self.figure.tight_layout(rect=(0, bottom_margin, 1, 0.93))
         self.canvas.draw_idle()
 
     def export_results(self):

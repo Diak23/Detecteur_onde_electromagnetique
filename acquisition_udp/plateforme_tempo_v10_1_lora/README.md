@@ -32,6 +32,9 @@ acquisition comportant plusieurs sources :
 
 - un sous-graphe par source et par bande RF ;
 - plusieurs courbes seulement à l'intérieur du panneau BLE, une par appareil ;
+- légende BLE placée sous les sous-graphes, hors de la zone de tracé ;
+- identification individuelle des six appareils BLE les plus observés ; les
+  autres restent tracés en gris sous une entrée de légende commune ;
 - fond bleu et trait continu pour les données réelles ;
 - fond orange et trait pointillé pour les simulations ;
 - graphe RSSI réservé aux récepteurs numériques Wi-Fi, BLE et LoRa ;
