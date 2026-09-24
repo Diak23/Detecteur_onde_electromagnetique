@@ -1,8 +1,10 @@
 #include <WiFiNINA.h>
 #include <WiFiUdp.h>
 
-char ssid[] = "NOM_DE_TON_WIFI";
-char pass[] = "MOT_DE_PASSE_WIFI";
+#include "arduino_secrets.h"
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 
 WiFiUDP udp;
 

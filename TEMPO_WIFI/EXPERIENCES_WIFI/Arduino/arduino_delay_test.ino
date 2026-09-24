@@ -1,8 +1,10 @@
 #include <WiFiNINA.h>
 #include <WiFiUdp.h>
 
-char ssid[] = "Galaxy S9+0105";
-char pass[] = "Diakllo@";
+#include "arduino_secrets.h"
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 
 WiFiUDP udp;
 

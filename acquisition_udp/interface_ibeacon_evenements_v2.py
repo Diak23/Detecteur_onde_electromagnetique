@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import json
 import math
 import queue
@@ -25,7 +26,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 
-TARGET_MAC = "DC:A6:32:65:E5:71".lower()
+TARGET_MAC = os.environ.get("TEMPO_TARGET_MAC", "02:00:00:00:00:01").strip().lower()
 TARGET_UUID = "e20a39f4-73f5-4bc4-a12f-17d1ad07a961"
 TARGET_MAJOR = 0
 TARGET_MINOR = 0
